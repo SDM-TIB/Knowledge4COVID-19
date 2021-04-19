@@ -1,0 +1,6 @@
+docker build -t sdmtib/covid19_exploration:1.0 .
+
+
+docker push sdmtib/covid19_exploration:1.0
+
+docker run -d --name covid19_exploration_api -p 18873:5000 -e ENDPOINT='https://labs.tib.eu/sdm/covid19kg/sparql' sdmtib/covid19_exploration:1.0
