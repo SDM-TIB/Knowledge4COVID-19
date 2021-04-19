@@ -15,7 +15,7 @@
 	rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/vocab/{DrugBankID}";
+		rr:template "http://covid-19.tib.eu/Drug/{DrugBankID}";
 		rr:class covid-19:Drug
 	];
 	rr:predicateObjectMap [
