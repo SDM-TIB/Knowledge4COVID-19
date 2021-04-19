@@ -1,0 +1,1156 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://covid-19.tib.eu/vocab/partOf
+<http://covid-19.tib.eu/vocab/partOf> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#lasbel
+rdfs:lasbel rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://covid-19.tib.eu/vocab/affects
+<http://covid-19.tib.eu/vocab/affects> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <http://covid-19.tib.eu/vocab/EffectInteraction> ;
+                                       rdfs:range <http://covid-19.tib.eu/vocab/Drug> ;
+                                       <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                       <http://purl.org/dc/terms/modified> "2020-11-27"@en ;
+                                       rdfs:comment "The conncetion between drug that affects by the other one through their interaction and the interaction node."@en ;
+                                       rdfs:label "affects"@en .
+
+
+###  http://covid-19.tib.eu/vocab/annotates
+<http://covid-19.tib.eu/vocab/annotates> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <http://covid-19.tib.eu/vocab/Relation> ;
+                                         rdfs:range <http://covid-19.tib.eu/vocab/Publication> ;
+                                         <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                         <http://purl.org/dc/terms/modified> "2020-05-24"@en ;
+                                         rdfs:label "annotates"@en .
+
+
+###  http://covid-19.tib.eu/vocab/annotation_isRelatedTo_Disease
+<http://covid-19.tib.eu/vocab/annotation_isRelatedTo_Disease> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain <http://covid-19.tib.eu/vocab/Annotation> ;
+                                                              rdfs:range <http://covid-19.tib.eu/vocab/Disorder> ;
+                                                              <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                              <http://purl.org/dc/terms/modified> "2020-10-29"@en ;
+                                                              rdfs:comment "."@en ,
+                                                                           "This property associates an annotation with a disorder."@en ;
+                                                              rdfs:label "annotation_isRelatedTo_Disease"@en .
+
+
+###  http://covid-19.tib.eu/vocab/drug_interactsWith_drug
+<http://covid-19.tib.eu/vocab/drug_interactsWith_drug> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <http://covid-19.tib.eu/vocab/Drug> ;
+                                                       rdfs:range <http://covid-19.tib.eu/vocab/Drug> ;
+                                                       <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                       <http://purl.org/dc/terms/modified> "2020-07-24T00:00:00"^^xsd:dateTime ;
+                                                       rdfs:comment "Represents drug-drug interactions."@en ;
+                                                       rdfs:label "drug_interactsWith_drug"@en .
+
+
+###  http://covid-19.tib.eu/vocab/drug_isRelatedTo_dse
+<http://covid-19.tib.eu/vocab/drug_isRelatedTo_dse> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <http://covid-19.tib.eu/vocab/Drug> ;
+                                                    rdfs:range <http://covid-19.tib.eu/vocab/DrugSideEffect> ;
+                                                    <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                    <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
+                                                    rdfs:comment "Connection between drug and drug-sideEffect relation."@en ;
+                                                    rdfs:label "drug_isRelatedTo_dse"@en .
+
+
+###  http://covid-19.tib.eu/vocab/effect
+<http://covid-19.tib.eu/vocab/effect> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <http://covid-19.tib.eu/vocab/DrugDrugInteraction> ;
+                                      rdfs:range <http://covid-19.tib.eu/vocab/AdverseEvent> ;
+                                      <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                      <http://purl.org/dc/terms/modified> "2020-09-14"@en ;
+                                      rdfs:comment "The relationship between the drug drug interaction and corresponding adverse event."@en ;
+                                      rdfs:label "effect"@en .
+
+
+###  http://covid-19.tib.eu/vocab/enzyme_isRelatedTo_gene
+<http://covid-19.tib.eu/vocab/enzyme_isRelatedTo_gene> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <http://covid-19.tib.eu/vocab/Enzyme> ;
+                                                       rdfs:range <http://covid-19.tib.eu/vocab/Gene> ;
+                                                       <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                       <http://purl.org/dc/terms/modified> "2020-10-30"^^xsd:date ;
+                                                       rdfs:comment "The connection between the enzyme and the gene from which it is produced."@en ;
+                                                       rdfs:label "enzyme_isRelatedTo_gene"@en .
+
+
+###  http://covid-19.tib.eu/vocab/hasCUIAnnotation
+<http://covid-19.tib.eu/vocab/hasCUIAnnotation> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://covid-19.tib.eu/vocab/Concept> ;
+                                                rdfs:range <http://covid-19.tib.eu/vocab/Annotation> ;
+                                                <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                <http://purl.org/dc/terms/modified> "2019-01-29"@en ;
+                                                rdfs:comment "CUI annotation of the concept."@en ;
+                                                rdfs:label "hasCUIAnnotation"@en .
+
+
+###  http://covid-19.tib.eu/vocab/hasDrugBankID
+<http://covid-19.tib.eu/vocab/hasDrugBankID> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <http://covid-19.tib.eu/vocab/DrugToxicityInteraction> ;
+                                             rdfs:range <http://covid-19.tib.eu/vocab/Drug> ;
+                                             rdfs:comment "The drugbank id for a drug"@en ;
+                                             rdfs:isDefinedBy "anery_patel"@en ;
+                                             rdfs:label "hasDrugBankID"@en .
+
+
+###  http://covid-19.tib.eu/vocab/hasHPOAnnotation
+<http://covid-19.tib.eu/vocab/hasHPOAnnotation> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://covid-19.tib.eu/vocab/Phenotype> ;
+                                                rdfs:range <http://covid-19.tib.eu/vocab/Annotation> ;
+                                                <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                <http://purl.org/dc/terms/modified> "2019-01-30"@en ;
+                                                rdfs:comment "HPO annotation of the phenotype."@en ;
+                                                rdfs:label "hasHPOAnnotation"@en .
+
+
+###  http://covid-19.tib.eu/vocab/interaction_isRelatedTo_Disease
+<http://covid-19.tib.eu/vocab/interaction_isRelatedTo_Disease> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain <http://covid-19.tib.eu/vocab/Interaction> ;
+                                                               rdfs:range <http://covid-19.tib.eu/vocab/Disorder> ;
+                                                               <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                               <http://purl.org/dc/terms/modified> "2020-10-29"@en ;
+                                                               rdfs:comment "Connection between the interaction and disease."@en ;
+                                                               rdfs:label "interaction_isRelatedTo_Disease"@en .
+
+
+###  http://covid-19.tib.eu/vocab/interactor1
+<http://covid-19.tib.eu/vocab/interactor1> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://covid-19.tib.eu/vocab/Interaction> ;
+                                           rdfs:range <http://covid-19.tib.eu/vocab/Concept> ;
+                                           <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                           <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
+                                           rdfs:comment "Relation which connects an interaction to the involved drug"@en ;
+                                           rdfs:label "interactor1"@en .
+
+
+###  http://covid-19.tib.eu/vocab/interactor1_hasDrugBankID
+<http://covid-19.tib.eu/vocab/interactor1_hasDrugBankID> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://covid-19.tib.eu/vocab/Interaction> ;
+                                                         rdfs:range <http://covid-19.tib.eu/vocab/Drug> ;
+                                                         <http://purl.org/dc/terms/modified> "2021-04-13"@en ;
+                                                         rdfs:comment "A relation that connects an interaction to the involved drug in DrugBank."@en ;
+                                                         rdfs:isDefinedBy "anery_patel"@en ;
+                                                         rdfs:label "interactor1_hasDrugBankID"@en .
+
+
+###  http://covid-19.tib.eu/vocab/interactor2
+<http://covid-19.tib.eu/vocab/interactor2> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://covid-19.tib.eu/vocab/Interaction> ;
+                                           rdfs:range <http://covid-19.tib.eu/vocab/Concept> ;
+                                           <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                           <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
+                                           rdfs:label "interactor2"@en .
+
+
+###  http://covid-19.tib.eu/vocab/interactor2_hasDrugBankID
+<http://covid-19.tib.eu/vocab/interactor2_hasDrugBankID> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://covid-19.tib.eu/vocab/Interaction> ;
+                                                         rdfs:range <http://covid-19.tib.eu/vocab/Drug> ;
+                                                         <http://purl.org/dc/terms/modified> "2021-04-13T00:00:00"^^xsd:dateTime ;
+                                                         rdfs:comment "A relation that connects an interaction to the second drug (in case it is a drug) in DrugBank."@en ;
+                                                         rdfs:isDefinedBy "anery_patel"@en ;
+                                                         rdfs:label "interactor2_hasDrugBankID"@en .
+
+
+###  http://covid-19.tib.eu/vocab/isAffected
+<http://covid-19.tib.eu/vocab/isAffected> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <http://covid-19.tib.eu/vocab/EffectInteraction> ;
+                                          rdfs:range <http://covid-19.tib.eu/vocab/Drug> ;
+                                          <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                          <http://purl.org/dc/terms/modified> "2020-11-27"@en ;
+                                          rdfs:comment "The conncetion between drug that is affected by the other one through their interaction and the interaction node."@en ;
+                                          rdfs:label "isAffected"@en .
+
+
+###  http://covid-19.tib.eu/vocab/objectDrug
+<http://covid-19.tib.eu/vocab/objectDrug> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <http://covid-19.tib.eu/vocab/DrugDrugInteraction> ;
+                                          rdfs:range <http://covid-19.tib.eu/vocab/Drug> ;
+                                          <http://purl.org/dc/terms/modified> "2021-04-13T00:00:00"^^xsd:dateTime ;
+                                          rdfs:comment "Relation which connects the drug drug interaction to the object drug."@en ;
+                                          rdfs:isDefinedBy "anery-patel"@en ;
+                                          rdfs:label "objectDrug"@en .
+
+
+###  http://covid-19.tib.eu/vocab/object_hasDrugBankID
+<http://covid-19.tib.eu/vocab/object_hasDrugBankID> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <http://covid-19.tib.eu/vocab/DrugDrugInteraction> ;
+                                                    rdfs:range <http://covid-19.tib.eu/vocab/Drug> ;
+                                                    <http://purl.org/dc/terms/modified> "2021-04-13"@en ;
+                                                    rdfs:comment "The drugbank ID of the object drug"@en ;
+                                                    rdfs:isDefinedBy "anery-patel"@en .
+
+
+###  http://covid-19.tib.eu/vocab/precipitantDrug
+<http://covid-19.tib.eu/vocab/precipitantDrug> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <http://covid-19.tib.eu/vocab/DrugDrugInteraction> ;
+                                               rdfs:range <http://covid-19.tib.eu/vocab/Drug> ;
+                                               <http://purl.org/dc/terms/modified> "2021-04-13"@en ;
+                                               rdfs:comment "Relation which connects the drug drug interaction to the precipitant drug."@en ;
+                                               rdfs:isDefinedBy "anery-patel"@en ;
+                                               rdfs:label "precipitantDrug"@en .
+
+
+###  http://covid-19.tib.eu/vocab/precipitant_hasDrugBankID
+<http://covid-19.tib.eu/vocab/precipitant_hasDrugBankID> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://covid-19.tib.eu/vocab/DrugDrugInteraction> ;
+                                                         rdfs:range <http://covid-19.tib.eu/vocab/Drug> ;
+                                                         <http://purl.org/dc/terms/modified> "2021-04-13T00:00:00"^^xsd:dateTime ;
+                                                         rdfs:comment "The drugbank ID of the object drug"@en ;
+                                                         rdfs:isDefinedBy "anery-patel"@en ;
+                                                         rdfs:label "precipitant_hasDrugBankID"@en .
+
+
+###  http://covid-19.tib.eu/vocab/publication_isRelatedTo_Disease
+<http://covid-19.tib.eu/vocab/publication_isRelatedTo_Disease> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                                               rdfs:range <http://covid-19.tib.eu/vocab/Disorder> ;
+                                                               <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                               <http://purl.org/dc/terms/modified> "2019-05-24"@en ;
+                                                               rdfs:comment "" ;
+                                                               rdfs:label "publication_isRelatedTo_Disease"@en .
+
+
+###  http://covid-19.tib.eu/vocab/relation_hasObjectGene_annotation
+<http://covid-19.tib.eu/vocab/relation_hasObjectGene_annotation> rdf:type owl:ObjectProperty ;
+                                                                 rdfs:domain <http://covid-19.tib.eu/vocab/Relation> ;
+                                                                 rdfs:range <http://covid-19.tib.eu/vocab/Gene> ;
+                                                                 <http://purl.org/dc/terms/modified> "2021-04-13T00:00:00"@en ;
+                                                                 rdfs:isDefinedBy "anery-patel"@en ;
+                                                                 rdfs:label "relation_hasObjectGene_annotation"@en .
+
+
+###  http://covid-19.tib.eu/vocab/relation_hasObject_annotation
+<http://covid-19.tib.eu/vocab/relation_hasObject_annotation> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain <http://covid-19.tib.eu/vocab/Relation> ;
+                                                             rdfs:range <http://covid-19.tib.eu/vocab/SemanticAnnotation> ;
+                                                             <http://purl.org/dc/terms/modified> "2021-04-13T00:00:00"@en ;
+                                                             rdfs:isDefinedBy "anery-patel"@en ;
+                                                             rdfs:label "relation_hasObject_annotation"@en .
+
+
+###  http://covid-19.tib.eu/vocab/relation_hasSubjectGene_Annotation
+<http://covid-19.tib.eu/vocab/relation_hasSubjectGene_Annotation> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:domain <http://covid-19.tib.eu/vocab/Relation> ;
+                                                                  rdfs:range <http://covid-19.tib.eu/vocab/Gene> ;
+                                                                  <http://purl.org/dc/terms/modified> "2021-04-13T00:00:00"@en ;
+                                                                  rdfs:isDefinedBy "anery-patel"@en ;
+                                                                  rdfs:label "relation_hasSubjectGene_Annotation"@en .
+
+
+###  http://covid-19.tib.eu/vocab/relation_hasSubject_annotation
+<http://covid-19.tib.eu/vocab/relation_hasSubject_annotation> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain <http://covid-19.tib.eu/vocab/Relation> ;
+                                                              rdfs:range <http://covid-19.tib.eu/vocab/SemanticAnnotation> ;
+                                                              <http://purl.org/dc/terms/modified> "2021-04-13T00:00:00"^^xsd:dateTime ;
+                                                              rdfs:isDefinedBy "anery-patel"@en ;
+                                                              rdfs:label "relation_hasSubject_annotation"@en .
+
+
+###  http://covid-19.tib.eu/vocab/relation_isRelatedTo_Disease
+<http://covid-19.tib.eu/vocab/relation_isRelatedTo_Disease> rdf:type owl:ObjectProperty ;
+                                                            rdfs:domain <http://covid-19.tib.eu/vocab/Relation> ;
+                                                            rdfs:range <http://covid-19.tib.eu/vocab/Disorder> ;
+                                                            <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                            <http://purl.org/dc/terms/modified> "2020-10-29"@en ;
+                                                            rdfs:comment "." ;
+                                                            rdfs:label "relation_isRelatedTo_Disease"@en .
+
+
+###  http://covid-19.tib.eu/vocab/relation_isRelatedTo_annotation
+<http://covid-19.tib.eu/vocab/relation_isRelatedTo_annotation> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain <http://covid-19.tib.eu/vocab/Relation> ;
+                                                               rdfs:range <http://covid-19.tib.eu/vocab/Annotation> ;
+                                                               <http://purl.org/dc/terms/modified> "2020-11-27"@en ;
+                                                               rdfs:comment "." ;
+                                                               rdfs:isDefinedBy "anery_patel"@en ;
+                                                               rdfs:label "relation_isRelatedTo_annotation"@en .
+
+
+###  http://covid-19.tib.eu/vocab/relation_isRelatedTo_publication
+<http://covid-19.tib.eu/vocab/relation_isRelatedTo_publication> rdf:type owl:ObjectProperty ;
+                                                                rdfs:domain <http://covid-19.tib.eu/vocab/Relation> ;
+                                                                rdfs:range <http://covid-19.tib.eu/vocab/Publication> ;
+                                                                <http://purl.org/dc/terms/modified> "2019-05-24"@en ;
+                                                                rdfs:comment "." ;
+                                                                rdfs:isDefinedBy "anery_patel"@en ;
+                                                                rdfs:label "relation_isRelatedTo_publication"@en .
+
+
+###  http://covid-19.tib.eu/vocab/sideEffect_isRelatedTo_dse
+<http://covid-19.tib.eu/vocab/sideEffect_isRelatedTo_dse> rdf:type owl:ObjectProperty ;
+                                                          rdfs:domain <http://covid-19.tib.eu/vocab/Phenotype> ;
+                                                          rdfs:range <http://covid-19.tib.eu/vocab/DrugSideEffect> ;
+                                                          <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                          <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
+                                                          rdfs:comment "Connection between sideEffect and drug-sideEffect relation."@en ;
+                                                          rdfs:label "sideEffect_isRelatedTo_dse"@en .
+
+
+###  http://covid-19.tib.eu/vocab/target_isRelatedTo_gene
+<http://covid-19.tib.eu/vocab/target_isRelatedTo_gene> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <http://covid-19.tib.eu/vocab/Target> ;
+                                                       rdfs:range <http://covid-19.tib.eu/vocab/Gene> ;
+                                                       <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                       <http://purl.org/dc/terms/modified> "2020-10-30"@en ;
+                                                       rdfs:comment "The connection between the target and the gene from which it is produced."@en ;
+                                                       rdfs:label "target_isRelatedTo_gene"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://covid-19.tib.eu/vocab/abstract
+<http://covid-19.tib.eu/vocab/abstract> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                        rdfs:range rdfs:Literal ;
+                                        rdfs:comment "Abstract of the publication"@en ;
+                                        rdfs:isDefinedBy "anery-patel"@en ;
+                                        rdfs:label "abstract"@en .
+
+
+###  http://covid-19.tib.eu/vocab/annID
+<http://covid-19.tib.eu/vocab/annID> rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain <http://covid-19.tib.eu/vocab/Annotation> ;
+                                     rdfs:range rdfs:Literal ;
+                                     <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                     <http://purl.org/dc/terms/modified> "2019-01-29"@en ;
+                                     rdfs:comment "Identification of instances of Annotation class"@en ;
+                                     rdfs:label "annID"@en .
+
+
+###  http://covid-19.tib.eu/vocab/annLabel
+<http://covid-19.tib.eu/vocab/annLabel> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://covid-19.tib.eu/vocab/Annotation> ;
+                                        rdfs:range rdfs:Literal ;
+                                        <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                        <http://purl.org/dc/terms/modified> "2020-04-12"@en ;
+                                        rdfs:comment "Label of instances of Annotation class"@en ;
+                                        rdfs:label "annLabel"@en .
+
+
+###  http://covid-19.tib.eu/vocab/arxiv_id
+<http://covid-19.tib.eu/vocab/arxiv_id> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                        rdfs:range rdfs:Literal ;
+                                        rdfs:comment "Publications"^^xsd:string ;
+                                        rdfs:label "arxiv_id"@en .
+
+
+###  http://covid-19.tib.eu/vocab/authorName
+<http://covid-19.tib.eu/vocab/authorName> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                          rdfs:range rdfs:Literal ;
+                                          <http://purl.org/dc/terms/modified> "2019-05-24"@en ;
+                                          rdfs:comment "Name of Author"@en ;
+                                          rdfs:isDefinedBy "anery_patel"@en ;
+                                          rdfs:label "author"@en .
+
+
+###  http://covid-19.tib.eu/vocab/confidence
+<http://covid-19.tib.eu/vocab/confidence> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <http://covid-19.tib.eu/vocab/Relation> ;
+                                          rdfs:range rdfs:Literal ;
+                                          <http://purl.org/dc/terms/modified> "2020-11-27"@en ;
+                                          rdfs:comment "Confidence score of the concept."@en ;
+                                          rdfs:isDefinedBy "anery_patel"@en ;
+                                          rdfs:label "confidence"@en .
+
+
+###  http://covid-19.tib.eu/vocab/disorderLabel
+<http://covid-19.tib.eu/vocab/disorderLabel> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <http://covid-19.tib.eu/vocab/Disorder> ;
+                                             rdfs:range rdfs:Literal ;
+                                             <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                             <http://purl.org/dc/terms/modified> "2020-10-30"@en ;
+                                             rdfs:comment "Disorder Label."@en ;
+                                             rdfs:label "DisorderLabel"@en .
+
+
+###  http://covid-19.tib.eu/vocab/disorderLabel_ENG
+<http://covid-19.tib.eu/vocab/disorderLabel_ENG> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <http://covid-19.tib.eu/vocab/Disorder> ;
+                                                 rdfs:range rdfs:Literal ;
+                                                 <http://purl.org/dc/terms/modified> "2019-05-24"@en ;
+                                                 rdfs:comment "Disorder label."@en ;
+                                                 rdfs:isDefinedBy "anery_patel"@en ;
+                                                 rdfs:label "disorderLabel_ENG"@en .
+
+
+###  http://covid-19.tib.eu/vocab/doi
+<http://covid-19.tib.eu/vocab/doi> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                   rdfs:range rdfs:Literal ;
+                                   <http://purl.org/dc/terms/creator> "anery-patel"^^xsd:string ;
+                                   <http://purl.org/dc/terms/modified> "2021-04-13T00:00:00"@en ;
+                                   rdfs:comment "DOI of a publication"@en ;
+                                   rdfs:label "doi"@en .
+
+
+###  http://covid-19.tib.eu/vocab/drugBankID
+<http://covid-19.tib.eu/vocab/drugBankID> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <http://covid-19.tib.eu/vocab/Drug> ;
+                                          rdfs:range rdfs:Literal ;
+                                          <http://purl.org/dc/terms/modified> "2020-11-22"@en ;
+                                          rdfs:comment "Drug Bank ID."@en ;
+                                          rdfs:isDefinedBy "anery_patel"@en ;
+                                          rdfs:label "DrugBankID"@en .
+
+
+###  http://covid-19.tib.eu/vocab/drugLabel
+<http://covid-19.tib.eu/vocab/drugLabel> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <http://covid-19.tib.eu/vocab/Drug> ;
+                                         rdfs:range rdfs:Literal ;
+                                         <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                         <http://purl.org/dc/terms/modified> "2020-09-26"@en ;
+                                         rdfs:comment "Drug label."@en ;
+                                         rdfs:label "DrugLabel"@en .
+
+
+###  http://covid-19.tib.eu/vocab/drugLabel_ENG
+<http://covid-19.tib.eu/vocab/drugLabel_ENG> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <http://covid-19.tib.eu/vocab/Drug> ;
+                                             rdfs:range rdfs:Literal ;
+                                             <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                             <http://purl.org/dc/terms/modified> "2019-01-30"@en ;
+                                             rdfs:comment "Drug label."@en ;
+                                             rdfs:label "drugLabel_ENG"@en .
+
+
+###  http://covid-19.tib.eu/vocab/dse_AvgFrequency
+<http://covid-19.tib.eu/vocab/dse_AvgFrequency> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <http://covid-19.tib.eu/vocab/DrugSideEffect> ;
+                                                rdfs:range rdfs:Literal ;
+                                                <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
+                                                rdfs:comment "Represents the average frequecy of particular drug having specific side effect."@en ;
+                                                rdfs:label "dse_AvgFrequency"@en .
+
+
+###  http://covid-19.tib.eu/vocab/enzymeID
+<http://covid-19.tib.eu/vocab/enzymeID> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://covid-19.tib.eu/vocab/Enzyme> ;
+                                        rdfs:range rdfs:Literal ;
+                                        <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                        <http://purl.org/dc/terms/modified> "2020-09-26"@en ;
+                                        rdfs:comment "Enzyme ID."@en ;
+                                        rdfs:label "EnzymeID"@en .
+
+
+###  http://covid-19.tib.eu/vocab/enzymeLabel
+<http://covid-19.tib.eu/vocab/enzymeLabel> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://covid-19.tib.eu/vocab/Enzyme> ;
+                                           rdfs:range rdfs:Literal ;
+                                           <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                           <http://purl.org/dc/terms/modified> "2020-09-26"@en ;
+                                           rdfs:comment "Enzyme Label."@en ;
+                                           rdfs:label "EnzymeLabel"@en .
+
+
+###  http://covid-19.tib.eu/vocab/externalLink
+<http://covid-19.tib.eu/vocab/externalLink> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <http://covid-19.tib.eu/vocab/Concept> ;
+                                            rdfs:range xsd:anyURI ;
+                                            <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                            <http://purl.org/dc/terms/modified> "2020-09-26"@en ;
+                                            rdfs:comment "Link to external resources."@en ;
+                                            rdfs:label "externalLink"@en .
+
+
+###  http://covid-19.tib.eu/vocab/hasConfidenceScore
+<http://covid-19.tib.eu/vocab/hasConfidenceScore> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <http://covid-19.tib.eu/vocab/Interaction> ;
+                                                  rdfs:range rdfs:Literal ;
+                                                  rdfs:label "hasConfidenceScore"@en .
+
+
+###  http://covid-19.tib.eu/vocab/hasDate
+<http://covid-19.tib.eu/vocab/hasDate> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <http://covid-19.tib.eu/vocab/Concept> ;
+                                       rdfs:range rdfs:Literal ;
+                                       <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                       <http://purl.org/dc/terms/modified> "2021-03-18"@en ;
+                                       rdfs:comment "Connection between any concept and the corresponding date."@en ;
+                                       rdfs:label "hasDate"@en .
+
+
+###  http://covid-19.tib.eu/vocab/hasGeneLabel
+<http://covid-19.tib.eu/vocab/hasGeneLabel> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <http://covid-19.tib.eu/vocab/Gene> ;
+                                            rdfs:range rdfs:Literal ;
+                                            rdfs:label "hasGeneLabel"@en .
+
+
+###  http://covid-19.tib.eu/vocab/impact
+<http://covid-19.tib.eu/vocab/impact> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <http://covid-19.tib.eu/vocab/AdverseEvent> ;
+                                      rdfs:range rdfs:Literal ;
+                                      <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                      <http://purl.org/dc/terms/modified> "2020-09-14"@en ;
+                                      rdfs:comment "Represents the type impact of the adverse event i.e. increase/decrease"@en ;
+                                      rdfs:lasbel "impact"@en .
+
+
+###  http://covid-19.tib.eu/vocab/journal
+<http://covid-19.tib.eu/vocab/journal> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                       rdfs:range rdfs:Literal ;
+                                       <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                       <http://purl.org/dc/terms/modified> "2020-04-12"@en ;
+                                       rdfs:comment "Journal of publication"@en ;
+                                       rdfs:label "journal"@en .
+
+
+###  http://covid-19.tib.eu/vocab/license
+<http://covid-19.tib.eu/vocab/license> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                       rdfs:range rdfs:Literal ;
+                                       rdfs:label "license"@en .
+
+
+###  http://covid-19.tib.eu/vocab/negation
+<http://covid-19.tib.eu/vocab/negation> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://covid-19.tib.eu/vocab/Relation> ;
+                                        rdfs:range rdfs:Literal ;
+                                        <http://purl.org/dc/terms/modified> "2019-05-24"@en ;
+                                        rdfs:comment "."@en ;
+                                        rdfs:isDefinedBy "anery_patel"@en ;
+                                        rdfs:label "negation"@en .
+
+
+###  http://covid-19.tib.eu/vocab/pdf_json_files
+<http://covid-19.tib.eu/vocab/pdf_json_files> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                              rdfs:range rdfs:Literal ;
+                                              rdfs:label "pdf_json_files"@en .
+
+
+###  http://covid-19.tib.eu/vocab/phenotypeLabel
+<http://covid-19.tib.eu/vocab/phenotypeLabel> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://covid-19.tib.eu/vocab/Phenotype> ;
+                                              rdfs:range rdfs:Literal ;
+                                              <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                              <http://purl.org/dc/terms/modified> "2020-09-26"@en ;
+                                              rdfs:comment "Phenotype Label."@en ;
+                                              rdfs:label "PhenotypeLabel"@en .
+
+
+###  http://covid-19.tib.eu/vocab/pmc_json_files
+<http://covid-19.tib.eu/vocab/pmc_json_files> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                              rdfs:range rdfs:Literal ;
+                                              rdfs:label "pmc_json_files"@en .
+
+
+###  http://covid-19.tib.eu/vocab/pmcid
+<http://covid-19.tib.eu/vocab/pmcid> rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                     rdfs:range rdfs:Literal ;
+                                     rdfs:comment "Publications identifier"^^xsd:string ;
+                                     rdfs:label "pmcid"@en .
+
+
+###  http://covid-19.tib.eu/vocab/predictionMethod
+<http://covid-19.tib.eu/vocab/predictionMethod> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <http://covid-19.tib.eu/vocab/Interaction> ;
+                                                rdfs:range rdfs:Literal ;
+                                                <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                <http://purl.org/dc/terms/modified> "2020-10-29"@en ;
+                                                rdfs:comment "Represents the prediction method that is used in order to extract DDI predictions from literature or databases."@en ;
+                                                rdfs:label "predictionMethod"@en .
+
+
+###  http://covid-19.tib.eu/vocab/proteinID
+<http://covid-19.tib.eu/vocab/proteinID> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <http://covid-19.tib.eu/vocab/Protein> ;
+                                         rdfs:range rdfs:Literal ;
+                                         <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                         <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
+                                         rdfs:comment "Protein ID."@en ;
+                                         rdfs:label "proteinID"@en .
+
+
+###  http://covid-19.tib.eu/vocab/proteinLabel
+<http://covid-19.tib.eu/vocab/proteinLabel> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <http://covid-19.tib.eu/vocab/Protein> ;
+                                            rdfs:range rdfs:Literal ;
+                                            <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                            <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
+                                            rdfs:comment "Protein Label."@en ;
+                                            rdfs:label "proteinName"@en .
+
+
+###  http://covid-19.tib.eu/vocab/pubmed_id
+<http://covid-19.tib.eu/vocab/pubmed_id> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                         rdfs:range rdfs:Literal ;
+                                         rdfs:comment "Publications"^^xsd:string ;
+                                         rdfs:label "pubmed_id"@en .
+
+
+###  http://covid-19.tib.eu/vocab/relation_hasObject_confidenceScore
+<http://covid-19.tib.eu/vocab/relation_hasObject_confidenceScore> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:domain <http://covid-19.tib.eu/vocab/Relation> ;
+                                                                  rdfs:range rdfs:Literal ;
+                                                                  rdfs:label "relation_hasObject_confidenceScore"@en .
+
+
+###  http://covid-19.tib.eu/vocab/relation_hasSubject_confidenceScore
+<http://covid-19.tib.eu/vocab/relation_hasSubject_confidenceScore> rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:domain <http://covid-19.tib.eu/vocab/Relation> ;
+                                                                   rdfs:range rdfs:Literal ;
+                                                                   rdfs:label "relation_hasSubject_confidenceScore"@en .
+
+
+###  http://covid-19.tib.eu/vocab/semanticType
+<http://covid-19.tib.eu/vocab/semanticType> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <http://covid-19.tib.eu/vocab/Annotation> ;
+                                            rdfs:range rdfs:Literal ;
+                                            <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                            <http://purl.org/dc/terms/modified> "2020-11-27"@en ;
+                                            rdfs:comment "A list with the allowed semantic_types for this Annotation in the UMLS."@en ;
+                                            rdfs:label "hasSemanticType"@en .
+
+
+###  http://covid-19.tib.eu/vocab/semanticTypeGroup
+<http://covid-19.tib.eu/vocab/semanticTypeGroup> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <http://covid-19.tib.eu/vocab/Annotation> ;
+                                                 rdfs:range rdfs:Literal ;
+                                                 <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                 <http://purl.org/dc/terms/modified> "2020-10-05"@en ;
+                                                 rdfs:comment "The semantic type group provided by UMLS."@en ;
+                                                 rdfs:label "semanticTypeGroup"@en .
+
+
+###  http://covid-19.tib.eu/vocab/semanticTypeID
+<http://covid-19.tib.eu/vocab/semanticTypeID> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://covid-19.tib.eu/vocab/Annotation> ;
+                                              rdfs:range rdfs:Literal ;
+                                              <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                              <http://purl.org/dc/terms/modified> "2019-01-30"@en ;
+                                              rdfs:comment "The semantic type id provided by UMLS."@en ;
+                                              rdfs:label "semanticTypeID"@en .
+
+
+###  http://covid-19.tib.eu/vocab/semanticTypeLabel
+<http://covid-19.tib.eu/vocab/semanticTypeLabel> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <http://covid-19.tib.eu/vocab/Annotation> ;
+                                                 rdfs:range rdfs:Literal .
+
+
+###  http://covid-19.tib.eu/vocab/sha_id
+<http://covid-19.tib.eu/vocab/sha_id> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                      rdfs:range rdfs:Literal ;
+                                      rdfs:comment "Publications identifier"^^xsd:string ;
+                                      rdfs:label "sha_id"@en .
+
+
+###  http://covid-19.tib.eu/vocab/source
+<http://covid-19.tib.eu/vocab/source> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                      rdfs:range rdfs:Literal ;
+                                      rdfs:label "source"@en .
+
+
+###  http://covid-19.tib.eu/vocab/targetID
+<http://covid-19.tib.eu/vocab/targetID> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://covid-19.tib.eu/vocab/Target> ;
+                                        rdfs:range rdfs:Literal ;
+                                        <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                        <http://purl.org/dc/terms/modified> "2020-10-30"@en ;
+                                        rdfs:comment "Target ID."@en ;
+                                        rdfs:label "targetID"@en .
+
+
+###  http://covid-19.tib.eu/vocab/targetLabel
+<http://covid-19.tib.eu/vocab/targetLabel> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://covid-19.tib.eu/vocab/Target> ;
+                                           rdfs:range rdfs:Literal ;
+                                           <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                           <http://purl.org/dc/terms/modified> "2020-10-30"@en ;
+                                           rdfs:comment "Target Label."@en ;
+                                           rdfs:label "TargetLabel"@en .
+
+
+###  http://covid-19.tib.eu/vocab/targetTotal
+<http://covid-19.tib.eu/vocab/targetTotal> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://covid-19.tib.eu/vocab/Target> ;
+                                           rdfs:range rdfs:Literal ;
+                                           <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                           <http://purl.org/dc/terms/modified> "2017-07-24"@en ;
+                                           rdfs:comment "The percentage of circulating tumor DNA in the blood"@en ;
+                                           rdfs:label "targetTotal"@en .
+
+
+###  http://covid-19.tib.eu/vocab/title
+<http://covid-19.tib.eu/vocab/title> rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                     rdfs:range rdfs:Literal ;
+                                     <http://purl.org/dc/terms/modified> "2020-11-27"@en ;
+                                     rdfs:comment "Title of Publication."@en ;
+                                     rdfs:isDefinedBy "anery_patel"@en ;
+                                     rdfs:label "title"@en .
+
+
+###  http://covid-19.tib.eu/vocab/toxicityLabel_ENG
+<http://covid-19.tib.eu/vocab/toxicityLabel_ENG> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <http://covid-19.tib.eu/vocab/Phenotype> ;
+                                                 rdfs:range rdfs:Literal ;
+                                                 <http://purl.org/dc/terms/modified> "2019-05-24"@en ;
+                                                 rdfs:comment "toxicity Label ENG"@en ;
+                                                 rdfs:isDefinedBy "anery_patel"@en ;
+                                                 rdfs:label "toxicityLabel_ENG"@en .
+
+
+###  http://covid-19.tib.eu/vocab/toxicityType
+<http://covid-19.tib.eu/vocab/toxicityType> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <http://covid-19.tib.eu/vocab/Phenotype> ;
+                                            rdfs:range rdfs:Literal ;
+                                            <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                            <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
+                                            rdfs:comment "An attribute of phenotype represetning the type of the toxicity."@en ;
+                                            rdfs:label "toxicityType"@en .
+
+
+###  http://covid-19.tib.eu/vocab/type
+<http://covid-19.tib.eu/vocab/type> rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain <http://covid-19.tib.eu/vocab/Relation> ;
+                                    rdfs:range rdfs:Literal ;
+                                    <http://purl.org/dc/terms/modified> "2021-04-13T00:00:00"^^xsd:dateTime ;
+                                    rdfs:comment "The predicate type of the relation"@en ;
+                                    rdfs:isDefinedBy "anery-patel"@en ;
+                                    rdfs:label "type"@en .
+
+
+###  http://covid-19.tib.eu/vocab/uniprotID
+<http://covid-19.tib.eu/vocab/uniprotID> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <http://covid-19.tib.eu/vocab/Concept> ;
+                                         rdfs:range rdfs:Literal ;
+                                         <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                         <http://purl.org/dc/terms/modified> "2020-10-30"@en ;
+                                         rdfs:comment "External connection to accession ID in uniprot."@en ;
+                                         rdfs:label "uniprotID"@en .
+
+
+###  http://covid-19.tib.eu/vocab/who_covidence_id
+<http://covid-19.tib.eu/vocab/who_covidence_id> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                                rdfs:range rdfs:Literal ;
+                                                rdfs:comment "Publication resource"@en ;
+                                                rdfs:label "who_covidence_id"@en .
+
+
+###  http://covid-19.tib.eu/vocab/year
+<http://covid-19.tib.eu/vocab/year> rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                    rdfs:range rdfs:Literal ;
+                                    <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                    <http://purl.org/dc/terms/modified> "2020-04-12"@en ;
+                                    rdfs:comment "Year of Publication"@en ;
+                                    rdfs:label "year"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://covid-19.tib.eu/vocab/AFFECTS
+<http://covid-19.tib.eu/vocab/AFFECTS> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://covid-19.tib.eu/vocab/Relation> ;
+                                       rdfs:label "Affects"@en .
+
+
+###  http://covid-19.tib.eu/vocab/ASSOCIATED_WITH
+<http://covid-19.tib.eu/vocab/ASSOCIATED_WITH> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://covid-19.tib.eu/vocab/Relation> ;
+                                               <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal> ;
+                                               <http://purl.org/dc/terms/modified> "2020-10-23"@en ;
+                                               rdfs:comment "UMLS Annotation."@en ;
+                                               rdfs:label "AssociatedWith"@en .
+
+
+###  http://covid-19.tib.eu/vocab/AUGMENTS
+<http://covid-19.tib.eu/vocab/AUGMENTS> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://covid-19.tib.eu/vocab/Relation> ;
+                                        rdfs:label "Augments"@en .
+
+
+###  http://covid-19.tib.eu/vocab/AdverseEvent
+<http://covid-19.tib.eu/vocab/AdverseEvent> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://covid-19.tib.eu/vocab/Concept> ;
+                                            <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                            <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
+                                            rdfs:comment "Represents the consequence of the interaction between two drugs."@en ;
+                                            rdfs:label "AdverseEvent"@en .
+
+
+###  http://covid-19.tib.eu/vocab/Annotation
+<http://covid-19.tib.eu/vocab/Annotation> rdf:type owl:Class ;
+                                          <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal> ;
+                                          <http://purl.org/dc/terms/description> "e.g. CUI IDs provided by UMLS."@en ;
+                                          rdfs:comment "Explanation of a concept including label, id and source of concept."@en ;
+                                          rdfs:label "Annotation"@en .
+
+
+###  http://covid-19.tib.eu/vocab/CAUSES
+<http://covid-19.tib.eu/vocab/CAUSES> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://covid-19.tib.eu/vocab/Relation> ;
+                                      <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                      <http://purl.org/dc/terms/modified> "2020-10-23"@en ;
+                                      rdfs:comment "UMLS Annotation."@en ;
+                                      rdfs:label "Causes"@en .
+
+
+###  http://covid-19.tib.eu/vocab/COEXISTS_WITH
+<http://covid-19.tib.eu/vocab/COEXISTS_WITH> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://covid-19.tib.eu/vocab/Relation> ;
+                                             rdfs:label "Coexists_with"@en .
+
+
+###  http://covid-19.tib.eu/vocab/COMPLICATES
+<http://covid-19.tib.eu/vocab/COMPLICATES> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://covid-19.tib.eu/vocab/Relation> ;
+                                           rdfs:label "Complicates"@en .
+
+
+###  http://covid-19.tib.eu/vocab/Concept
+<http://covid-19.tib.eu/vocab/Concept> rdf:type owl:Class ;
+                                       rdfs:subClassOf owl:Thing ;
+                                       rdfs:comment "Constituents of thoughts or real world entities."@en ;
+                                       rdfs:isDefinedBy "emetis_niazmand"@en ;
+                                       rdfs:label "Concept"@en ;
+                                       owl:versionInfo "v1.0"@en .
+
+
+###  http://covid-19.tib.eu/vocab/DISRUPTS
+<http://covid-19.tib.eu/vocab/DISRUPTS> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://covid-19.tib.eu/vocab/Relation> ;
+                                        rdfs:label "Disrupts"@en .
+
+
+###  http://covid-19.tib.eu/vocab/Disorder
+<http://covid-19.tib.eu/vocab/Disorder> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://covid-19.tib.eu/vocab/Concept> ;
+                                        rdfs:comment "This class represents disorders"@en ;
+                                        rdfs:isDefinedBy "anery_patel"@en ;
+                                        rdfs:label "Disorder"@en ;
+                                        owl:versionInfo "v1.0"@en .
+
+
+###  http://covid-19.tib.eu/vocab/Drug
+<http://covid-19.tib.eu/vocab/Drug> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://covid-19.tib.eu/vocab/Concept> ;
+                                    rdfs:comment "This class represents drugs"@en ;
+                                    rdfs:isDefinedBy "emetis_niazmand"@en ;
+                                    rdfs:label "Drug"@en ;
+                                    owl:versionInfo "v1.0"@en .
+
+
+###  http://covid-19.tib.eu/vocab/DrugDisorderInteraction
+<http://covid-19.tib.eu/vocab/DrugDisorderInteraction> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://covid-19.tib.eu/vocab/Interaction> ;
+                                                       <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                       <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
+                                                       rdfs:comment "Represents the relation between drugs and disorders."@en ;
+                                                       rdfs:label "DrugDisorderInteraction"@en .
+
+
+###  http://covid-19.tib.eu/vocab/DrugDrugInteraction
+<http://covid-19.tib.eu/vocab/DrugDrugInteraction> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://covid-19.tib.eu/vocab/Interaction> ;
+                                                   <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                   <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
+                                                   rdfs:comment "Represents the relation between drugs."@en ;
+                                                   rdfs:label "DrugDrugInteraction"@en .
+
+
+###  http://covid-19.tib.eu/vocab/DrugDrugPrediction
+<http://covid-19.tib.eu/vocab/DrugDrugPrediction> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://covid-19.tib.eu/vocab/Interaction> ;
+                                                  <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                  <http://purl.org/dc/terms/modified> "2020-10-29"@en ;
+                                                  rdfs:comment "Represents the predicted relation between drugs."@en ;
+                                                  rdfs:label "DrugDrugPrediction"@en .
+
+
+###  http://covid-19.tib.eu/vocab/DrugEnzymeInteraction
+<http://covid-19.tib.eu/vocab/DrugEnzymeInteraction> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://covid-19.tib.eu/vocab/Interaction> ;
+                                                     <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                     <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
+                                                     rdfs:comment "Represents the relation between drugs and enzymes."@en ;
+                                                     rdfs:label "DrugEnzymeInteraction"@en .
+
+
+###  http://covid-19.tib.eu/vocab/DrugEnzymePrediction
+<http://covid-19.tib.eu/vocab/DrugEnzymePrediction> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://covid-19.tib.eu/vocab/Interaction> ;
+                                                    <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                    <http://purl.org/dc/terms/modified> "2020-10-29"@en ;
+                                                    rdfs:comment "Represents the predicted relation between drug and enzyme."@en ;
+                                                    rdfs:label "DrugEnzymePrediction"@en .
+
+
+###  http://covid-19.tib.eu/vocab/DrugSideEffect
+<http://covid-19.tib.eu/vocab/DrugSideEffect> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://covid-19.tib.eu/vocab/Relation> ;
+                                              <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                              <http://purl.org/dc/terms/modified> "2017-07-24"@en ;
+                                              rdfs:comment "The Drug SideEffect relation should be a class since has two properties"@en ;
+                                              rdfs:label "DrugSideEffect"@en .
+
+
+###  http://covid-19.tib.eu/vocab/DrugSideEffectInteraction
+<http://covid-19.tib.eu/vocab/DrugSideEffectInteraction> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://covid-19.tib.eu/vocab/Interaction> ;
+                                                         <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                         <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
+                                                         rdfs:comment "Represents side effects of drugs."@en ;
+                                                         rdfs:label "DrugSideEffectInteraction"@en .
+
+
+###  http://covid-19.tib.eu/vocab/DrugSideEffectPrediction
+<http://covid-19.tib.eu/vocab/DrugSideEffectPrediction> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://covid-19.tib.eu/vocab/Interaction> ;
+                                                        <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                        <http://purl.org/dc/terms/modified> "2020-10-29"@en ;
+                                                        rdfs:comment "Represents the predicted relation between drug and side effects."@en ;
+                                                        rdfs:label "DrugSideEffectPrediction"@en .
+
+
+###  http://covid-19.tib.eu/vocab/DrugTargetInteraction
+<http://covid-19.tib.eu/vocab/DrugTargetInteraction> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://covid-19.tib.eu/vocab/Interaction> ;
+                                                     <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                     <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
+                                                     rdfs:comment "Represents the relation between drugs and targets."@en ;
+                                                     rdfs:label "DrugTargetInteraction"@en .
+
+
+###  http://covid-19.tib.eu/vocab/DrugTargetPrediction
+<http://covid-19.tib.eu/vocab/DrugTargetPrediction> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://covid-19.tib.eu/vocab/Interaction> ;
+                                                    <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                    <http://purl.org/dc/terms/modified> "2020-10-29"@en ;
+                                                    rdfs:comment "Represents the predicted relation between drug and target."@en ;
+                                                    rdfs:label "DrugTargetPrediction"@en .
+
+
+###  http://covid-19.tib.eu/vocab/DrugToxicityInteraction
+<http://covid-19.tib.eu/vocab/DrugToxicityInteraction> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://covid-19.tib.eu/vocab/Interaction> .
+
+
+###  http://covid-19.tib.eu/vocab/EffectInteraction
+<http://covid-19.tib.eu/vocab/EffectInteraction> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://covid-19.tib.eu/vocab/Relation> ;
+                                                 <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                 <http://purl.org/dc/terms/modified> "2020-10-23"@en ;
+                                                 rdfs:comment "The relation between two drugs that interact."@en ;
+                                                 rdfs:label "EffectInteraction"@en .
+
+
+###  http://covid-19.tib.eu/vocab/Enzyme
+<http://covid-19.tib.eu/vocab/Enzyme> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://covid-19.tib.eu/vocab/Concept> ;
+                                      <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                      <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
+                                      rdfs:comment "Macromolecular biological catalyst that accelerate chemical reactions. Most enzymes are proteins."@en ;
+                                      rdfs:label "Enzyme"@en .
+
+
+###  http://covid-19.tib.eu/vocab/Gene
+<http://covid-19.tib.eu/vocab/Gene> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://covid-19.tib.eu/vocab/Concept> ;
+                                    rdfs:comment "Represents a gene"^^xsd:string ;
+                                    rdfs:isDefinedBy "anery_patel"^^xsd:string ;
+                                    rdfs:label "Gene"^^xsd:string ;
+                                    owl:versionInfo "v1.0"^^xsd:string .
+
+
+###  http://covid-19.tib.eu/vocab/INHIBITS
+<http://covid-19.tib.eu/vocab/INHIBITS> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://covid-19.tib.eu/vocab/Relation> ;
+                                        <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                        <http://purl.org/dc/terms/modified> "2017-10-23"@en ;
+                                        rdfs:comment "UMLS Annotation."@en ;
+                                        rdfs:label "Inhibits"@en .
+
+
+###  http://covid-19.tib.eu/vocab/INTERACTS_WITH
+<http://covid-19.tib.eu/vocab/INTERACTS_WITH> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://covid-19.tib.eu/vocab/Relation> ;
+                                              <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                              <http://purl.org/dc/terms/modified> "2017-10-23"@en ;
+                                              rdfs:comment "UMLS Annotation."@en ;
+                                              rdfs:label "InteractsWith"@en .
+
+
+###  http://covid-19.tib.eu/vocab/Interaction
+<http://covid-19.tib.eu/vocab/Interaction> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://covid-19.tib.eu/vocab/Concept> ;
+                                           <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                           <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
+                                           rdfs:comment "Interaction between drugs and disorder, enzyme, target."@en ;
+                                           rdfs:label "Interaction"@en .
+
+
+###  http://covid-19.tib.eu/vocab/MANIFESTATION_OF
+<http://covid-19.tib.eu/vocab/MANIFESTATION_OF> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://covid-19.tib.eu/vocab/Relation> ;
+                                                rdfs:label "Manifestation_of"@en .
+
+
+###  http://covid-19.tib.eu/vocab/PRECEDES
+<http://covid-19.tib.eu/vocab/PRECEDES> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://covid-19.tib.eu/vocab/Relation> ;
+                                        rdfs:label "Preceds"@en .
+
+
+###  http://covid-19.tib.eu/vocab/PREDISPOSES
+<http://covid-19.tib.eu/vocab/PREDISPOSES> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://covid-19.tib.eu/vocab/Relation> ;
+                                           <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                           <http://purl.org/dc/terms/modified> "2017-10-23"@en ;
+                                           rdfs:comment "UMLS Annotation."@en ;
+                                           rdfs:label "Predisposes"@en .
+
+
+###  http://covid-19.tib.eu/vocab/PREVENTS
+<http://covid-19.tib.eu/vocab/PREVENTS> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://covid-19.tib.eu/vocab/Relation> ;
+                                        rdfs:label "Prevents"@en .
+
+
+###  http://covid-19.tib.eu/vocab/PRODUCES
+<http://covid-19.tib.eu/vocab/PRODUCES> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://covid-19.tib.eu/vocab/Relation> ;
+                                        rdfs:label "Produces"@en .
+
+
+###  http://covid-19.tib.eu/vocab/Phenotype
+<http://covid-19.tib.eu/vocab/Phenotype> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://covid-19.tib.eu/vocab/Concept> ;
+                                         <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                         <http://purl.org/dc/terms/modified> "2020-01-30"@en ;
+                                         rdfs:comment "The set of observable characteristics of an individual resulting from the interaction of its genotype with the environment. This class include side effects that result from different drugs."@en ;
+                                         rdfs:label "Phenotype"@en .
+
+
+###  http://covid-19.tib.eu/vocab/Protein
+<http://covid-19.tib.eu/vocab/Protein> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://covid-19.tib.eu/vocab/Concept> ;
+                                       rdfs:label "Protein"@en .
+
+
+###  http://covid-19.tib.eu/vocab/Publication
+<http://covid-19.tib.eu/vocab/Publication> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://covid-19.tib.eu/vocab/Concept> ;
+                                           rdfs:comment "This class represents scientific publications"@en ;
+                                           rdfs:isDefinedBy "emetis_niazmand"@en ;
+                                           rdfs:label "Publication"@en ;
+                                           owl:versionInfo "v1.0"@en .
+
+
+###  http://covid-19.tib.eu/vocab/Relation
+<http://covid-19.tib.eu/vocab/Relation> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://covid-19.tib.eu/vocab/Concept> ;
+                                        <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal> ;
+                                        <http://purl.org/dc/terms/modified> "2021-04-13"@en ;
+                                        rdfs:comment "Relations between concepts."@en ;
+                                        rdfs:label "Relation"@en .
+
+
+###  http://covid-19.tib.eu/vocab/STIMULATES
+<http://covid-19.tib.eu/vocab/STIMULATES> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://covid-19.tib.eu/vocab/Relation> ;
+                                          <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                          <http://purl.org/dc/terms/modified> "2017-10-23"@en ;
+                                          rdfs:comment "UMLS Annotation."@en ;
+                                          rdfs:label "Stimulates"@en .
+
+
+###  http://covid-19.tib.eu/vocab/SemanticAnnotation
+<http://covid-19.tib.eu/vocab/SemanticAnnotation> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://covid-19.tib.eu/vocab/Concept> ;
+                                                  rdfs:label "Semantic Annotation"@en .
+
+
+###  http://covid-19.tib.eu/vocab/SourceName
+<http://covid-19.tib.eu/vocab/SourceName> rdf:type owl:Class .
+
+
+###  http://covid-19.tib.eu/vocab/SymmetricDrugDrugInteraction
+<http://covid-19.tib.eu/vocab/SymmetricDrugDrugInteraction> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://covid-19.tib.eu/vocab/Interaction> ;
+                                                            <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                            <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
+                                                            rdfs:comment "Represents the symmetric relation between drugs."@en ;
+                                                            rdfs:label "SymmetricDrugDrugInteraction"@en .
+
+
+###  http://covid-19.tib.eu/vocab/TREATS
+<http://covid-19.tib.eu/vocab/TREATS> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://covid-19.tib.eu/vocab/Relation> ;
+                                      rdfs:label "Treats"@en .
+
+
+###  http://covid-19.tib.eu/vocab/Target
+<http://covid-19.tib.eu/vocab/Target> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://covid-19.tib.eu/vocab/Concept> ;
+                                      <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                      <http://purl.org/dc/terms/modified> "2020-10-30"@en ;
+                                      rdfs:comment "A drug target is a molecule in the body, usually a protein, that is intrinsically associated with a particular disease process and that could be addressed by a drug to produce a desired therapeutic effect."@en ;
+                                      rdfs:label "Target"@en .
+
+
+###  http://covid-19.tib.eu/vocab/USES
+<http://covid-19.tib.eu/vocab/USES> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://covid-19.tib.eu/vocab/Relation> ;
+                                    rdfs:label "Uses"@en .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi

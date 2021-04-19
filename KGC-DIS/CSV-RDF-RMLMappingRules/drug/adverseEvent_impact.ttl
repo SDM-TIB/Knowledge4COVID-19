@@ -1,0 +1,52 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix covid-19: <http://covid-19.tib.eu/vocab/> .
+
+<AdverseEvent>
+	rml:logicalSource [ rml:source "/data/drug/adverse_impact.csv";
+						rml:referenceFormulation ql:CSV 
+						];
+	rr:subjectMap [
+		rr:template "http://covid-19.tib.eu/AdverseEvent/{Adverse_Event}_{Impact}";
+		rr:class covid-19:AdverseEvent
+	];
+	rr:predicateObjectMap [
+		rr:predicate covid-19:impact;
+		rr:objectMap [
+			rml:reference "Impact";
+		]
+	];
+	rr:predicateObjectMap [
+		rr:predicate covid-19:hasCUIAnnotation;
+		rr:objectMap [
+			rr:parentTriplesMap <Annotation>
+		]
+	].					
+
+<Annotation>
+	rml:logicalSource [ rml:source "/data/drug/adverse_impact.csv";
+						rml:referenceFormulation ql:CSV 
+						];
+	rr:subjectMap [
+		rr:template "http://covid-19.tib.eu/Annotation/{CUI_AdverseEvent}";
+		rr:class covid-19:Annotation
+	];
+	rr:predicateObjectMap [
+		rr:predicate covid-19:annID;
+		rr:objectMap [ 
+			rml:reference "CUI_AdverseEvent" 
+		]
+	];
+	rr:predicateObjectMap [
+		rr:predicate prov:hadPrimarySource;
+		rr:objectMap [
+			rr:template "http://covid-19.tib.eu/SourceName/UMLS"
+		]
+	].
