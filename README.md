@@ -1,3 +1,7 @@
 # Knowledge4COVID-19
 
+Knowledge4COVID-19 is a framework that aims to showcase the power of integrating disparate sources of knowledge to discover adverse drug effects caused by drug-drug interactions among COVID-19 treatments and pre-existing condition drugs. The Knowledge4COVID-19 framework is devised as a network of data ecosystems (DEs). It aligns data and metadata to describe the network and its components. Heterogeneity issues across the different data sets are overcome by various methods of data curation and integration. Each DE comprises data sets, programs for accessing, managing, and analysing their data. Interoperability issues across a DE data sets are solved in a unified view. Mappings between the data sets and the unified schema describe the meaning of the data sets. The following figure represents the Knowledge4COVID-19 network of data ecosystems:
+
 ![Knowledge4COVID-19 Workflow](https://github.com/SDM-TIB/Knowledge4COVID-19/blob/main/images/GeneralCOVID-19KG.jpg "Knowledge4COVID-19 Workflow")
+
+The metadata layer specifies alignments among the data sets provided by each DE. The shared data sets are described in terms of the Knowledge4COVID-19 unified schema using RML triples maps. These descriptions provide a declarative definition of the process of data integration and curation. Medical concepts existing on the data sets of each DE are annotated with terms from UMLS. These annotations are utilized to solve the problem of entity matching and for integrating data in the Knowledge4COVID-19 knowledge graph.
