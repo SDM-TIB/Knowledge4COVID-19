@@ -1,4 +1,4 @@
-# COVID-19-KG-Exploration-API
+# Knowledge4COVID-19-KG-Exploration-API
 
 # 1) Get Publication related to Drugs
 
