@@ -21,7 +21,7 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:interactor1;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/Annotation/{DrugId}"
+			rr:template "http://covid-19.tib.eu/Drug/{DrugId}"
 		]
 	];
 	rr:predicateObjectMap [
