@@ -9,9 +9,9 @@ curl --header "Content-Type: application/json" \
   --request POST \
   --data '{
    "Drugs":[
-  	"C0031623",
-  	"C0751995",
-  	"C0030106"
+  	"C0987272",
+  	"C1967929",
+  	"C1145810"
    ]
 }' \
   https://labs.tib.eu/sdm/covid19kg-exp/covid19kg-exp?target=Pub
