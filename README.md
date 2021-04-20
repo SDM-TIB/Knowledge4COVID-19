@@ -11,7 +11,7 @@ Data sources from the data sources in the Knowledg4COVID-19 DE are integrated in
 ![Knowledge4COVID-19 Workflow](https://github.com/SDM-TIB/Knowledge4COVID-19/blob/main/images/GeneralCOVID-19KG.jpg "Knowledge4COVID-19 Workflow")
 
 ## Knowledge4COVID-19 Evaluation
-We illustrate the analytical support provided by Knowledge4COVID-19. We analyze relevant adverse effects that may be produced as a result of interactions among drugs to treat COVID-19 and the most common pre-existing conditions. The following figure depicts the adverse effects commonly reported during the treatments of hypertension, asthma, and diabetes: 
+We illustrate the analytical support provided by Knowledge4COVID-19. We analyze relevant adverse effects that may be produced as a result of interactions among drugs to treat COVID-19 and the most common pre-existing conditions. The figure below depicts the adverse effects commonly reported during the treatments of hypertension, asthma, and diabetes: 
 
 ![AdverseEffect](https://github.com/SDM-TIB/Knowledge4COVID-19/blob/main/images/adverseEffectPerComorbidity.png "AdverseEffect")
 
@@ -19,4 +19,5 @@ A wide range of adverse effects may be triggered, but the top-5 most frequent af
 Additionally, we evaluate the effects of the interactions (DDIs) between the drugs used to treat hypertension and COVID-19:
 ![Hypertensive](https://github.com/SDM-TIB/Knowledge4COVID-19/blob/main/images/Hypertensive.png "Hypertensive")
 
-As observed, a large number of DDIs may exist and generate serious conditions like QT prolongation. They results suggest that COVID-19 patients receiving treatments for pre-existing conditions need to be carefully treated. A more detailed analysis of the impact of the combination of drugs can be executed on the public [available Jupyter Notebook](https://colab.research.google.com/drive/146-oQTxDpZQoOifKY6iafaEwuupH7q3t#scrollTo=ZMmLkkoE9XO0). Also, exemplar DDIs represented in the Knowledge4COVID-19 KG can also be [visualized](https://youtu.be/7YsTYJzRfR0). 
+As observed, a large number of DDIs may exist and generate serious conditions like QT prolongation. They results suggest that COVID-19 patients receiving treatments for pre-existing conditions need to be carefully treated. 
+A more detailed analysis of the impact of the combination of drugs can be executed on the public [available Jupyter Notebook](https://colab.research.google.com/drive/146-oQTxDpZQoOifKY6iafaEwuupH7q3t#scrollTo=ZMmLkkoE9XO0). Also, exemplar DDIs represented in the Knowledge4COVID-19 KG can also be [visualized](https://youtu.be/7YsTYJzRfR0). 
