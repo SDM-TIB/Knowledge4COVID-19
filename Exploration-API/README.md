@@ -1,5 +1,7 @@
 # Knowledge4COVID-19-KG-Exploration-API
 
+The API can be accessed via POST request 
+
 # 1) Get Publication related to Drugs
 
 ```
