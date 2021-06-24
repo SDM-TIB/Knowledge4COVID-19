@@ -25,12 +25,6 @@
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate owl:sameAs;
-		rr:objectMap [
-			rr:template "{DBpediaURL}";
-		]
-	];
-	rr:predicateObjectMap [
 		rr:predicate covid-19:externalLink;
 		rr:objectMap [
 			rr:template "https://www.drugbank.ca/drugs/{DrugBankID}";
@@ -40,12 +34,6 @@
 		rr:predicate owl:sameAs;
 		rr:objectMap [
 			rr:template "http://bio2rdf.org/drugbank:{DrugBankID}";
-		]
-	];
-	rr:predicateObjectMap [
-		rr:predicate owl:sameAs;
-		rr:objectMap [
-			rr:template "http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugs/{DrugBankID}";
 		]
 	];
 	rr:predicateObjectMap [

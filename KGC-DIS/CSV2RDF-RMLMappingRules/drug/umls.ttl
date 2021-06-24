@@ -12,11 +12,11 @@
 @prefix covid-19: <http://covid-19.tib.eu/vocab/> .
 
 <#UMLS>
-	rml:logicalSource [ rml:source "/data/drug/CUIs_oneLabel.csv";
+	rml:logicalSource [ rml:source "/data/drug/UMLS_combined.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/Annotation/{Id}";
+		rr:template "http://covid-19.tib.eu/Annotation/{CUI}";
 		rr:class covid-19:Annotation
 	];
 	rr:predicateObjectMap [
@@ -29,5 +29,75 @@
 		rr:predicate prov:hadPrimarySource;
 		rr:objectMap [
 			rr:template "http://covid-19.tib.eu/SourceName/UMLS";
+		]
+	];
+	rr:predicateObjectMap [
+		rr:predicate covid-19:semanticTypeID;
+		rr:objectMap [ 
+			rml:reference "Semantic_type_ids" 
+		]
+	];
+	rr:predicateObjectMap [
+		rr:predicate covid-19:semanticTypeLabel;
+		rr:objectMap [ 
+			rml:reference "Semantic_type_label" 
+		]
+	];
+	rr:predicateObjectMap [
+		rr:predicate covid-19:semanticTypeGroup;
+		rr:objectMap [ 
+			rml:reference "Semantic_group" 
+		]
+	];
+	rr:predicateObjectMap [
+		rr:predicate owl:sameAs;
+		rr:objectMap [ 
+			rr:parentTriplesMap <Wikidata>
+		]
+	];
+	rr:predicateObjectMap [
+		rr:predicate owl:sameAs;
+		rr:objectMap [ 
+			rr:parentTriplesMap <DBpedia>
+		]
+	].
+
+<Wikidata>
+	rml:logicalSource [ rml:source "/data/drug/UMLS_combined.csv";
+						rml:referenceFormulation ql:CSV 
+						];
+	rr:subjectMap [
+		rr:template "{Wikidata}";
+	];
+	rr:predicateObjectMap [
+		rr:predicate rdf:type;
+		rr:objectMap [ 
+			rml:reference "Wikidata_type" 
+		]
+	];
+	rr:predicateObjectMap [
+		rr:predicate prov:has_provenance;
+		rr:objectMap [
+			rr:constant "http://covid-19.tib.eu/entity/Wikidata"
+		]
+	].
+
+<DBpedia>
+	rml:logicalSource [ rml:source "/data/drug/UMLS_combined.csv";
+						rml:referenceFormulation ql:CSV 
+						];
+	rr:subjectMap [
+		rr:template "{DBpedia}";
+	];
+	rr:predicateObjectMap [
+		rr:predicate rdf:type;
+		rr:objectMap [ 
+			rml:reference "DBpedia_type" 
+		]
+	];
+	rr:predicateObjectMap [
+		rr:predicate prov:has_provenance;
+		rr:objectMap [
+			rr:constant "http://covid-19.tib.eu/entity/DBpedia"
 		]
 	].
