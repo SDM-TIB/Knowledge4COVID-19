@@ -20,6 +20,12 @@
 		rr:class covid-19:Annotation
 	];
 	rr:predicateObjectMap [
+		rr:predicate covid-19:annId;
+		rr:objectMap [ 
+			rml:reference "CUI"; 
+		]
+	];
+	rr:predicateObjectMap [
 		rr:predicate covid-19:annLabel;
 		rr:objectMap [ 
 			rml:reference "Label"; 
