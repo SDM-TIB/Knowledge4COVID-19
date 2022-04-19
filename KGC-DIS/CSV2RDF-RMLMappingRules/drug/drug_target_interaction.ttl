@@ -14,13 +14,13 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/DrugTargetInteraction/{Drug}_interactsWith_{Protein ID}";
+		rr:template "http://covid-19.tib.eu/entity/{Drug}_interactsWith_{Protein ID}";
 		rr:class covid-19:DrugTargetInteraction
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:interactor1;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/Drug/{Drug}" 
+			rr:template "http://covid-19.tib.eu/entity/{Drug}" 
 		]
 	];
 	rr:predicateObjectMap [
@@ -41,7 +41,7 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/Target/{Protein ID}";
+		rr:template "http://covid-19.tib.eu/entity/{Protein ID}";
 		rr:class covid-19:Target
 	];
 	rr:predicateObjectMap [
@@ -68,7 +68,7 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/Protein/{Protein ID}";
+		rr:template "http://covid-19.tib.eu/entity/{Protein ID}";
 		rr:class covid-19:Protein
 	];
 	rr:predicateObjectMap [
@@ -86,6 +86,6 @@
 	rr:predicateObjectMap [
 		rr:predicate owl:sameAs;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/Protein/{Protein ID}"; 
+			rr:template "http://covid-19.tib.eu/entity/{Protein ID}"; 
 		]
 	].	

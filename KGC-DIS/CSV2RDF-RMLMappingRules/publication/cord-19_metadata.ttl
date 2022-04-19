@@ -14,13 +14,13 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/Publication/{cord_uid}";
+		rr:template "http://covid-19.tib.eu/entity/{cord_uid}";
 		rr:class covid-19:Publication
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:sha_id;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/Publication/{sha}" 
+			rr:template "http://covid-19.tib.eu/entity/{sha}" 
 		]
 	];
 	rr:predicateObjectMap [
@@ -44,19 +44,19 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:doi;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/Publication/{doi}"
+			rr:template "http://covid-19.tib.eu/entity/{doi}"
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:pmcid;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/Publication/{pmcid}" 
+			rr:template "http://covid-19.tib.eu/entity/{pmcid}" 
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:pubmed_id;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/Publication/{pubmed_id}"
+			rr:template "http://covid-19.tib.eu/entity/{pubmed_id}"
 		]
 	];
 	rr:predicateObjectMap [
@@ -110,7 +110,7 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:publication_isRelatedTo_Disease;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/Disorder/COVID-19"
+			rr:template "http://covid-19.tib.eu/entity/COVID-19"
 		]
 	];
 	rr:predicateObjectMap [

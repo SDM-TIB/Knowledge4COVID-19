@@ -14,7 +14,7 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/AdverseEvent/{Adverse_Event}_{Impact}";
+		rr:template "http://covid-19.tib.eu/entity/{Adverse_Event}_{Impact}";
 		rr:class covid-19:AdverseEvent
 	];
 	rr:predicateObjectMap [
@@ -35,7 +35,7 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/Annotation/{CUI_AdverseEvent}";
+		rr:template "http://covid-19.tib.eu/entity/{CUI_AdverseEvent}";
 		rr:class covid-19:Annotation
 	];
 	rr:predicateObjectMap [

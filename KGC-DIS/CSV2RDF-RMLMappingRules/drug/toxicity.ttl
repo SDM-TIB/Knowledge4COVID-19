@@ -14,7 +14,7 @@
 						rml:referenceFormulation ql:CSV
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/Phenotype/{cui1}";
+		rr:template "http://covid-19.tib.eu/entity/{cui1}";
 		rr:class covid-19:Phenotype 	
 	];
 	rr:predicateObjectMap [
@@ -53,7 +53,7 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/Annotation/{cui1}";
+		rr:template "http://covid-19.tib.eu/entity/{cui1}";
 		rr:class covid-19:Annotation
 	];
 	rr:predicateObjectMap [
@@ -74,7 +74,7 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/Annotation/{cui2}";
+		rr:template "http://covid-19.tib.eu/entity/{cui2}";
 		rr:class covid-19:Annotation
 	];
 	rr:predicateObjectMap [
@@ -95,7 +95,7 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/Annotation/{cui3}";
+		rr:template "http://covid-19.tib.eu/entity/{cui3}";
 		rr:class covid-19:Annotation
 	];
 	rr:predicateObjectMap [

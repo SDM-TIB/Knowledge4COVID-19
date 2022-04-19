@@ -14,7 +14,7 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/Enzyme/{CUI}";
+		rr:template "http://covid-19.tib.eu/entity/{CUI}";
 		rr:class covid-19:Enzyme
 	];
 	rr:predicateObjectMap [
@@ -32,7 +32,7 @@
 	rr:predicateObjectMap [
 		rr:predicate owl:sameAs;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/Protein/{Uni_ID}";
+			rr:template "http://covid-19.tib.eu/entity/{Uni_ID}";
 		]
 	];
 	rr:predicateObjectMap [
@@ -50,7 +50,7 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:enzyme_isRelatedTo_gene;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/Gene/{Gene_name}";
+			rr:template "http://covid-19.tib.eu/entity/{Gene_name}";
 		]
 	].
 

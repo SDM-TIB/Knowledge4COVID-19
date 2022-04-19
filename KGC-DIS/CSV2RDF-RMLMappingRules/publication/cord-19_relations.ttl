@@ -15,12 +15,12 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/{predicate}/{cord_uid}_HAS_{subject_cui}_{predicate}_{object_cui}";
+		rr:template "http://covid-19.tib.eu/entity/{cord_uid}_HAS_{subject_cui}_{predicate}_{object_cui}";
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:relation_isRelatedTo_publication;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/Publication/{cord_uid}"
+			rr:template "http://covid-19.tib.eu/entity/{cord_uid}"
 		]
 	];
 	rr:predicateObjectMap [
@@ -50,7 +50,7 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:type;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/vocab/{predicate}";
+			rr:template "http://covid-19.tib.eu/entity/{predicate}";
 		]
 	];
 	rr:predicateObjectMap [
@@ -84,7 +84,7 @@ a rr:TriplesMap;
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/SemanticAnnotation/{subject_cui}_istype_{subject_sem_type}";
+		rr:template "http://covid-19.tib.eu/entity/{subject_cui}_istype_{subject_sem_type}";
 		rr:class covid-19:SemanticAnnotation
 	];
 	rr:predicateObjectMap [
@@ -96,7 +96,7 @@ a rr:TriplesMap;
 	rr:predicateObjectMap [
 		rr:predicate covid-19:hasCUIAnnotation;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/Annotation/{subject_cui}";
+			rr:template "http://covid-19.tib.eu/entity/{subject_cui}";
 		]
 	];
 	rr:predicateObjectMap [
@@ -112,7 +112,7 @@ a rr:TriplesMap;
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/Gene/{subject_geneid}";
+		rr:template "http://covid-19.tib.eu/entity/{subject_geneid}";
 		rr:class covid-19:Gene
 	];
 	rr:predicateObjectMap [
@@ -134,7 +134,7 @@ a rr:TriplesMap;
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/SemanticAnnotation/{object_cui}_istype_{object_sem_type}";
+		rr:template "http://covid-19.tib.eu/entity/{object_cui}_istype_{object_sem_type}";
 		rr:class covid-19:SemanticAnnotation
 	];
 	rr:predicateObjectMap [
@@ -146,7 +146,7 @@ a rr:TriplesMap;
 	rr:predicateObjectMap [
 		rr:predicate covid-19:hasCUIAnnotation;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/Annotation/{object_cui}";
+			rr:template "http://covid-19.tib.eu/entity/{object_cui}";
 		]
 	];
 	rr:predicateObjectMap [
@@ -162,7 +162,7 @@ a rr:TriplesMap;
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/Gene/{object_geneid}";
+		rr:template "http://covid-19.tib.eu/entity/{object_geneid}";
 		rr:class covid-19:Gene
 	];
 	rr:predicateObjectMap [

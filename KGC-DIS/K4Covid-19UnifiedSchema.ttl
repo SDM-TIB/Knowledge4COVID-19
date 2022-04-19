@@ -339,16 +339,6 @@ xsd:date rdf:type rdfs:Datatype .
                                    rdfs:label "doi"@en .
 
 
-###  http://covid-19.tib.eu/vocab/drugBankID
-<http://covid-19.tib.eu/vocab/drugBankID> rdf:type owl:DatatypeProperty ;
-                                          rdfs:domain <http://covid-19.tib.eu/vocab/Drug> ;
-                                          rdfs:range rdfs:Literal ;
-                                          <http://purl.org/dc/terms/modified> "2020-11-22"@en ;
-                                          rdfs:comment "Drug Bank ID."@en ;
-                                          rdfs:isDefinedBy "anery_patel"@en ;
-                                          rdfs:label "DrugBankID"@en .
-
-
 ###  http://covid-19.tib.eu/vocab/dse_AvgFrequency
 <http://covid-19.tib.eu/vocab/dse_AvgFrequency> rdf:type owl:DatatypeProperty ;
                                                 rdfs:domain <http://covid-19.tib.eu/vocab/DrugSideEffect> ;

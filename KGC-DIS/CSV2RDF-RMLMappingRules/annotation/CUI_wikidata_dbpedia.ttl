@@ -1,0 +1,71 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix covid-19: <http://covid-19.tib.eu/vocab/> .
+
+
+<CUIs_dbpedia_wikidata_annotation_dictionary_label_cui_Covid19>
+    rml:logicalSource [ rml:source "./data/data/annotation/UMLS_combined.csv";
+                        rml:referenceFormulation ql:CSV 
+                        ];
+    rr:subjectMap [
+        rr:template "http://covid-19.tib.eu/entity/{CUI}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate owl:sameAs;
+        rr:objectMap [ 
+            rr:parentTriplesMap <wikidata_annotation_dictionary_label_cui_Covid19>
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate owl:sameAs;
+        rr:objectMap [ 
+            rr:parentTriplesMap <dbpedia_annotation_dictionary_label_cui_Covid19>
+        ]
+    ].
+
+<wikidata_annotation_dictionary_label_cui_Covid19>
+    rml:logicalSource [ rml:source "./data/data/annotation/UMLS_combined.csv";
+                        rml:referenceFormulation ql:CSV 
+                        ];
+    rr:subjectMap [
+        rr:template "{Wikidata}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:objectMap [ 
+            rml:reference "Wikidata_type" 
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate prov:has_provenance;
+        rr:objectMap [
+            rr:constant "http://covid-19.tib.eu/SourceName/Wikidata"
+        ]
+    ].
+
+<dbpedia_annotation_dictionary_label_cui_Covid19>
+    rml:logicalSource [ rml:source "./data/data/annotation/UMLS_combined.csv";
+                        rml:referenceFormulation ql:CSV 
+                        ];
+    rr:subjectMap [
+        rr:template "{DBpedia}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:objectMap [ 
+            rml:reference "DBpedia_type" 
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate prov:has_provenance;
+        rr:objectMap [
+            rr:constant "http://covid-19.tib.eu/SourceName/DBpedia"
+        ]
+    ].

@@ -14,24 +14,24 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/DrugDrugInteraction/{Drug1}_interactsWith_{Drug2}";
+		rr:template "http://covid-19.tib.eu/entity/{Drug1}_interactsWith_{Drug2}";
 		rr:class covid-19:DrugDrugInteraction
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:affects;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/Drug/{Drug1}" 
+			rr:template "http://covid-19.tib.eu/entity/{Drug1}" 
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:isAffected;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/Drug/{Drug2}" 
+			rr:template "http://covid-19.tib.eu/entity/{Drug2}" 
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate prov:hadPrimarySource;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/SourceName/DrugBank/metabolized_by_the_same_CYP_enzyme"
+			rr:template "http://covid-19.tib.eu/SourceName/DrugBank_metabolized_by_the_same_CYP_enzyme"
 		]
 	].

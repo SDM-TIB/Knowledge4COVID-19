@@ -14,13 +14,13 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/DrugToxicityInteraction/{drug_id}_hasToxicity_{toxicity_Label}";
+		rr:template "http://covid-19.tib.eu/entity/{drug_id}_hasToxicity_{toxicity_Label}";
 		rr:class covid-19:DrugToxicityInteraction
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:hasDrugBankID;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/Drug/{drug_id}";
+			rr:template "http://covid-19.tib.eu/entity/{drug_id}";
 		]
 	];
 	rr:predicateObjectMap [
@@ -35,7 +35,7 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/Drug/{drug_id}";
+		rr:template "http://covid-19.tib.eu/entity/{drug_id}";
 		rr:class covid-19:Drug
 	];
 	rr:predicateObjectMap [
@@ -50,7 +50,7 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/Phenotype/{toxicity_Label}";
+		rr:template "http://covid-19.tib.eu/entity/{toxicity_Label}";
 		rr:class covid-19:Phenotype
 	];
 	rr:predicateObjectMap [

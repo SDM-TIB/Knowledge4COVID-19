@@ -14,7 +14,7 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/Disorder/{ID}";
+		rr:template "http://covid-19.tib.eu/entity/{ID}";
 		rr:class covid-19:Disorder
 	];
 	rr:predicateObjectMap [
@@ -32,7 +32,7 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:hasCUIAnnotation;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/Annotation/{ID}";
+			rr:template "http://covid-19.tib.eu/entity/{ID}";
 		]
 	].
 

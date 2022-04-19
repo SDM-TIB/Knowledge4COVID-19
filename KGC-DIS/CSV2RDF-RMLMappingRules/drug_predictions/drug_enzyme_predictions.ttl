@@ -14,19 +14,19 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/DrugEnzymePrediction/{Drug}_interactsWith_{Enzyme}";
+		rr:template "http://covid-19.tib.eu/entity/{Drug}_interactsWith_{Enzyme}";
 		rr:class covid-19:DrugEnzymePrediction
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:interactor1;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/Drug/{Drug}" 
+			rr:template "http://covid-19.tib.eu/entity/{Drug}" 
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:interactor2;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/Enzyme/{Enzyme}" 
+			rr:template "http://covid-19.tib.eu/entity/{Enzyme}" 
 		]
 	];
 	rr:predicateObjectMap [
