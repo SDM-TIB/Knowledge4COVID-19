@@ -32,6 +32,6 @@
 	rr:predicateObjectMap [
 		rr:predicate prov:hadPrimarySource;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/SourceName/DrugBank_not_metabolized_by_the_same_CYP_enzyme"
+			rr:template "http://covid-19.tib.eu/SourceName/DrugBank/not_metabolized_by_the_same_CYP_enzyme"
 		]
 	].
