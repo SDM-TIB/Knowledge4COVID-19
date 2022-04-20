@@ -14,99 +14,15 @@
 						rml:referenceFormulation ql:CSV
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{cui1}";
+		rr:template "http://covid-19.tib.eu/entity/{Toxicity}";
 		rr:class covid-19:Phenotype 	
 	];
-	rr:predicateObjectMap [
-		rr:predicate covid-19:phenotypeLabel;
-		rr:objectMap [
-			rml:reference "Toxicity"
-		]
-	];
-	rr:predicateObjectMap [
-		rr:predicate covid-19:toxicityType;
-		rr:objectMap [
-			rml:reference "TYPE"
-		]
-	];	
+		
 	rr:predicateObjectMap [
 		rr:predicate covid-19:hasCUIAnnotation;
 		rr:objectMap [
-			rr:parentTriplesMap <Annotation1>
+			rr:template "http://covid-19.tib.eu/entity/{cui1}";
 		]
-	];
-	rr:predicateObjectMap [
-		rr:predicate covid-19:hasHPOAnnotation;
-		rr:objectMap [
-			rr:parentTriplesMap <Annotation2>
-		]
-	];
-	rr:predicateObjectMap [
-		rr:predicate covid-19:hasHPOAnnotation;
-		rr:objectMap [
-			rr:parentTriplesMap <Annotation3>
-		]
+	
 	].	
 
-<Annotation1>
-	rml:logicalSource [ rml:source "/data/drug/toxicitiesAndTypes_processed.csv";
-						rml:referenceFormulation ql:CSV 
-						];
-	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{cui1}";
-		rr:class covid-19:Annotation
-	];
-	rr:predicateObjectMap [
-		rr:predicate covid-19:annID;
-		rr:objectMap [ 
-			rml:reference "cui1" 
-		]
-	];
-	rr:predicateObjectMap [
-		rr:predicate prov:hadPrimarySource;
-		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/SourceName/UMLS"
-		]
-	].	
-
-<Annotation2>
-	rml:logicalSource [ rml:source "/data/drug/toxicitiesAndTypes_processed.csv";
-						rml:referenceFormulation ql:CSV 
-						];
-	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{cui2}";
-		rr:class covid-19:Annotation
-	];
-	rr:predicateObjectMap [
-		rr:predicate covid-19:annID;
-		rr:objectMap [ 
-			rml:reference "cui2" 
-		]
-	];
-	rr:predicateObjectMap [
-		rr:predicate prov:hadPrimarySource;
-		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/SourceName/UMLS"
-		]
-	].
-
-<Annotation3>
-	rml:logicalSource [ rml:source "/data/drug/toxicitiesAndTypes_processed.csv";
-						rml:referenceFormulation ql:CSV 
-						];
-	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{cui3}";
-		rr:class covid-19:Annotation
-	];
-	rr:predicateObjectMap [
-		rr:predicate covid-19:annID;
-		rr:objectMap [ 
-			rml:reference "cui3" 
-		]
-	];
-	rr:predicateObjectMap [
-		rr:predicate prov:hadPrimarySource;
-		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/SourceName/UMLS"
-		]
-	].	

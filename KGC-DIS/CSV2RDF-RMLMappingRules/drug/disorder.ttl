@@ -14,21 +14,10 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{ID}";
+		rr:template "http://covid-19.tib.eu/entity/{name}";
 		rr:class covid-19:Disorder
 	];
-	rr:predicateObjectMap [
-		rr:predicate covid-19:disorderLabel;
-		rr:objectMap [ 
-			rml:reference "name" 
-		]
-	];
-	rr:predicateObjectMap [
-		rr:predicate owl:sameAs;
-		rr:objectMap [
-			rr:template "{Dbpedia_URL}";
-		]
-	];		
+			
 	rr:predicateObjectMap [
 		rr:predicate covid-19:hasCUIAnnotation;
 		rr:objectMap [

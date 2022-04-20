@@ -18,6 +18,24 @@
 		rr:class covid-19:DrugSideEffectInteraction
 	];
 	rr:predicateObjectMap [
+		rr:predicate covid-19:hasPhenotype;
+		rr:objectMap [
+			rml:reference "name";
+		]
+	];
+	rr:predicateObjectMap [
+		rr:predicate covid-19:hasCUI;
+		rr:objectMap [
+			rr:template "http://covid-19.tib.eu/entity/{CUI}";
+		]
+	];
+        rr:predicateObjectMap [
+		rr:predicate covid-19:hasDrug;
+		rr:objectMap [
+			rr:template "http://covid-19.tib.eu/entity/{DrugID}";
+		]
+	];
+	rr:predicateObjectMap [
 		rr:predicate covid-19:dse_AvgFrequency;
 		rr:objectMap [
 			rml:reference "AvgFrequency";
@@ -40,7 +58,7 @@
 		rr:class covid-19:Drug
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:drug_isRelatedTo_dse;
+		rr:predicate covid-19:hasSideEffect;
 		rr:objectMap [
 			rr:parentTriplesMap <DrugSideEffectInteraction>
 		]
@@ -54,8 +72,14 @@
 		rr:template "http://covid-19.tib.eu/entity/{name}";
 		rr:class covid-19:Phenotype
 	];
+        rr:predicateObjectMap [
+		rr:predicate covid-19:hasCUIAnnotation;
+		rr:objectMap [
+			rr:template "http://covid-19.tib.eu/entity/{CUI}";
+		]
+	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:sideEffect_isRelatedTo_dse;
+		rr:predicate covid-19:isSideEffectOf;
 		rr:objectMap [
 			rr:parentTriplesMap <DrugSideEffectInteraction>
 		]

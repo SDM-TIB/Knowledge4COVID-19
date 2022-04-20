@@ -14,33 +14,28 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{CUI}";
+		rr:template "http://covid-19.tib.eu/entity/{Enzyme_name}";
 		rr:class covid-19:Enzyme
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:enzymeLabel;
+		rr:predicate covid-19:hasEnzymeID;
 		rr:objectMap [
-			rml:reference "Enzyme_name";
+			rr:template "http://covid-19.tib.eu/entity/{Enzyme_ID}";
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:enzymeID;
+		rr:predicate covid-19:hasCUIAnnotation;
 		rr:objectMap [
-			rml:reference "Enzyme_ID";
-		]
-	];
-	rr:predicateObjectMap [
-		rr:predicate owl:sameAs;
-		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/entity/{Uni_ID}";
+			rr:template "http://covid-19.tib.eu/entity/{CUI}";
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:uniprotID;
 		rr:objectMap [
-			rml:reference "Uni_ID";
+			rr:template "http://covid-19.tib.eu/entity/{Uni_ID}";
 		]
 	];
+	
 	rr:predicateObjectMap [
 		rr:predicate covid-19:externalLink;
 		rr:objectMap [
