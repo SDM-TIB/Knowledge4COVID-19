@@ -30,7 +30,7 @@
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate owl:sameAs;
+		rr:predicate covid-19:uniprotID;
 		rr:objectMap [
 			rr:template "http://covid-19.tib.eu/entity/{Uni_ID}";
 		]
