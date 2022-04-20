@@ -15,8 +15,9 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{CUI_1}_interactsWith_{CUI_2}";
-		rr:class covid-19:DrugDrugInteraction
+		rr:template "http://covid-19.tib.eu/entity/{CUI_1}_Pharmacokynetic_{CUI_2}";
+		rr:class covid-19:PharmacokyneticDrugDrugInteraction,
+		covid-19:DrugDrugInteraction;
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:precipitantDrug;
@@ -129,8 +130,9 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{CUI_1}_hasSymmetricInteractionWith_{CUI_2}";
-		rr:class covid-19:SymmetricDrugDrugInteraction
+		rr:template "http://covid-19.tib.eu/entity/{CUI_1}_hasPharmacodynamic_{CUI_2}";
+		rr:class covid-19:SymmetricDrugDrugInteraction,
+		covid-19:DrugDrugInteraction;
 	];
 	rr:predicateObjectMap [
 		rr:predicate rdfs:subClassOf;
