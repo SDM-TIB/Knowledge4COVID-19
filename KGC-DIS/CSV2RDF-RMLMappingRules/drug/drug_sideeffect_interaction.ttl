@@ -14,7 +14,7 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{DrugID}_hasidse_{name}";
+		rr:template "http://covid-19.tib.eu/entity/{DrugID}_hasdse_{name}";
 		rr:class covid-19:DrugSideEffectInteraction
 	];
 	rr:predicateObjectMap [
