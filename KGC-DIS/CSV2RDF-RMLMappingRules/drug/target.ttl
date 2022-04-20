@@ -14,21 +14,21 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{CUI}";
+		rr:template "http://covid-19.tib.eu/entity/{Target_name}";
 		rr:class covid-19:Target
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:targetLabel;
+		rr:predicate covid-19:hasTargetID;
 		rr:objectMap [
-			rml:reference "Target_name";
+			rr:template "http://covid-19.tib.eu/entity/{Target_ID}";
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:targetID;
+		rr:predicate covid-19:hasCUIAnnotation;
 		rr:objectMap [
-			rml:reference "Target_ID";
+			rr:template "http://covid-19.tib.eu/entity/{CUI}";
 		]
-	];
+	];	
 	rr:predicateObjectMap [
 		rr:predicate covid-19:uniprotID;
 		rr:objectMap [
