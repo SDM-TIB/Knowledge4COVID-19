@@ -24,7 +24,7 @@
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:hasCUI;
+		rr:predicate covid-19:hasCUIAnnotation;
 		rr:objectMap [
 			rr:template "http://covid-19.tib.eu/entity/{CUI}";
 		]
