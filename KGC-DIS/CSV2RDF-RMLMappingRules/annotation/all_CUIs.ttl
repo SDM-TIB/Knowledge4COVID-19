@@ -22,7 +22,7 @@
     rr:class covid-19:AnnotationDefinition;
   ];
   rr:predicateObjectMap [
-    rr:predicate covid-19:hasCUI;
+    rr:predicate covid-19:hasCUIAnnotation;
     rr:objectMap [
       rr:template "http://covid-19.tib.eu/entity/{CUI}"
     ]
@@ -49,7 +49,7 @@
     rr:class covid-19:AnnotationType;
   ];
   rr:predicateObjectMap [
-    rr:predicate covid-19:hasCUI;
+    rr:predicate covid-19:hasCUIAnnotation;
     rr:objectMap [
       rr:template "http://covid-19.tib.eu/entity/{CUI}"
     ]
