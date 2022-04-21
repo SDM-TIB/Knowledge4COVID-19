@@ -131,7 +131,7 @@
 						];
 	rr:subjectMap [
 		rr:template "http://covid-19.tib.eu/entity/{CUI_1}_hasPharmacodynamic_{CUI_2}";
-		rr:class covid-19:SymmetricDrugDrugInteraction,
+		rr:class covid-19:PharmacodynamicDrugDrugInteraction,
 		covid-19:DrugDrugInteraction;
 	];
 	rr:predicateObjectMap [

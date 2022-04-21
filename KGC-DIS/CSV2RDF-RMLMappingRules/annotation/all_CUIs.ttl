@@ -14,11 +14,9 @@
 @base <http://covid-19.tib.eu/vocab/> .
 
 <AnnotationDefinitionCovID-19>
-  rml:logicalSource [ 
-      rml:source <RDB_source>;
-      rr:sqlVersion rr:SQL2008;
-      rml:query """Select DISTINCT CUI, definition, source  FROM cui_defintions""";
-    ];
+  rml:logicalSource [ rml:source "./data/data/annotation/CUI_definitions.csv";
+                        rml:referenceFormulation ql:CSV 
+                        ];
   rr:subjectMap [
     rr:template "http://covid-19.tib.eu/entity/{CUI}_{source}";
     rr:class covid-19:AnnotationDefinition;
@@ -43,11 +41,9 @@
   ].
 
 <CUITypeCovID-19>
-  rml:logicalSource [ 
-      rml:source <RDB_source>;
-      rr:sqlVersion rr:SQL2008;
-      rml:query """Select DISTINCT CUI, TypeId  FROM CUI_types""";
-    ];
+  rml:logicalSource [ rml:source "./data/data/annotation/CUI_types.csv";
+                        rml:referenceFormulation ql:CSV 
+                        ];
   rr:subjectMap [
     rr:template "http://covid-19.tib.eu/entity/{CUI}_{TypeId}";
     rr:class covid-19:AnnotationType;
@@ -66,11 +62,9 @@
   ].
 
 <SemanticTypesCovID-19>
-  rml:logicalSource [ 
-      rml:source <RDB_source>;
-      rr:sqlVersion rr:SQL2008;
-      rml:query """Select DISTINCT Id, Label, definition FROM Semantic_types""";
-    ];
+  rml:logicalSource [ rml:source "./data/data/annotation/Semantic_types.csv";
+                        rml:referenceFormulation ql:CSV 
+                        ];
   rr:subjectMap [
     rr:template "http://covid-19.tib.eu/entity/{Id}";
     rr:class covid-19:SemanticType;
@@ -89,11 +83,9 @@
   ].
 
  <TypeGroupCovID-19>
-  rml:logicalSource [ 
-      rml:source <RDB_source>;
-      rr:sqlVersion rr:SQL2008;
-      rml:query """Select DISTINCT TypeId, CUI_Group  FROM CUI_types""";
-    ];
+  rml:logicalSource [ rml:source "./data/data/annotation/CUI_types.csv";
+                        rml:referenceFormulation ql:CSV 
+                        ];
   rr:subjectMap [
     rr:template "http://covid-19.tib.eu/entity/{TypeId}_{CUI_Group}";
     rr:class covid-19:SemanticTypeGroup;
@@ -113,11 +105,9 @@
    
 
 <AnnotationCUICovID-19>
-  rml:logicalSource [ 
-      rml:source <RDB_source>;
-      rr:sqlVersion rr:SQL2008;
-      rml:query """Select DISTINCT CUI, Label, freq  FROM oneLabel""";
-    ];
+  rml:logicalSource [ rml:source "./data/data/annotation/OneLabel.csv";
+                        rml:referenceFormulation ql:CSV 
+                        ];
   rr:subjectMap [
     rr:template "http://covid-19.tib.eu/entity/{CUI}";
     rr:class covid-19:Annotation;
@@ -137,11 +127,9 @@
   ].
 
 <AnnotationCUICovID-19_CUI>
-  rml:logicalSource [ 
-      rml:source <RDB_source>;
-      rr:sqlVersion rr:SQL2008;
-      rml:query """Select DISTINCT CUI, Label FROM oneLabel""";
-    ];
+  rml:logicalSource [ rml:source "./data/data/annotation/OneLabel.csv";
+                        rml:referenceFormulation ql:CSV 
+                        ];
   rr:subjectMap [
     rr:template "http://covid-19.tib.eu/entity/{Label}";
   ];
@@ -151,9 +139,3 @@
       rr:template "http://covid-19.tib.eu/entity/{CUI}"
     ]
   ].
-
-<RDB_source> a d2rq:Database;
-  d2rq:jdbcDSN "UMLS_nov21";
-  d2rq:jdbcDriver "com.mysql.cj.jdbc.Driver"; 
-  d2rq:username "";
-  d2rq:password "" .
