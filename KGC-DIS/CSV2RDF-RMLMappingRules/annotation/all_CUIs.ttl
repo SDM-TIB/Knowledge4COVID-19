@@ -34,7 +34,7 @@
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate prov:has_provenance;
+    rr:predicate prov:hasGeneratedBy;
     rr:objectMap [
       rr:template "http://covid-19.tib.eu/SourceName/{source}"
     ]
