@@ -44,7 +44,7 @@
         ]
     ];
     rr:predicateObjectMap [
-        rr:predicate prov:has_provenance;
+        rr:predicate prov:hasGeneratedBy;
         rr:objectMap [
             rr:constant "http://covid-19.tib.eu/SourceName/Wikidata"
         ]
@@ -64,7 +64,7 @@
         ]
     ];
     rr:predicateObjectMap [
-        rr:predicate prov:has_provenance;
+        rr:predicate prov:hasGeneratedBy;
         rr:objectMap [
             rr:constant "http://covid-19.tib.eu/SourceName/DBpedia"
         ]
