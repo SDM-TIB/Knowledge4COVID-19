@@ -6,26 +6,31 @@ services:
     container_name: sdmrdfizer
     domainname: k4covid
     volumes:
-      - .:/data
+      - ./data:/data
+      - ./rdf:/data/rdf-dump
+      - ../KGC-DIS/SDM-RDFizer-Configs:/data/configs
+      - ../KGC-DIS/CSV2RDF-RMLMappingRules:/data/mappings
+      - ./scripts:/data/scripts
     networks:
       - k4covid
     depends_on:
-      - endpoint
+      - covid19kg
     environment:
-      - SPARQL_ENDPOINT_IP=endpoint
+      - SPARQL_ENDPOINT_IP=covid19kg
       - SPARQL_ENDPOINT_USER=dba
       - SPARQL_ENDPOINT_PASSWD=dba
       - SPARQL_ENDPOINT_PORT=1111
       - SPARQL_ENDPOINT_GRAPH=http://covid-19.tib.eu 
-      - RDF_DUMP_FOLDER_PATH=/data
+      - RDF_DUMP_FOLDER_PATH=/data/rdf-dump/
 
-  endpoint:
+  covid19kg:
     image: kemele/virtuoso:6-stable
-    hostname: pilot2akg
-    container_name: pilot2akg
+    hostname: covid19kg
+    container_name: covid19kg
     domainname: k4covid
     volumes:
       - ./rdf-dump:/data
+      - ./rdf:/data/rdf-dump
     ports:
       - "8891:8890"
       - "1116:1111"
@@ -36,16 +41,19 @@ services:
     image: asanchez75/pubby:v0.3.3
     hostname: pubby
     container_name: pubby
+    domainname: k4covid
     ports:
         - "80:8080"
+    networks:
+      - k4covid
     environment:
-      SPARQL_ENDPOINT: endpoint
+      SPARQL_ENDPOINT: "http://node3.research.tib.eu:8891/sparql"
       PROJECT_HOMEPAGE_URL: "http://covid-19.tib.eu/"
       PROJECT_NAME: "Knowledge4COVID-19"
-      DEFAULT_RESOURCE: "http://covid-19.tib.eu/"
+      DEFAULT_RESOURCE: "http://covid-19.tib.eu/entity/C0168273"
       DEFAULT_NAMED_GRAPH: "http://covid-19.tib.eu"
       COMMON_URI_PREFIX: "http://covid-19.tib.eu/"
-      WEB_RESOURCE_PREFIX: "entity/"
+      WEB_RESOURCE_PREFIX: ""
       PUBBY_ROOT_URL: "http://covid-19.tib.eu/"
     restart: always
     tty: true
