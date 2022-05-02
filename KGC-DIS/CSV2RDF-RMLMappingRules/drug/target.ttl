@@ -36,12 +36,6 @@
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:uniprotID;
-		rr:objectMap [
-			rml:reference "Uni_ID";
-		]
-	];
-	rr:predicateObjectMap [
 		rr:predicate covid-19:externalLink;
 		rr:objectMap [
 			rr:template "https://www.uniprot.org/uniprot/{Uni_ID}";
