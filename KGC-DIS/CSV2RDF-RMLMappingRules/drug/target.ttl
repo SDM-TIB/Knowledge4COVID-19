@@ -36,9 +36,9 @@
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:externalLink;
+		rr:predicate owl:sameAs;
 		rr:objectMap [
-			rr:template "https://www.uniprot.org/uniprot/{Uni_ID}";
+			rr:template "http://purl.uniprot.org/uniprot/{Uni_ID}";
 		]
 	];
 	rr:predicateObjectMap [
