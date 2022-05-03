@@ -9,24 +9,30 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix covid-19: <http://covid-19.tib.eu/vocab/> .
 
-<DrugTargetInteraction>
-	rml:logicalSource [ rml:source "/data/drug/drugTargetInteraction.csv";
+<DrugProteinInteraction>
+	rml:logicalSource [ rml:source "/data/drug/DrugsAndProteins.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{Drug}_interactsWith_{Protein ID}";
+		rr:template "http://covid-19.tib.eu/entity/{drugbank_id}_interactsWith_{uniprot_id}";
 		rr:class covid-19:DrugTargetInteraction
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:interactor1;
+		rr:predicate covid-19:interactingDrug;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/entity/{Drug}" 
+			rr:template "http://covid-19.tib.eu/entity/{drugbank_id}" 
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:interactor2;
+		rr:predicate covid-19:interactingCategory;
 		rr:objectMap [ 
-			rr:parentTriplesMap <Target> 
+			rr:template "http://covid-19.tib.eu/entity/{category}" 
+		]
+	];
+	rr:predicateObjectMap [
+		rr:predicate covid-19:interactingProtein;
+		rr:objectMap [ 
+			rr:template "http://covid-19.tib.eu/entity/{uniprot_id}" 
 		]
 	];
 	rr:predicateObjectMap [
@@ -36,56 +42,17 @@
 		]
 	].
 		
-<Target>
-	rml:logicalSource [ rml:source "/data/drug/drugTargetInteraction.csv";
+<Protein>
+	rml:logicalSource [ rml:source "/data/drug/DrugsAndProteins.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{Protein ID}";
-		rr:class covid-19:Target
+		rr:template "http://covid-19.tib.eu/entity/{uniprot_id}";
+		rr:class covid-19:Protein
 	];
-	rr:predicateObjectMap [
-		rr:predicate covid-19:targetID;
-		rr:objectMap [
-			rml:reference "Protein ID"
-		]
-	];		
-	rr:predicateObjectMap [
-		rr:predicate covid-19:targetLabel;
-		rr:objectMap [
-			rml:reference "Protein Name"
-		]
-	];		
 	rr:predicateObjectMap [
 		rr:predicate owl:sameAs;
 		rr:objectMap [ 
-			rr:parentTriplesMap <Protein>
+			rr:template "http://purl.uniprot.org/uniprot/{uniprot_id}";
 		]
 	].
-
-<Protein>
-	rml:logicalSource [ rml:source "/data/drug/drugTargetInteraction.csv";
-						rml:referenceFormulation ql:CSV 
-						];
-	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{Protein ID}";
-		rr:class covid-19:Protein;
-	];
-	rr:predicateObjectMap [
-		rr:predicate covid-19:proteinID;
-		rr:objectMap [
-			rml:reference "Protein ID"
-		]
-	];	
-	rr:predicateObjectMap [
-		rr:predicate covid-19:proteinLabel;
-		rr:objectMap [
-			rml:reference "Protein Name"
-		]
-	];		
-	rr:predicateObjectMap [
-		rr:predicate owl:sameAs;
-		rr:objectMap [ 
-			rr:template "http://purl.uniprot.org/uniprot/{Protein ID}"; 
-		]
-	].	
