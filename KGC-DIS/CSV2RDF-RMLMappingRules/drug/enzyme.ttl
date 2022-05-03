@@ -43,7 +43,7 @@
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:enzyme_isRelatedTo_gene;
+		rr:predicate covid-19:hasSymbol;
 		rr:objectMap [
 			rr:template "http://covid-19.tib.eu/entity/{Gene_name}";
 		]
