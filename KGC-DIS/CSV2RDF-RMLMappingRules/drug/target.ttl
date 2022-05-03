@@ -14,14 +14,9 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{Target_name}";
-		rr:class covid-19:Target
-	];
-	rr:predicateObjectMap [
-		rr:predicate covid-19:hasTargetID;
-		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/entity/{Target_ID}";
-		]
+		rr:template "http://covid-19.tib.eu/entity/{Uni_ID}";
+		rr:class covid-19:Target,
+			 covid-19:Protein;
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:hasCUIAnnotation;
@@ -30,9 +25,9 @@
 		]
 	];	
 	rr:predicateObjectMap [
-		rr:predicate covid-19:uniprotID;
+		rr:predicate rdfs:label;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/entity/{Uni_ID}";
+			rml:reference "Target_name";
 		]
 	];
 	rr:predicateObjectMap [
