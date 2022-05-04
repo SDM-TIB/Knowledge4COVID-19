@@ -18,13 +18,13 @@
 		rr:class covid-19:DrugToxicityInteraction
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:hasDrugBankID;
+		rr:predicate covid-19:hasDrug;
 		rr:objectMap [
 			rr:template "http://covid-19.tib.eu/entity/{drug_id}";
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate prov:hadPrimarySource;
+		rr:predicate prov:hasPrimarySource;
 		rr:objectMap [
 			rr:template "http://covid-19.tib.eu/SourceName/DrugBank"
 		]
