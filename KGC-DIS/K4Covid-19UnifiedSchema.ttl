@@ -287,14 +287,14 @@ xsd:date rdf:type rdfs:Datatype .
                                                       rdfs:label "hasSemanticAnnotation"@en .
 
 
-###  http://www.w3.org/ns/prov#hadPrimarySource
-<http://www.w3.org/ns/prov#hadPrimarySource> rdf:type owl:ObjectProperty ;
+###  http://www.w3.org/ns/prov#hasPrimarySource
+<http://www.w3.org/ns/prov#hasPrimarySource> rdf:type owl:ObjectProperty ;
                                                 rdfs:domain <http://research.tib.eu/covid-19/vocab/SemanticAnnotation> ;
                                                 rdfs:range <http://research.tib.eu/covid-19/vocab/SourceName> ;
                                                 <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
                                                 <http://purl.org/dc/terms/modified> "2021-04-19"@en ;
                                                 rdfs:comment "Provides the connection between the semantic annotation and the source name."@en ;
-                                                rdfs:label "hadPrimarySource"@en .
+                                                rdfs:label "hasPrimarySource"@en .
 
 
 #################################################################
