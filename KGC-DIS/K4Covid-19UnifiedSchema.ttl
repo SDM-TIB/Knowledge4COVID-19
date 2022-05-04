@@ -133,14 +133,6 @@ xsd:date rdf:type rdfs:Datatype .
                                            rdfs:label "hasInteractingDrug"@en .
 
 
-###  http://research.tib.eu/covid-19/vocab/hasInteractingCategory
-<http://research.tib.eu/covid-19/vocab/hasInteractingCategory> rdf:type owl:ObjectProperty ;
-                                           rdfs:domain <http://research.tib.eu/covid-19/vocab/Interaction> ;
-                                           rdfs:range <http://research.tib.eu/covid-19/vocab/Concept> ;
-                                           <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
-                                           <http://purl.org/dc/terms/modified> "2022-04-05"@en ;
-                                           rdfs:comment "Relation which connects an interaction to the involved category of proteins"@en ;
-                                           rdfs:label "hasInteractingCategory"@en .
 
 ###  http://research.tib.eu/covid-19/vocab/isAffected
 <http://research.tib.eu/covid-19/vocab/isAffected> rdf:type owl:ObjectProperty ;
@@ -161,23 +153,6 @@ xsd:date rdf:type rdfs:Datatype .
                                           rdfs:isDefinedBy "anery-patel"@en ;
                                           rdfs:label "objectDrug"@en .
 
-###  http://research.tib.eu/covid-19/vocab/hasDrug
-<http://research.tib.eu/covid-19/vocab/hasDrug> rdf:type owl:ObjectProperty ;
-                                          rdfs:domain <http://research.tib.eu/covid-19/vocab/Drug> ;
-                                          rdfs:range <http://research.tib.eu/covid-19/vocab/Concept> ;
-                                          <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
-                                          <http://purl.org/dc/terms/modified> "2022-04-05T00:00:00"^^xsd:dateTime ;
-                                          rdfs:comment "Relation which connects the drug to other entities."@en ;
-                                          rdfs:label "hasDrug"@en .
-
-###  http://research.tib.eu/covid-19/vocab/hasIndication
-<http://research.tib.eu/covid-19/vocab/hasIndication> rdf:type owl:ObjectProperty ;
-                                          rdfs:domain <http://research.tib.eu/covid-19/vocab/Indication> ;
-                                          rdfs:range <http://research.tib.eu/covid-19/vocab/Concept> ;
-                                          <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
-                                          <http://purl.org/dc/terms/modified> "2022-04-05T00:00:00"^^xsd:dateTime ;
-                                          rdfs:comment "Relation which connects the indication to other entities."@en ;
-                                          rdfs:label "hasIndication"@en .
 
 ###  http://research.tib.eu/covid-19/vocab/object_hasDrugBankID
 <http://research.tib.eu/covid-19/vocab/object_hasDrugBankID> rdf:type owl:ObjectProperty ;
@@ -796,14 +771,6 @@ xsd:date rdf:type rdfs:Datatype .
                                     rdfs:label "Drug"@en ;
                                     owl:versionInfo "v1.0"@en .
 
-
-###  http://research.tib.eu/covid-19/vocab/Indication
-<http://research.tib.eu/covid-19/vocab/Indication> rdf:type owl:Class ;
-                                    rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Concept> ;
-                                    rdfs:comment "This class represents indications"@en ;
-                                    rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                    rdfs:label "Indication"@en ;
-                                    owl:versionInfo "v1.0"@en .
 
 ###  http://research.tib.eu/covid-19/vocab/DrugDisorderInteraction
 <http://research.tib.eu/covid-19/vocab/DrugDisorderInteraction> rdf:type owl:Class ;

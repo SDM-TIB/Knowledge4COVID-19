@@ -14,7 +14,7 @@
 @base <http://research.tib.eu/covid-19/vocab/> .
 
 <AnnotationDefinitionCovID-19>
-  rml:logicalSource [ rml:source "./data/data/annotation/CUI_definitions.csv";
+  rml:logicalSource [ rml:source "/data/annotation/CUI_definitions.csv";
                         rml:referenceFormulation ql:CSV 
                         ];
   rr:subjectMap [
@@ -41,7 +41,7 @@
   ].
 
 <CUITypeCovID-19>
-  rml:logicalSource [ rml:source "./data/data/annotation/CUI_types.csv";
+  rml:logicalSource [ rml:source "/data/annotation/CUI_types.csv";
                         rml:referenceFormulation ql:CSV 
                         ];
   rr:subjectMap [
@@ -62,7 +62,7 @@
   ].
 
 <SemanticTypesCovID-19>
-  rml:logicalSource [ rml:source "./data/data/annotation/Semantic_types.csv";
+  rml:logicalSource [ rml:source "/data/annotation/Semantic_types.csv";
                         rml:referenceFormulation ql:CSV 
                         ];
   rr:subjectMap [
@@ -83,7 +83,7 @@
   ].
 
  <TypeGroupCovID-19>
-  rml:logicalSource [ rml:source "./data/data/annotation/CUI_types.csv";
+  rml:logicalSource [ rml:source "/data/annotation/CUI_types.csv";
                         rml:referenceFormulation ql:CSV 
                         ];
   rr:subjectMap [
@@ -105,7 +105,7 @@
    
 
 <AnnotationCUICovID-19>
-  rml:logicalSource [ rml:source "./data/data/annotation/OneLabel.csv";
+  rml:logicalSource [ rml:source "/data/annotation/OneLabel.csv";
                         rml:referenceFormulation ql:CSV 
                         ];
   rr:subjectMap [
@@ -127,7 +127,7 @@
   ].
 
 <AnnotationCUICovID-19_CUI>
-  rml:logicalSource [ rml:source "./data/data/annotation/OneLabel.csv";
+  rml:logicalSource [ rml:source "/data/annotation/OneLabel.csv";
                         rml:referenceFormulation ql:CSV 
                         ];
   rr:subjectMap [
