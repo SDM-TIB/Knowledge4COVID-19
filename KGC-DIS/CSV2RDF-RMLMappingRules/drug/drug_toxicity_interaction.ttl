@@ -7,26 +7,26 @@
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix covid-19: <http://covid-19.tib.eu/vocab/> .
+@prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
 <DrugToxicityInteraction>
 	rml:logicalSource [ rml:source "/data/drug/drugs_toxicities_processed.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{drug_id}_hasToxicity_{toxicity_Label}";
+		rr:template "http://research.tib.eu/covid-19/entity/{drug_id}_hasToxicity_{toxicity_Label}";
 		rr:class covid-19:DrugToxicityInteraction
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:hasDrug;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/entity/{drug_id}";
+			rr:template "http://research.tib.eu/covid-19/entity/{drug_id}";
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate prov:hasPrimarySource;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/SourceName/DrugBank"
+			rr:template "http://research.tib.eu/covid-19/SourceName/DrugBank"
 		]
 	].	
 
@@ -35,7 +35,7 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{drug_id}";
+		rr:template "http://research.tib.eu/covid-19/entity/{drug_id}";
 		rr:class covid-19:Drug
 	];
 	rr:predicateObjectMap [
@@ -50,7 +50,7 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{toxicity_Label}";
+		rr:template "http://research.tib.eu/covid-19/entity/{toxicity_Label}";
 		rr:class covid-19:Phenotype
 	];
 	rr:predicateObjectMap [

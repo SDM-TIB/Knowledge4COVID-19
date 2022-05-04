@@ -7,14 +7,14 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix covid-19: <http://covid-19.tib.eu/vocab/> .
+@prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
 <DrugSideEffectInteraction>
 	rml:logicalSource [ rml:source "/data/drug/drugs_side_effects.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{DrugID}_hasdse_{name}";
+		rr:template "http://research.tib.eu/covid-19/entity/{DrugID}_hasdse_{name}";
 		rr:class covid-19:DrugSideEffectInteraction
 	];
 	rr:predicateObjectMap [
@@ -26,13 +26,13 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:hasCUIAnnotation;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/entity/{CUI}";
+			rr:template "http://research.tib.eu/covid-19/entity/{CUI}";
 		]
 	];
         rr:predicateObjectMap [
 		rr:predicate covid-19:hasDrug;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/entity/{DrugID}";
+			rr:template "http://research.tib.eu/covid-19/entity/{DrugID}";
 		]
 	];
 	rr:predicateObjectMap [
@@ -45,7 +45,7 @@
 	rr:predicateObjectMap [
 		rr:predicate prov:hasPrimarySource;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/SourceName/SIDER"
+			rr:template "http://research.tib.eu/covid-19/SourceName/SIDER"
 		]
 	].	
 
@@ -54,7 +54,7 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{DrugID}";
+		rr:template "http://research.tib.eu/covid-19/entity/{DrugID}";
 		rr:class covid-19:Drug
 	];
 	rr:predicateObjectMap [
@@ -69,13 +69,13 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{name}";
+		rr:template "http://research.tib.eu/covid-19/entity/{name}";
 		rr:class covid-19:Phenotype
 	];
         rr:predicateObjectMap [
 		rr:predicate covid-19:hasCUIAnnotation;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/entity/{CUI}";
+			rr:template "http://research.tib.eu/covid-19/entity/{CUI}";
 		]
 	];
 	rr:predicateObjectMap [

@@ -7,31 +7,31 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix covid-19: <http://covid-19.tib.eu/vocab/> .
+@prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
 <DrugEnzymeInteraction>
 	rml:logicalSource [ rml:source "/data/drug/drug_enzyme_interaction.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{Drug_ID}_interactsWith_{Enzyme_name}";
+		rr:template "http://research.tib.eu/covid-19/entity/{Drug_ID}_interactsWith_{Enzyme_name}";
 		rr:class covid-19:DrugEnzymeInteraction
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:hasInteractingDrug;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/entity/{Drug_ID}" 
+			rr:template "http://research.tib.eu/covid-19/entity/{Drug_ID}" 
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:hasInteractingEnzyme;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/entity/{Enzyme_name}" 
+			rr:template "http://research.tib.eu/covid-19/entity/{Enzyme_name}" 
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate prov:hasPrimarySource;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/SourceName/KEGG"
+			rr:template "http://research.tib.eu/covid-19/SourceName/KEGG"
 		]
 	].

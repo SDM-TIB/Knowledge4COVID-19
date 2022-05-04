@@ -8,26 +8,26 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix base: <http://tib.de/ontario/mapping#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix covid-19: <http://covid-19.tib.eu/vocab/> .
+@prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
 <#DrugDrugPrediction>
 	rml:logicalSource [ rml:source "/data/drug_predictions/wp4_drug_drug_interactions_AD.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{DRUGBANK_ID_1}_interactsWith_{DRUGBANK_ID_2}";
+		rr:template "http://research.tib.eu/covid-19/entity/{DRUGBANK_ID_1}_interactsWith_{DRUGBANK_ID_2}";
 		rr:class covid-19:DrugDrugPrediction
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:hasInteractingDrug;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/entity/{DRUGBANK_ID_1}" 
+			rr:template "http://research.tib.eu/covid-19/entity/{DRUGBANK_ID_1}" 
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:hasInteractingDrug;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/entity/{DRUGBANK_ID_2}" 
+			rr:template "http://research.tib.eu/covid-19/entity/{DRUGBANK_ID_2}" 
 		]
 	];
 	rr:predicateObjectMap [
@@ -39,7 +39,7 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:provenance;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/SourceName/PubMed"
+			rr:template "http://research.tib.eu/covid-19/SourceName/PubMed"
 		]
 	];
 	rr:predicateObjectMap [
@@ -51,6 +51,6 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:interaction_isRelatedTo_Disease;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/entity/Alzheimer"; 
+			rr:template "http://research.tib.eu/covid-19/entity/Alzheimer"; 
 		]
 	].		

@@ -7,26 +7,26 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix covid-19: <http://covid-19.tib.eu/vocab/> .
+@prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
 <DrugTargetPrediction>
 	rml:logicalSource [ rml:source "/data/drug_predictions/DrugTarget_prediction_LUH.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{Drug}_interactsWith_{Target}";
+		rr:template "http://research.tib.eu/covid-19/entity/{Drug}_interactsWith_{Target}";
 		rr:class covid-19:DrugTargetPrediction
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:hasInteractingDrug;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/entity/{Drug}" 
+			rr:template "http://research.tib.eu/covid-19/entity/{Drug}" 
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:hasInteractingTarget;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/entity/{Target}" 
+			rr:template "http://research.tib.eu/covid-19/entity/{Target}" 
 		]
 	];
 	rr:predicateObjectMap [
@@ -38,7 +38,7 @@
 	rr:predicateObjectMap [
 		rr:predicate prov:hasPrimarySource;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/SourceName/DrugBank"
+			rr:template "http://research.tib.eu/covid-19/SourceName/DrugBank"
 		]
 	];
 	rr:predicateObjectMap [

@@ -7,26 +7,26 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix covid-19: <http://covid-19.tib.eu/vocab/> .
+@prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
 <DrugSideEffectPrediction>
 	rml:logicalSource [ rml:source "/data/drug_predictions/DrugPhenotype_prediction_LUH.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{Drug}_interactsWith_{Phenotype}";
+		rr:template "http://research.tib.eu/covid-19/entity/{Drug}_interactsWith_{Phenotype}";
 		rr:class covid-19:DrugSideEffectPrediction
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:hasInteractingDrug;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/entity/{Drug}" 
+			rr:template "http://research.tib.eu/covid-19/entity/{Drug}" 
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:hasInteractingPhenotype;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/entity/{Phenotype}" 
+			rr:template "http://research.tib.eu/covid-19/entity/{Phenotype}" 
 		]
 	];
 	rr:predicateObjectMap [
@@ -38,7 +38,7 @@
 	rr:predicateObjectMap [
 		rr:predicate prov:hasPrimarySource;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/SourceName/{SimilaritySource}"
+			rr:template "http://research.tib.eu/covid-19/SourceName/{SimilaritySource}"
 		]
 	];
 	rr:predicateObjectMap [

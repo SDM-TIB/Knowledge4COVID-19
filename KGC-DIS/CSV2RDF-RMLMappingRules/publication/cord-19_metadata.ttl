@@ -7,20 +7,20 @@
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix covid-19: <http://covid-19.tib.eu/vocab/> .
+@prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
 <#Publication>
 	rml:logicalSource [ rml:source "/data/pub/metadata.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{cord_uid}";
+		rr:template "http://research.tib.eu/covid-19/entity/{cord_uid}";
 		rr:class covid-19:Publication
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:sha_id;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/entity/{sha}" 
+			rr:template "http://research.tib.eu/covid-19/entity/{sha}" 
 		]
 	];
 	rr:predicateObjectMap [
@@ -44,19 +44,19 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:doi;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/entity/{doi}"
+			rr:template "http://research.tib.eu/covid-19/entity/{doi}"
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:pmcid;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/entity/{pmcid}" 
+			rr:template "http://research.tib.eu/covid-19/entity/{pmcid}" 
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:pubmed_id;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/entity/{pubmed_id}"
+			rr:template "http://research.tib.eu/covid-19/entity/{pubmed_id}"
 		]
 	];
 	rr:predicateObjectMap [
@@ -110,7 +110,7 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:publication_isRelatedTo_Disease;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/entity/COVID-19"
+			rr:template "http://research.tib.eu/covid-19/entity/COVID-19"
 		]
 	];
 	rr:predicateObjectMap [

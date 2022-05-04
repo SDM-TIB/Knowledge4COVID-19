@@ -7,21 +7,21 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix covid-19: <http://covid-19.tib.eu/vocab/> .
+@prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
 <Target>
 	rml:logicalSource [ rml:source "/data/drug/target.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{Uni_ID}";
+		rr:template "http://research.tib.eu/covid-19/entity/{Uni_ID}";
 		rr:class covid-19:Target,
 			 covid-19:Protein;
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:hasCUIAnnotation;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/entity/{CUI}";
+			rr:template "http://research.tib.eu/covid-19/entity/{CUI}";
 		]
 	];	
 	rr:predicateObjectMap [
@@ -39,7 +39,7 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:hasSymbol;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/entity/{Gene_name}";
+			rr:template "http://research.tib.eu/covid-19/entity/{Gene_name}";
 		]
 	].
 

@@ -8,39 +8,39 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix covid-19: <http://covid-19.tib.eu/vocab/> .
+@prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
 <#DrugDrugInteractionNS>
 	rml:logicalSource [ rml:source "/data/drug/Unsymmetric_DDI_corpus.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{CUI_1}_Pharmacokynetic_{CUI_2}";
+		rr:template "http://research.tib.eu/covid-19/entity/{CUI_1}_Pharmacokynetic_{CUI_2}";
 		rr:class covid-19:PharmacokyneticDrugDrugInteraction,
 		covid-19:DrugDrugInteraction;
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:precipitantDrug;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/entity/{CUI_1}";
+			rr:template "http://research.tib.eu/covid-19/entity/{CUI_1}";
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:objectDrug;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/entity/{CUI_2}";
+			rr:template "http://research.tib.eu/covid-19/entity/{CUI_2}";
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:precipitant_hasDrugBankID;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/entity/{PrecipitantDrugID}"; 
+			rr:template "http://research.tib.eu/covid-19/entity/{PrecipitantDrugID}"; 
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:object_hasDrugBankID;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/entity/{ObjectDrugID}"; 
+			rr:template "http://research.tib.eu/covid-19/entity/{ObjectDrugID}"; 
 		]
 	];
 	rr:predicateObjectMap [
@@ -52,7 +52,7 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:effect;
 		rr:objectMap [
-  			rr:template "http://covid-19.tib.eu/entity/{CUI_AdverseEvent}";;
+  			rr:template "http://research.tib.eu/covid-19/entity/{CUI_AdverseEvent}";;
 		];
 	];
 	rr:predicateObjectMap [
@@ -64,7 +64,7 @@
 	rr:predicateObjectMap [
 		rr:predicate prov:hasPrimarySource;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/SourceName/UMLS";
+			rr:template "http://research.tib.eu/covid-19/SourceName/UMLS";
 		]
 	].
 
@@ -73,31 +73,31 @@
 	rml:referenceFormulation ql:CSV 
 	];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{CUI_1}_interactsWith_{CUI_2}";
+		rr:template "http://research.tib.eu/covid-19/entity/{CUI_1}_interactsWith_{CUI_2}";
 		rr:class covid-19:DrugDrugInteraction
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:precipitantDrug;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/entity/{CUI_1}";
+			rr:template "http://research.tib.eu/covid-19/entity/{CUI_1}";
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:objectDrug;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/entity/{CUI_2}";
+			rr:template "http://research.tib.eu/covid-19/entity/{CUI_2}";
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:precipitant_hasDrugBankID;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/entity/{PrecipitantDrugID}"; 
+			rr:template "http://research.tib.eu/covid-19/entity/{PrecipitantDrugID}"; 
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:object_hasDrugBankID;
 		rr:objectMap [ 
-			rr:template "http://covid-19.tib.eu/entity/{ObjectDrugID}"; 
+			rr:template "http://research.tib.eu/covid-19/entity/{ObjectDrugID}"; 
 		]
 	];
 	rr:predicateObjectMap [
@@ -109,7 +109,7 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:effect;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/entity/{CUI_AdverseEvent}";
+			rr:template "http://research.tib.eu/covid-19/entity/{CUI_AdverseEvent}";
 		];
 	];
 	rr:predicateObjectMap [
@@ -121,7 +121,7 @@
 	rr:predicateObjectMap [
 		rr:predicate prov:hasPrimarySource;
 		rr:objectMap [
-			rr:template "http://covid-19.tib.eu/SourceName/UMLS";
+			rr:template "http://research.tib.eu/covid-19/SourceName/UMLS";
 		]
 	].
 
@@ -130,7 +130,7 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://covid-19.tib.eu/entity/{CUI_1}_hasPharmacodynamic_{CUI_2}";
+		rr:template "http://research.tib.eu/covid-19/entity/{CUI_1}_hasPharmacodynamic_{CUI_2}";
 		rr:class covid-19:PharmacodynamicDrugDrugInteraction,
 		covid-19:DrugDrugInteraction;
 	];
