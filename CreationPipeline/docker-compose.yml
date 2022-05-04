@@ -57,6 +57,20 @@ services:
       PUBBY_ROOT_URL: "http://covid-19.tib.eu/"
     restart: always
     tty: true
+    
+  detrusty:
+    image: sdmtib/detrusty:0.2.0
+    hostname: detrusty
+    container_name: detrusty
+    domainname: k4covid
+    volumes:
+      - ./DeTrusty/Config/:/DeTrusty/Config/
+    ports:
+      - "5000:5000"
+    networks:
+      - k4covid
+    depends_on:
+      - covid19kg
 
 networks:
   k4covid:
