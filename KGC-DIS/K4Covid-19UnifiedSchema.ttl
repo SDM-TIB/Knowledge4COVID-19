@@ -133,6 +133,14 @@ xsd:date rdf:type rdfs:Datatype .
                                            rdfs:label "hasInteractingDrug"@en .
 
 
+###  http://research.tib.eu/covid-19/vocab/hasInteractingCategory
+<http://research.tib.eu/covid-19/vocab/hasInteractingCategory> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://research.tib.eu/covid-19/vocab/Interaction> ;
+                                           rdfs:range <http://research.tib.eu/covid-19/vocab/Concept> ;
+                                           <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
+                                           <http://purl.org/dc/terms/modified> "2022-04-05"@en ;
+                                           rdfs:comment "Relation which connects an interaction to the involved category of proteins"@en ;
+                                           rdfs:label "hasInteractingCategory"@en .
 
 ###  http://research.tib.eu/covid-19/vocab/isAffected
 <http://research.tib.eu/covid-19/vocab/isAffected> rdf:type owl:ObjectProperty ;
