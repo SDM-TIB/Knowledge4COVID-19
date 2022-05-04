@@ -93,14 +93,15 @@ xsd:date rdf:type rdfs:Datatype .
                                       rdfs:label "effect"@en .
 
 
-###  http://covid-19.tib.eu/vocab/enzyme_isRelatedTo_gene
-<http://covid-19.tib.eu/vocab/enzyme_isRelatedTo_gene> rdf:type owl:ObjectProperty ;
-                                                       rdfs:domain <http://covid-19.tib.eu/vocab/Enzyme> ;
-                                                       rdfs:range <http://covid-19.tib.eu/vocab/Gene> ;
-                                                       <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
-                                                       <http://purl.org/dc/terms/modified> "2020-10-30"^^xsd:date ;
-                                                       rdfs:comment "The connection between the enzyme and the gene from which it is produced."@en ;
-                                                       rdfs:label "enzyme_isRelatedTo_gene"@en .
+###  http://covid-19.tib.eu/vocab/hasSymbol
+<http://covid-19.tib.eu/vocab/hasSymbol> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <http://covid-19.tib.eu/vocab/Protein> ;
+                                                       rdfs:range <http://covid-19.tib.eu/vocab/Target> ,
+                                                                  <http://covid-19.tib.eu/vocab/Enzyme> ;
+                                                       <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
+                                                       <http://purl.org/dc/terms/modified> "2022-04-05"^^xsd:date ;
+                                                       rdfs:comment "The symbol of protein."@en ;
+                                                       rdfs:label "hasSymbol"@en .
 
 
 ###  http://covid-19.tib.eu/vocab/hasCUIAnnotation
@@ -246,15 +247,6 @@ xsd:date rdf:type rdfs:Datatype .
                                                           rdfs:comment "Connection between sideEffect and drug-sideEffect relation."@en ;
                                                           rdfs:label "sideEffect_isRelatedTo_dse"@en .
 
-
-###  http://covid-19.tib.eu/vocab/target_isRelatedTo_gene
-<http://covid-19.tib.eu/vocab/target_isRelatedTo_gene> rdf:type owl:ObjectProperty ;
-                                                       rdfs:domain <http://covid-19.tib.eu/vocab/Target> ;
-                                                       rdfs:range <http://covid-19.tib.eu/vocab/Gene> ;
-                                                       <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
-                                                       <http://purl.org/dc/terms/modified> "2020-10-30"@en ;
-                                                       rdfs:comment "The connection between the target and the gene from which it is produced."@en ;
-                                                       rdfs:label "target_isRelatedTo_gene"@en .
 
 
 ###  http://covid-19.tib.eu/vocab/relation_hasSubjectGene_annotation
