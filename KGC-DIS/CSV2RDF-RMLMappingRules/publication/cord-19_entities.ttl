@@ -37,7 +37,7 @@
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate prov:hadPrimarySource;
+		rr:predicate prov:hasPrimarySource;
 		rr:objectMap [
 			rr:template "http://covid-19.tib.eu/SourceName/Semrep";
 		]
@@ -65,7 +65,7 @@ a rr:TriplesMap;
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate prov:hadPrimarySource;
+		rr:predicate prov:hasPrimarySource;
 		rr:objectMap [
 			rr:template "http://covid-19.tib.eu/SourceName/Semrep";
 		]
