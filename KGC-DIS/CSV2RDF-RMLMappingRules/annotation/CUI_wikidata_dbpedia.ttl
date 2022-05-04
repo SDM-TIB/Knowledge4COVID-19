@@ -31,7 +31,7 @@
     ].
 
 <wikidata_annotation_dictionary_label_cui_Covid19>
-    rml:logicalSource [ rml:source "./data/data/annotation/UMLS_combined.csv";
+    rml:logicalSource [ rml:source "/data/annotation/UMLS_combined.csv";
                         rml:referenceFormulation ql:CSV 
                         ];
     rr:subjectMap [
