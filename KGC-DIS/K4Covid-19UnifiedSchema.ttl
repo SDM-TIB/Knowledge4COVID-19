@@ -1014,13 +1014,13 @@ xsd:date rdf:type rdfs:Datatype .
 <http://covid-19.tib.eu/vocab/SourceName> rdf:type owl:Class .
 
 
-###  http://covid-19.tib.eu/vocab/SymmetricDrugDrugInteraction
-<http://covid-19.tib.eu/vocab/SymmetricDrugDrugInteraction> rdf:type owl:Class ;
+###  http://covid-19.tib.eu/vocab/PharmacodynamicDrugDrugInteraction
+<http://covid-19.tib.eu/vocab/PharmacodynamicDrugDrugInteraction> rdf:type owl:Class ;
                                                             rdfs:subClassOf <http://covid-19.tib.eu/vocab/Interaction> ;
-                                                            <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
-                                                            <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
+                                                            <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
+                                                            <http://purl.org/dc/terms/modified> "2022-04-05"@en ;
                                                             rdfs:comment "Represents the symmetric relation between drugs."@en ;
-                                                            rdfs:label "SymmetricDrugDrugInteraction"@en .
+                                                            rdfs:label "PharmacodynamicDrugDrugInteraction"@en .
 
 
 ###  http://covid-19.tib.eu/vocab/TREATS
