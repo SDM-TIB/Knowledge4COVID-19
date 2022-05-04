@@ -18,6 +18,12 @@ This command will download and start the three docker containers used in our pip
 2) SPARQL Endpoint
 3) Dereferencing Interface (Pubby)
 
+Once the docker containers are up and running, execute the following command to fix the URLs of Pubby (the dereferencing tool)
+```bash
+docker exec -it pubby cp -r /usr/local/tomcat/webapps/pubby/. /usr/local/tomcat/webapps/ROOT/
+
+```
+
 # Creating RDF Dump using SDM-RDFizer
 
 ## Run `rdfizer` tool to create the RDF dump according to the above configuration and mapping files included in this config.
