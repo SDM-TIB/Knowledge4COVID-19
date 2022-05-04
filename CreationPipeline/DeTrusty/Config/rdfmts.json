@@ -1,0 +1,1899 @@
+[
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/Drug",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/2002/07/owl#sameAs",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/ns/prov#hadPrimarySource",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/drugLabel",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/externalLink",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/hasCUIAnnotation",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Annotation"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/drug_isRelatedTo_dse",
+        "range": [
+          "http://covid-19.tib.eu/vocab/DrugToxicityInteraction",
+          "http://covid-19.tib.eu/vocab/DrugSideEffectInteraction"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [
+      "http://covid-19.tib.eu/vocab/Annotation",
+      "http://covid-19.tib.eu/vocab/DrugToxicityInteraction",
+      "http://covid-19.tib.eu/vocab/DrugSideEffectInteraction"
+    ],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/2002/07/owl#sameAs",
+          "http://www.w3.org/ns/prov#hadPrimarySource",
+          "http://covid-19.tib.eu/vocab/drugLabel",
+          "http://covid-19.tib.eu/vocab/externalLink",
+          "http://covid-19.tib.eu/vocab/hasCUIAnnotation",
+          "http://covid-19.tib.eu/vocab/drug_isRelatedTo_dse"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/DrugTargetPrediction",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/ns/prov#hadPrimarySource",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/interactor1",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Drug"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/interactor2",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/confidence",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/predictionMethod",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [
+      "http://covid-19.tib.eu/vocab/Drug"
+    ],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/ns/prov#hadPrimarySource",
+          "http://covid-19.tib.eu/vocab/interactor1",
+          "http://covid-19.tib.eu/vocab/interactor2",
+          "http://covid-19.tib.eu/vocab/confidence",
+          "http://covid-19.tib.eu/vocab/predictionMethod"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/DrugDrugInteraction",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/ns/prov#hadPrimarySource",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/affects",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Drug"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/isAffected",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Drug"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/effect",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Annotation"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/impact",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/interaction",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/objectDrug",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Annotation"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/object_hasDrugBankID",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Drug"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/precipitantDrug",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Annotation"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/precipitant_hasDrugBankID",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Drug"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [
+      "http://covid-19.tib.eu/vocab/Drug",
+      "http://covid-19.tib.eu/vocab/Drug",
+      "http://covid-19.tib.eu/vocab/Annotation",
+      "http://covid-19.tib.eu/vocab/Annotation",
+      "http://covid-19.tib.eu/vocab/Drug",
+      "http://covid-19.tib.eu/vocab/Annotation",
+      "http://covid-19.tib.eu/vocab/Drug"
+    ],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/ns/prov#hadPrimarySource",
+          "http://covid-19.tib.eu/vocab/affects",
+          "http://covid-19.tib.eu/vocab/isAffected",
+          "http://covid-19.tib.eu/vocab/effect",
+          "http://covid-19.tib.eu/vocab/impact",
+          "http://covid-19.tib.eu/vocab/interaction",
+          "http://covid-19.tib.eu/vocab/objectDrug",
+          "http://covid-19.tib.eu/vocab/object_hasDrugBankID",
+          "http://covid-19.tib.eu/vocab/precipitantDrug",
+          "http://covid-19.tib.eu/vocab/precipitant_hasDrugBankID"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/AdverseEvent",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/impact",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/hasCUIAnnotation",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Annotation"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [
+      "http://covid-19.tib.eu/vocab/Annotation"
+    ],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://covid-19.tib.eu/vocab/impact",
+          "http://covid-19.tib.eu/vocab/hasCUIAnnotation"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/Annotation",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/ns/prov#hadPrimarySource",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/annID",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/annLabel",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/ns/prov#hadPrimarySource",
+          "http://covid-19.tib.eu/vocab/annID",
+          "http://covid-19.tib.eu/vocab/annLabel"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/DrugTargetInteraction",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/ns/prov#hadPrimarySource",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/interactor1",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Drug"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/interactor2",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Target"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [
+      "http://covid-19.tib.eu/vocab/Drug",
+      "http://covid-19.tib.eu/vocab/Target"
+    ],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/ns/prov#hadPrimarySource",
+          "http://covid-19.tib.eu/vocab/interactor1",
+          "http://covid-19.tib.eu/vocab/interactor2"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/Protein",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/2002/07/owl#sameAs",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Protein"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/proteinID",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/proteinLabel",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [
+      "http://covid-19.tib.eu/vocab/Protein"
+    ],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/2002/07/owl#sameAs",
+          "http://covid-19.tib.eu/vocab/proteinID",
+          "http://covid-19.tib.eu/vocab/proteinLabel"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/Target",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/2002/07/owl#sameAs",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Protein"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/targetID",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/targetLabel",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/externalLink",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/uniprotID",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/target_isRelatedTo_gene",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Gene"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [
+      "http://covid-19.tib.eu/vocab/Protein",
+      "http://covid-19.tib.eu/vocab/Gene"
+    ],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/2002/07/owl#sameAs",
+          "http://covid-19.tib.eu/vocab/targetID",
+          "http://covid-19.tib.eu/vocab/targetLabel",
+          "http://covid-19.tib.eu/vocab/externalLink",
+          "http://covid-19.tib.eu/vocab/uniprotID",
+          "http://covid-19.tib.eu/vocab/target_isRelatedTo_gene"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/DrugEnzymeInteraction",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/ns/prov#hadPrimarySource",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/interactor1",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Drug"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/interactor2",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [
+      "http://covid-19.tib.eu/vocab/Drug"
+    ],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/ns/prov#hadPrimarySource",
+          "http://covid-19.tib.eu/vocab/interactor1",
+          "http://covid-19.tib.eu/vocab/interactor2"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/DrugDisorderInteraction",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/ns/prov#hadPrimarySource",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/interactor1",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Drug"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/interactor2",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [
+      "http://covid-19.tib.eu/vocab/Drug"
+    ],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/ns/prov#hadPrimarySource",
+          "http://covid-19.tib.eu/vocab/interactor1",
+          "http://covid-19.tib.eu/vocab/interactor2"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/Phenotype",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/sideEffect_isRelatedTo_dse",
+        "range": [
+          "http://covid-19.tib.eu/vocab/DrugToxicityInteraction",
+          "http://covid-19.tib.eu/vocab/DrugSideEffectInteraction"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/hasCUIAnnotation",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Annotation"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/hasHPOAnnotation",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Annotation"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/phenotypeLabel",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/toxicityType",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [
+      "http://covid-19.tib.eu/vocab/DrugToxicityInteraction",
+      "http://covid-19.tib.eu/vocab/DrugSideEffectInteraction",
+      "http://covid-19.tib.eu/vocab/Annotation",
+      "http://covid-19.tib.eu/vocab/Annotation"
+    ],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://covid-19.tib.eu/vocab/sideEffect_isRelatedTo_dse",
+          "http://covid-19.tib.eu/vocab/hasCUIAnnotation",
+          "http://covid-19.tib.eu/vocab/hasHPOAnnotation",
+          "http://covid-19.tib.eu/vocab/phenotypeLabel",
+          "http://covid-19.tib.eu/vocab/toxicityType"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/DrugSideEffectInteraction",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/ns/prov#hadPrimarySource",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/dse_AvgFrequency",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/ns/prov#hadPrimarySource",
+          "http://covid-19.tib.eu/vocab/dse_AvgFrequency"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/DrugToxicityInteraction",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/ns/prov#hadPrimarySource",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/hasDrugBankID",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Drug"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [
+      "http://covid-19.tib.eu/vocab/Drug"
+    ],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/ns/prov#hadPrimarySource",
+          "http://covid-19.tib.eu/vocab/hasDrugBankID"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/Enzyme",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/2002/07/owl#sameAs",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Protein"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/externalLink",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/enzymeID",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/enzymeLabel",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/enzyme_isRelatedTo_gene",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/uniprotID",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [
+      "http://covid-19.tib.eu/vocab/Protein"
+    ],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/2002/07/owl#sameAs",
+          "http://covid-19.tib.eu/vocab/externalLink",
+          "http://covid-19.tib.eu/vocab/enzymeID",
+          "http://covid-19.tib.eu/vocab/enzymeLabel",
+          "http://covid-19.tib.eu/vocab/enzyme_isRelatedTo_gene",
+          "http://covid-19.tib.eu/vocab/uniprotID"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/Disorder",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/2002/07/owl#sameAs",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/hasCUIAnnotation",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Annotation"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/disorderLabel",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [
+      "http://covid-19.tib.eu/vocab/Annotation"
+    ],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/2002/07/owl#sameAs",
+          "http://covid-19.tib.eu/vocab/hasCUIAnnotation",
+          "http://covid-19.tib.eu/vocab/disorderLabel"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/Gene",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/ns/prov#hadPrimarySource",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/hasGeneLabel",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/ns/prov#hadPrimarySource",
+          "http://covid-19.tib.eu/vocab/hasGeneLabel"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/DrugDrugPrediction",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/ns/prov#hadPrimarySource",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/interactor1",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Drug"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/interactor2",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Drug"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/confidence",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/methodAbbreviation",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/predictionMethod",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/interaction_isRelatedTo_Disease",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/provenance",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [
+      "http://covid-19.tib.eu/vocab/Drug",
+      "http://covid-19.tib.eu/vocab/Drug"
+    ],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/ns/prov#hadPrimarySource",
+          "http://covid-19.tib.eu/vocab/interactor1",
+          "http://covid-19.tib.eu/vocab/interactor2",
+          "http://covid-19.tib.eu/vocab/confidence",
+          "http://covid-19.tib.eu/vocab/methodAbbreviation",
+          "http://covid-19.tib.eu/vocab/predictionMethod",
+          "http://covid-19.tib.eu/vocab/interaction_isRelatedTo_Disease",
+          "http://covid-19.tib.eu/vocab/provenance"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/DrugEnzymePrediction",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/ns/prov#hadPrimarySource",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/interactor1",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Drug"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/interactor2",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/confidence",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/predictionMethod",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [
+      "http://covid-19.tib.eu/vocab/Drug"
+    ],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/ns/prov#hadPrimarySource",
+          "http://covid-19.tib.eu/vocab/interactor1",
+          "http://covid-19.tib.eu/vocab/interactor2",
+          "http://covid-19.tib.eu/vocab/confidence",
+          "http://covid-19.tib.eu/vocab/predictionMethod"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/DrugSideEffectPrediction",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/ns/prov#hadPrimarySource",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/interactor1",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Drug"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/interactor2",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Phenotype"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/confidence",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/predictionMethod",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [
+      "http://covid-19.tib.eu/vocab/Drug",
+      "http://covid-19.tib.eu/vocab/Phenotype"
+    ],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/ns/prov#hadPrimarySource",
+          "http://covid-19.tib.eu/vocab/interactor1",
+          "http://covid-19.tib.eu/vocab/interactor2",
+          "http://covid-19.tib.eu/vocab/confidence",
+          "http://covid-19.tib.eu/vocab/predictionMethod"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/SymmetricDrugDrugInteraction",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "range": [
+          "http://covid-19.tib.eu/vocab/DrugDrugInteraction"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [
+      "http://covid-19.tib.eu/vocab/DrugDrugInteraction"
+    ],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/SemanticAnnotation",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/ns/prov#hadPrimarySource",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/hasCUIAnnotation",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Annotation"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/hasSemanticType",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [
+      "http://covid-19.tib.eu/vocab/Annotation"
+    ],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/ns/prov#hadPrimarySource",
+          "http://covid-19.tib.eu/vocab/hasCUIAnnotation",
+          "http://covid-19.tib.eu/vocab/hasSemanticType"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/Publication",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/externalLink",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/abstract",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/author",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/doi",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/journal",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/license",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/pdf_json_files",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/pmc_json_files",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/pmcid",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/publication_isRelatedTo_Disease",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/pubmed_id",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/sha_id",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/source",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/title",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/year",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/arxiv_id",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/who_covidence_id",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://covid-19.tib.eu/vocab/externalLink",
+          "http://covid-19.tib.eu/vocab/abstract",
+          "http://covid-19.tib.eu/vocab/author",
+          "http://covid-19.tib.eu/vocab/doi",
+          "http://covid-19.tib.eu/vocab/journal",
+          "http://covid-19.tib.eu/vocab/license",
+          "http://covid-19.tib.eu/vocab/pdf_json_files",
+          "http://covid-19.tib.eu/vocab/pmc_json_files",
+          "http://covid-19.tib.eu/vocab/pmcid",
+          "http://covid-19.tib.eu/vocab/publication_isRelatedTo_Disease",
+          "http://covid-19.tib.eu/vocab/pubmed_id",
+          "http://covid-19.tib.eu/vocab/sha_id",
+          "http://covid-19.tib.eu/vocab/source",
+          "http://covid-19.tib.eu/vocab/title",
+          "http://covid-19.tib.eu/vocab/year",
+          "http://covid-19.tib.eu/vocab/arxiv_id",
+          "http://covid-19.tib.eu/vocab/who_covidence_id"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://covid-19.tib.eu/vocab/ConceptAnnotation",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/ns/prov#hadPrimarySource",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/annotates",
+        "range": [
+          "http://covid-19.tib.eu/vocab/Publication"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/hasConfidenceScore",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://covid-19.tib.eu/vocab/hasSemanticAnnotation",
+        "range": [
+          "http://covid-19.tib.eu/vocab/SemanticAnnotation"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [
+      "http://covid-19.tib.eu/vocab/Publication",
+      "http://covid-19.tib.eu/vocab/SemanticAnnotation"
+    ],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/ns/prov#hadPrimarySource",
+          "http://covid-19.tib.eu/vocab/annotates",
+          "http://covid-19.tib.eu/vocab/hasConfidenceScore",
+          "http://covid-19.tib.eu/vocab/hasSemanticAnnotation"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  }
+]
