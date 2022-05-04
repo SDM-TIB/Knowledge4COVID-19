@@ -8,6 +8,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix base: <http://tib.de/ontario/mapping#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
 <#DrugDrugPrediction>
@@ -37,7 +38,7 @@
 		]
 	];	
 	rr:predicateObjectMap [
-		rr:predicate covid-19:provenance;
+		rr:predicate prov:hasPrimarySource;
 		rr:objectMap [
 			rr:template "http://research.tib.eu/covid-19/SourceName/PubMed"
 		]
