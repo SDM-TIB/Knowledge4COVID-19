@@ -797,6 +797,14 @@ xsd:date rdf:type rdfs:Datatype .
                                     owl:versionInfo "v1.0"@en .
 
 
+###  http://research.tib.eu/covid-19/vocab/Indication
+<http://research.tib.eu/covid-19/vocab/Indication> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Concept> ;
+                                    rdfs:comment "This class represents indications"@en ;
+                                    rdfs:isDefinedBy "emetis_niazmand"@en ;
+                                    rdfs:label "Indication"@en ;
+                                    owl:versionInfo "v1.0"@en .
+
 ###  http://research.tib.eu/covid-19/vocab/DrugDisorderInteraction
 <http://research.tib.eu/covid-19/vocab/DrugDisorderInteraction> rdf:type owl:Class ;
                                                        rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Interaction> ;
