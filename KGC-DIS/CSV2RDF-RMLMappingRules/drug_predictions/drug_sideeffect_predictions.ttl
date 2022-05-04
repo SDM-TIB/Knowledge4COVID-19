@@ -18,13 +18,13 @@
 		rr:class covid-19:DrugSideEffectPrediction
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:interactor1;
+		rr:predicate covid-19:hasInteractingDrug;
 		rr:objectMap [ 
 			rr:template "http://covid-19.tib.eu/entity/{Drug}" 
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:interactor2;
+		rr:predicate covid-19:hasInteractingPhenotype;
 		rr:objectMap [ 
 			rr:template "http://covid-19.tib.eu/entity/{Phenotype}" 
 		]
@@ -36,7 +36,7 @@
 		]
 	];	
 	rr:predicateObjectMap [
-		rr:predicate prov:hadPrimarySource;
+		rr:predicate prov:hasPrimarySource;
 		rr:objectMap [
 			rr:template "http://covid-19.tib.eu/SourceName/{SimilaritySource}"
 		]
