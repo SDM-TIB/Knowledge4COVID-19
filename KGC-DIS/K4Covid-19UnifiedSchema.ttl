@@ -1048,6 +1048,14 @@ xsd:date rdf:type rdfs:Datatype .
                                                             rdfs:label "PharmacodynamicDrugDrugInteraction"@en .
 
 
+###  http://research.tib.eu/covid-19/vocab/PharmacokyneticDrugDrugInteraction
+<http://research.tib.eu/covid-19/vocab/PharmacokyneticDrugDrugInteraction> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Interaction> ;
+                                                            <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
+                                                            <http://purl.org/dc/terms/modified> "2022-04-05"@en ;
+                                                            rdfs:comment "Represents the unsymmetric relation between drugs."@en ;
+                                                            rdfs:label "PharmacokyneticDrugDrugInteraction"@en .
+
 ###  http://research.tib.eu/covid-19/vocab/TREATS
 <http://research.tib.eu/covid-19/vocab/TREATS> rdf:type owl:Class ;
                                       rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Relation> ;
