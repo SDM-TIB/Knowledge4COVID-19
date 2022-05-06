@@ -51,7 +51,7 @@ curl --header "Content-Type: application/json" \
 # 4) Get the predicted interactions of a Drug
 
 
-```
+```bash
 curl --header "Content-Type: application/json" \
   --request POST \
   --data '{
