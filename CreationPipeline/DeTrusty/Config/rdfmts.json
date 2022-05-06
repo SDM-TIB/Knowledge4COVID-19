@@ -7,7 +7,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -17,7 +17,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -27,7 +27,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -37,7 +37,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -47,7 +47,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -59,7 +59,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -72,7 +72,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -85,7 +85,7 @@
     ],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/2002/07/owl#sameAs",
@@ -108,7 +108,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -118,7 +118,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -130,7 +130,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -140,7 +140,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -150,7 +150,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -160,7 +160,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -171,7 +171,7 @@
     ],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/ns/prov#hadPrimarySource",
@@ -193,7 +193,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -203,7 +203,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -215,7 +215,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -227,7 +227,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -239,7 +239,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -249,7 +249,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -259,7 +259,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -271,7 +271,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -283,7 +283,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -295,7 +295,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -307,7 +307,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -324,7 +324,7 @@
     ],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/ns/prov#hadPrimarySource",
@@ -351,7 +351,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -361,7 +361,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -373,7 +373,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -384,7 +384,7 @@
     ],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://covid-19.tib.eu/vocab/impact",
@@ -403,7 +403,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -413,7 +413,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -423,7 +423,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -433,7 +433,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -442,7 +442,7 @@
     "linkedTo": [],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/ns/prov#hadPrimarySource",
@@ -462,7 +462,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -472,7 +472,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -484,7 +484,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -496,7 +496,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -508,7 +508,7 @@
     ],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/ns/prov#hadPrimarySource",
@@ -528,7 +528,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -540,7 +540,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -550,7 +550,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -560,7 +560,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -571,7 +571,7 @@
     ],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/2002/07/owl#sameAs",
@@ -591,7 +591,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -603,7 +603,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -613,7 +613,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -623,7 +623,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -633,7 +633,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -643,7 +643,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -655,7 +655,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -667,7 +667,7 @@
     ],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/2002/07/owl#sameAs",
@@ -690,7 +690,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -700,7 +700,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -712,7 +712,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -722,7 +722,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -733,7 +733,7 @@
     ],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/ns/prov#hadPrimarySource",
@@ -753,7 +753,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -763,7 +763,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -775,7 +775,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -785,7 +785,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -796,7 +796,7 @@
     ],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/ns/prov#hadPrimarySource",
@@ -816,7 +816,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -829,7 +829,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -841,7 +841,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -853,7 +853,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -863,7 +863,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -873,7 +873,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -887,7 +887,7 @@
     ],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://covid-19.tib.eu/vocab/sideEffect_isRelatedTo_dse",
@@ -909,7 +909,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -919,7 +919,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -929,7 +929,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -938,7 +938,7 @@
     "linkedTo": [],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/ns/prov#hadPrimarySource",
@@ -957,7 +957,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -967,7 +967,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -979,7 +979,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -990,7 +990,7 @@
     ],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/ns/prov#hadPrimarySource",
@@ -1009,7 +1009,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1021,7 +1021,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1031,7 +1031,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1041,7 +1041,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1051,7 +1051,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1061,7 +1061,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1071,7 +1071,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1082,7 +1082,7 @@
     ],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/2002/07/owl#sameAs",
@@ -1105,7 +1105,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1115,7 +1115,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1127,7 +1127,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1137,7 +1137,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1148,7 +1148,7 @@
     ],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/2002/07/owl#sameAs",
@@ -1168,7 +1168,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1178,7 +1178,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1188,7 +1188,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1197,7 +1197,7 @@
     "linkedTo": [],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/ns/prov#hadPrimarySource",
@@ -1216,7 +1216,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1226,7 +1226,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1238,7 +1238,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1250,7 +1250,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1260,7 +1260,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1270,7 +1270,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1280,7 +1280,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1290,7 +1290,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1300,7 +1300,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1312,7 +1312,7 @@
     ],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/ns/prov#hadPrimarySource",
@@ -1337,7 +1337,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1347,7 +1347,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1359,7 +1359,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1369,7 +1369,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1379,7 +1379,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1389,7 +1389,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1400,7 +1400,7 @@
     ],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/ns/prov#hadPrimarySource",
@@ -1422,7 +1422,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1432,7 +1432,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1444,7 +1444,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1456,7 +1456,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1466,7 +1466,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1476,7 +1476,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1488,7 +1488,7 @@
     ],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/ns/prov#hadPrimarySource",
@@ -1510,7 +1510,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1522,7 +1522,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1533,7 +1533,7 @@
     ],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/2000/01/rdf-schema#subClassOf"
@@ -1551,7 +1551,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1561,7 +1561,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1573,7 +1573,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1583,7 +1583,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1594,7 +1594,7 @@
     ],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/ns/prov#hadPrimarySource",
@@ -1614,7 +1614,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1624,7 +1624,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1634,7 +1634,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1644,7 +1644,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1654,7 +1654,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1664,7 +1664,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1674,7 +1674,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1684,7 +1684,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1694,7 +1694,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1704,7 +1704,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1714,7 +1714,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1724,7 +1724,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1734,7 +1734,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1744,7 +1744,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1754,7 +1754,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1764,7 +1764,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1774,7 +1774,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1784,7 +1784,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1793,7 +1793,7 @@
     "linkedTo": [],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://covid-19.tib.eu/vocab/externalLink",
@@ -1827,7 +1827,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1837,7 +1837,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1849,7 +1849,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1859,7 +1859,7 @@
         "range": [],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1871,7 +1871,7 @@
         ],
         "policies": [
           {
-            "dataset": "http://covid19kg:8890/sparql",
+            "dataset": "http://research.tib.eu/covid-19/",
             "operator": "PR"
           }
         ]
@@ -1883,7 +1883,7 @@
     ],
     "wrappers": [
       {
-        "url": "http://covid19kg:8890/sparql",
+        "url": "http://research.tib.eu/covid-19/",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/ns/prov#hadPrimarySource",
