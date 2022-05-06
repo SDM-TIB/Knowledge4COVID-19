@@ -6,25 +6,25 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 
 def load_drug_cui(data):
     input_cui = data['Drugs']
-    input_cui_uri = ','.join(['<http://covid-19.tib.eu/Annotation/'+cui+'>' for cui in input_cui])
+    input_cui_uri = ','.join(['<http://research.tib.eu/covid-19/entity/'+cui+'>' for cui in input_cui])
     return input_cui_uri
 
 
 def get_publication(input_cui_uri, sparql):
     query = """
     select distinct ?pub ?year ?journal ?title ?url ?drug ?drugLabel where {
-        ?drug a <http://covid-19.tib.eu/vocab/Drug>.
-        ?drug <http://covid-19.tib.eu/vocab/hasCUIAnnotation> ?drugCUI.
+        ?drug a <http://research.tib.eu/covid-19/vocab/Drug>.
+        ?drug <http://research.tib.eu/covid-19/vocab/hasCUIAnnotation> ?drugCUI.
         Filter(?drugCUI in (""" + input_cui_uri + """))
-        ?drug <http://covid-19.tib.eu/vocab/drugLabel> ?drugLabel.
-        ?ann a <http://covid-19.tib.eu/vocab/ConceptAnnotation>.
-        ?ann <http://covid-19.tib.eu/vocab/hasSemanticAnnotation> ?semAnn.
-        ?semAnn <http://covid-19.tib.eu/vocab/hasCUIAnnotation> ?drugCUI.
-        ?ann <http://covid-19.tib.eu/vocab/annotates> ?pub.
-        ?pub <http://covid-19.tib.eu/vocab/title> ?title.
-        ?pub <http://covid-19.tib.eu/vocab/year> ?year.
-        ?pub <http://covid-19.tib.eu/vocab/journal> ?journal.
-        ?pub <http://covid-19.tib.eu/vocab/externalLink> ?url.
+        ?drugCUI <http://research.tib.eu/covid-19/vocab/annLabel> ?drugLabel.
+        ?ann a <http://research.tib.eu/covid-19/vocab/ConceptAnnotation>.
+        ?ann <http://research.tib.eu/covid-19/vocab/hasSemanticAnnotation> ?semAnn.
+        ?semAnn <http://research.tib.eu/covid-19/vocab/hasCUIAnnotation> ?drugCUI.
+        ?ann <http://research.tib.eu/covid-19/vocab/annotates> ?pub.
+        ?pub <http://research.tib.eu/covid-19/vocab/title> ?title.
+        ?pub <http://research.tib.eu/covid-19/vocab/year> ?year.
+        ?pub <http://research.tib.eu/covid-19/vocab/journal> ?journal.
+        ?pub <http://research.tib.eu/covid-19/vocab/externalLink> ?url.
 
        
     }
@@ -36,12 +36,12 @@ def get_publication(input_cui_uri, sparql):
     dictionary = {}
     dictionary['Publication:'] = {}
     for r in results['results']['bindings']:
-        pub = (r['pub']['value']).replace('http://covid-19.tib.eu/Publication/', '')
+        pub = (r['pub']['value']).replace('http://research.tib.eu/covid-19/Publication/', '')
         year = r['year']['value']
         journal = r['journal']['value']
         title = r['title']['value']
         url = r['url']['value']
-        drug = (r['drug']['value']).replace('http://covid-19.tib.eu/vocab/', '')
+        drug = (r['drug']['value']).replace('http://research.tib.eu/covid-19/vocab/', '')
         drugLabel = r['drugLabel']['value']
 
         if pub not in dictionary['Publication:']:
