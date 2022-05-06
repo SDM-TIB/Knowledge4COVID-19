@@ -39,8 +39,8 @@
 <http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
 
 
-###  http://www.w3.org/2000/01/rdf-schema#lasbel
-rdfs:lasbel rdf:type owl:AnnotationProperty .
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -420,7 +420,7 @@ xsd:date rdf:type rdfs:Datatype .
                                       <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
                                       <http://purl.org/dc/terms/modified> "2020-09-14"@en ;
                                       rdfs:comment "Represents the type impact of the adverse event i.e. increase/decrease"@en ;
-                                      rdfs:lasbel "impact"@en .
+                                      rdfs:label "impact"@en .
 
 
 ###  http://research.tib.eu/covid-19/vocab/journal
