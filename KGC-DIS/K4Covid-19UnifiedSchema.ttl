@@ -8,8 +8,7 @@
 @prefix covid19: <http://research.tib.eu/covid-19/vocab/>.
 @base <http://www.w3.org/2002/07/owl#> .
 
-[ rdf:type owl:Ontology
- ] .
+<https://github.com/SDM-TIB/Knowledge4COVID-19/blob/main/KGC-DIS/K4Covid-19UnifiedSchema.ttl> rdf:type owl:Ontology.
 
 #################################################################
 #    Annotation properties
