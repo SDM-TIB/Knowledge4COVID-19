@@ -215,7 +215,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                                rdfs:range <http://research.tib.eu/covid-19/vocab/Disorder> ;
                                                                <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
                                                                <http://purl.org/dc/terms/modified> "2019-05-24"@en ;
-                                                               rdfs:comment "" ;
+                                                               rdfs:comment "The publications related to diseases." ;
                                                                rdfs:label "publication_isRelatedTo_Disease"@en .
 
 
