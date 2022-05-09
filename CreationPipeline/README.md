@@ -56,5 +56,15 @@ Before running this, make sure you update the environmental variable in the `doc
 
 4. Open [http://localhost:8891/sparql](http://localhost:8891/sparql) on your browser and you will get access to the created Knowledge Graph
 
+## Querying the Knowledge Graph using DeTrusty
+
+As an alternative to using Virtuoso directly (see above), you can use `DeTrusty` to query the Knowlede Graph.
+`DeTrusty` is a query engine enabling access to SPARQL endpoints via its HTTP API.
+To execute a query with `DeTrusty` run the following command; the example query returns some metadata for 10 publications.
+
+```bash
+curl -X POST -d "query=SELECT ?pub ?title ?doi WHERE { ?pub a <http://research.tib.eu/covid-19/vocab/Publication> . ?pub <http://research.tib.eu/covid-19/vocab/year> ?year . ?pub <http://research.tib.eu/covid-19/vocab/title> ?title . ?pub <http://research.tib.eu/covid-19/vocab/doi> ?doi . } LIMIT 10" localhost:5000/sparql
+```
+
 
 
