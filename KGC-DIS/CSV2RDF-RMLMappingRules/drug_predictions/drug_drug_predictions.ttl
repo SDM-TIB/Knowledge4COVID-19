@@ -9,12 +9,12 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
-<DrugDrugPrediction>
+<DrugDrugPrediction_DDI-LPB>
 	rml:logicalSource [ rml:source "/data/drug_predictions/wp4_drug_drug_interactions_otherDiseases.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://research.tib.eu/covid-19/entity/{DRUGBANK_ID_1}_interactsWith_{DRUGBANK_ID_2}";
+		rr:template "http://research.tib.eu/covid-19/entity/{DRUGBANK_ID_1}_interactsWith_{DRUGBANK_ID_2}_DDI-LPB";
 		rr:class covid-19:DrugDrugPrediction
 	];
 	rr:predicateObjectMap [
@@ -44,7 +44,7 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:predictionMethod;
 		rr:objectMap [ 
-			rr:constant "Literature Predictions" 
+			rr:constant "DDI-LPB" 
 		]
 	].	
 
