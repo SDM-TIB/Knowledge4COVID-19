@@ -14,7 +14,7 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://research.tib.eu/covid-19/entity/{Drug1}_interactsWith_{Drug2}";
+		rr:template "http://research.tib.eu/covid-19/entity/{Drug1}_interactsWith_{Drug2}_DDI-MA";
 		rr:class covid-19:DrugDrugPrediction
 	];
 	rr:predicateObjectMap [
@@ -50,6 +50,6 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:methodAbbreviation;
 		rr:objectMap [ 
-			rml:reference "MethodAbbreviation" 
+			rml:reference "DDI-MA" 
 		]
 	].	
