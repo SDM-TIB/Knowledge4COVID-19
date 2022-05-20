@@ -44,12 +44,12 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:predictionMethod;
 		rr:objectMap [ 
-			rml:reference "Method" 
+			rr:template "http://research.tib.eu/covid-19/entity/{MethodAbbreviation}" 
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:methodAbbreviation;
+		rr:predicate rdfs:Label;
 		rr:objectMap [ 
-			rml:reference "DDI-MA" 
+			rml:reference "Method"@en .
 		]
 	].	
