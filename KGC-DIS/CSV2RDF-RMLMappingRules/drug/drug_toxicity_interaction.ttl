@@ -30,7 +30,7 @@
 		]
 	].	
 
-<Drug>
+<Drug_DrugToxicityInteraction>
 	rml:logicalSource [ rml:source "/data/drug/drugs_toxicities_processed.csv";
 						rml:referenceFormulation ql:CSV 
 						];
@@ -45,7 +45,7 @@
 		]
 	].
 
-<Phenotype>
+<Phenotype_DrugToxicityInteraction>
 	rml:logicalSource [ rml:source "/data/drug/drugs_toxicities_processed.csv";
 						rml:referenceFormulation ql:CSV 
 						];
