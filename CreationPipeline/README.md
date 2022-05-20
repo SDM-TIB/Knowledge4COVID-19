@@ -59,12 +59,8 @@ Before running this, make sure you update the environmental variable in the `doc
 ## Querying the Knowledge Graph using DeTrusty
 
 As an alternative to using Virtuoso directly (see above), you can use `DeTrusty` to query the Knowlede Graph.
-`DeTrusty` is a query engine enabling access to SPARQL endpoints via its HTTP API.
-To execute a query with `DeTrusty` run the following command; the example query returns some metadata for 10 publications.
+`DeTrusty` is a query engine enabling access to SPARQL endpoints.
+Using `DeTrusty` you can also retrieve data from other sources, and, hence, execute a federated query.
 
-```bash
-curl -X POST -d "query=SELECT ?pub ?title ?doi WHERE { ?pub a <http://research.tib.eu/covid-19/vocab/Publication> . ?pub <http://research.tib.eu/covid-19/vocab/year> ?year . ?pub <http://research.tib.eu/covid-19/vocab/title> ?title . ?pub <http://research.tib.eu/covid-19/vocab/doi> ?doi . } LIMIT 10" localhost:5000/sparql
-```
-
-
+5. Open [http://localhost:5000/sparql](http://localhost:5000/sparql) in your browser to get access to the YASGUI connected to `DeTrusty`.
 

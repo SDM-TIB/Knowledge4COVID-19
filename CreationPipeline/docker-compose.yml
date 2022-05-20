@@ -76,7 +76,7 @@ services:
     tty: true
     
   detrusty:
-    image: sdmtib/detrusty:0.2.0
+    image: sdmtib/detrusty:0.4.1
     hostname: detrusty
     container_name: detrusty
     domainname: k4covid
@@ -86,6 +86,8 @@ services:
       - "5000:5000"
     networks:
       - k4covid
+    environment:
+      JOIN_STARS_LOCALLY: 'false'
     depends_on:
       - covid19kg
 
