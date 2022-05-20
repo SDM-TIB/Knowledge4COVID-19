@@ -49,6 +49,12 @@
 			rml:reference "doi"
 		]
 	];
+        rr:predicateObjectMap [
+		rr:predicate covid-19:doi;
+		rr:objectMap [ 
+			rr:template "http://research.tib.eu/covid-19/entity/{doi}"
+		]
+	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:pmcid;
 		rr:objectMap [ 
@@ -59,6 +65,12 @@
 		rr:predicate bibo:pmid;
 		rr:objectMap [ 
 			rml:reference "pubmed_id"
+		]
+	];
+   	rr:predicateObjectMap [
+		rr:predicate covid-19:pmid;
+		rr:objectMap [ 
+			rr:template "http://research.tib.eu/covid-19/entity/{pubmed_id}"
 		]
 	];
 	rr:predicateObjectMap [
