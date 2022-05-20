@@ -9,7 +9,7 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
-<DrugDrugPrediction>
+<DrugDrugPrediction_LUH>
 	rml:logicalSource [ rml:source "/data/drug_predictions/DDI_prediction_LUH.csv";
 						rml:referenceFormulation ql:CSV 
 						];
