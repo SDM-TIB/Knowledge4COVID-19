@@ -49,7 +49,7 @@ To load the generated RDF dump in step 2, we will use a script included in `scri
 docker exec -it sdmrdfizer python3 /data/scripts/load_to_virtuoso.py
 
 ```
-
+This script will also load the mappings and ontology data into the mappings and ontology SPARQL endpoint
 Before running this, make sure you update the environmental variable in the `docker-compose.yml` file.
 
 
