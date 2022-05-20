@@ -11,7 +11,7 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
-<#DrugDrugPrediction>
+<DrugDrugPrediction_AD>
 	rml:logicalSource [ rml:source "/data/drug_predictions/wp4_drug_drug_interactions_AD.csv";
 						rml:referenceFormulation ql:CSV 
 						];
