@@ -92,15 +92,9 @@
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate bibo:Article;
+		rr:predicate covid-19:journal;
 		rr:objectMap [ 
-			rml:reference "journal" 
-		]
-	];
-	rr:predicateObjectMap [
-		rr:predicate covid-19:Article;
-		rr:objectMap [ 
-			rr:template "http://research.tib.eu/covid-19/entity/{journal}"
+			rml:reference "journal"
 		]
 	];
 	rr:predicateObjectMap [
