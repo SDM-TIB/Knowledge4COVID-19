@@ -9,7 +9,7 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
-<DrugDrugInteraction>
+<DrugDrugInteraction_NCRD>
 	rml:logicalSource [ rml:source "/data/drug/NCRD.csv";
 						rml:referenceFormulation ql:CSV 
 						];
