@@ -1085,7 +1085,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                    rdfs:subClassOf dct:Literature ;
                                                    rdfs:comment "This class represents scientific publications"@en ;
                                                    rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                                   rdfs:label "Publication"@en ;
+                                                   rdfs:label "Publication"@en .
 
 
 ###  http://research.tib.eu/covid-19/vocab/Relation
