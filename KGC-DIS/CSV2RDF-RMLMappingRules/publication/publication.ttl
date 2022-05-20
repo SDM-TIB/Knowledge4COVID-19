@@ -51,7 +51,7 @@
         ]
     ];
     rr:predicateObjectMap [
-        rr:predicate covid-19:journal;
+        rr:predicate bibo:Article;
         rr:objectMap [
         rml:reference "journal"
         ]
