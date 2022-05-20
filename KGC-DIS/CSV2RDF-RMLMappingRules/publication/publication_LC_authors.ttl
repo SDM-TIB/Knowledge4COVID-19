@@ -7,6 +7,7 @@
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix base: <http://tib.de/ontario/mapping#> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
 <Publication_covid-19_publication_author_LC>
@@ -19,9 +20,9 @@
         rr:class covid-19:Publication_Author
     ];
     rr:predicateObjectMap [
-        rr:predicate covid-19:author;
+        rr:predicate dct:creator;
         rr:objectMap [
-        rml:reference  "author"
+        rr:template "http://research.tib.eu/covid-19/entity/{author}"
         ]
     ].
 

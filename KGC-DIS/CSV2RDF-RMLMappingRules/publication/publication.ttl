@@ -27,12 +27,6 @@
         ]
     ];
     rr:predicateObjectMap [
-        rr:predicate dct:creator;
-        rr:objectMap [
-        rml:reference "authors"
-        ]
-    ];
-    rr:predicateObjectMap [
         rr:predicate covid-19:rankingScore_SJR;
         rr:objectMap [
         rml:reference "journal_SJR"
@@ -51,7 +45,7 @@
         ]
     ];
     rr:predicateObjectMap [
-        rr:predicate covid-19:journal;
+        rr:predicate bibo:Article;
         rr:objectMap [
         rml:reference "journal"
         ]
@@ -60,12 +54,6 @@
         rr:predicate dct:title;
         rr:objectMap [
         rml:reference "title"
-        ]
-    ];
-    rr:predicateObjectMap [
-        rr:predicate covid-19:publicationType;
-        rr:objectMap [
-        rml:reference "PublicationTypes"
         ]
     ];
     rr:predicateObjectMap [

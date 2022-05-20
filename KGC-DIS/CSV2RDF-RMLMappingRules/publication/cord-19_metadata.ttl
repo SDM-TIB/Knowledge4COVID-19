@@ -40,13 +40,13 @@
 	rr:predicateObjectMap [
 		rr:predicate dct:creator;
 		rr:objectMap [ 
-			rml:reference "authors" 
+			rr:template "http://research.tib.eu/covid-19/entity/{authors}" 
 		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate bibo:doi;
 		rr:objectMap [ 
-			rr:template "http://research.tib.eu/covid-19/entity/{doi}"
+			rml:reference "doi"
 		]
 	];
 	rr:predicateObjectMap [
@@ -58,7 +58,7 @@
 	rr:predicateObjectMap [
 		rr:predicate bibo:pmid;
 		rr:objectMap [ 
-			rr:template "http://research.tib.eu/covid-19/entity/{pubmed_id}"
+			rml:reference "pubmed_id"
 		]
 	];
 	rr:predicateObjectMap [
@@ -68,7 +68,7 @@
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:abstract;
+		rr:predicate dct:abstract;
 		rr:objectMap [ 
 			rml:reference "abstract" 
 		]
@@ -80,7 +80,7 @@
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:journal;
+		rr:predicate bibo:Article;
 		rr:objectMap [ 
 			rml:reference "journal" 
 		]
