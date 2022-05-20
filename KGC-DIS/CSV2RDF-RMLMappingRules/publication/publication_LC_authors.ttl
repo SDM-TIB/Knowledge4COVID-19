@@ -22,7 +22,7 @@
     rr:predicateObjectMap [
         rr:predicate dct:creator;
         rr:objectMap [
-        rml:reference  "author"
+        rr:template "http://research.tib.eu/covid-19/entity/{author}"
         ]
     ].
 
