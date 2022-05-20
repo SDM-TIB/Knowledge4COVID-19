@@ -11,7 +11,7 @@
 @prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
 <CovidTreatment_CovidDrug>
-	rml:logicalSource [ rml:source "/data/drug/Treatment_covid_drug.csv";
+	rml:logicalSource [ rml:source "/data/treatment/Treatment_covid_drug.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
@@ -27,7 +27,7 @@ rr:predicateObjectMap [
 	].
 
 <CovidTreatment_Comorbidity>
-	rml:logicalSource [ rml:source "/data/drug/Treatment_comorbidity.csv";
+	rml:logicalSource [ rml:source "/data/treatment/Treatment_comorbidity.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
@@ -43,7 +43,7 @@ rr:predicateObjectMap [
 	].
 
 <CovidTreatment_ComorbidityDrug>
-	rml:logicalSource [ rml:source "/data/drug/Treatment_comorbidity_drug.csv";
+	rml:logicalSource [ rml:source "/data/treatment/Treatment_comorbidity_drug.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
@@ -60,7 +60,7 @@ rr:predicateObjectMap [
 
 
 <CovidTreatment_deduced_DDI>
-	rml:logicalSource [ rml:source "/data/drug/Treatment_deduced_DDI.csv";
+	rml:logicalSource [ rml:source "/data/treatment/Treatment_deduced_DDI.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
