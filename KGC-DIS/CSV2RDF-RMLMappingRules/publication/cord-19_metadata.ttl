@@ -118,7 +118,8 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:externalLink;
 		rr:objectMap [ 
-			rml:reference "url" 
+			rml:reference "url"; 
+            		rr:termType  rr:IRI 
 		]
 	].	
 
