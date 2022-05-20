@@ -46,7 +46,8 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:predictionMethod;
 		rr:objectMap [ 
-			rr:constant "Literature Predictions" 
+			rr:constant "http://research.tib.eu/covid-19/entity/DDI-LPB";
+				     rr:termType rr:IRI 
 		]
 	];		
 	rr:predicateObjectMap [
