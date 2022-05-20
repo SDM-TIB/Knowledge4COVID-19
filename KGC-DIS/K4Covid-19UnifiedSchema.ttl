@@ -305,6 +305,47 @@ xsd:date rdf:type rdfs:Datatype .
                                     <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
                                     rdfs:label "Creator"@en .
 
+<http://research.tib.eu/covid-19/vocab/hasCovidDrug> rdf:type owl:ObjectProperty ;
+                                                    <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                    rdfs:domain covid19:CovidTreatment ;
+                                                    rdfs:range covid19:CovidDrug ;
+                                                    <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
+                                                    rdfs:label "hasCovidDrug"@en .
+
+<http://research.tib.eu/covid-19/vocab/hasComorbidity> rdf:type owl:ObjectProperty ;
+                                                      <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                      rdfs:domain covid19:CovidTreatment ;
+                                                      rdfs:range covid19:Comorbidity ;
+                                                      <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
+                                                      rdfs:label "hasComorbidity"@en .
+
+<http://research.tib.eu/covid-19/vocab/hasComorbidityDrug> rdf:type owl:ObjectProperty ;
+                                                          <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                          rdfs:domain covid19:CovidTreatment ;
+                                                          rdfs:range covid19:CovidDrug ;
+                                                          <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
+                                                          rdfs:label "hasComorbidityDrug"@en .
+
+<http://research.tib.eu/covid-19/vocab/hasTreatment> rdf:type owl:ObjectProperty ;
+                                                      <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                      rdfs:domain covid19:DeducedDrugDrugInteraction ;
+                                                      rdfs:range covid19:Treatment ;
+                                                      <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
+                                                      rdfs:label "hasTreatment"@en .
+
+<http://research.tib.eu/covid-19/vocab/hasTreatment> rdf:type owl:ObjectProperty ;
+                                                      <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                      rdfs:domain covid19:DeducedDrugDrugInteraction ;
+                                                      rdfs:range covid19:Treatment ;
+                                                      <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
+                                                      rdfs:label "hasTreatment"@en .
+
+<http://research.tib.eu/covid-19/vocab/hasTreatment> rdf:type owl:ObjectProperty ;
+                                                      <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                                      rdfs:domain covid19:DeducedDrugDrugInteraction ;
+                                                      rdfs:range covid19:Treatment ;
+                                                      <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
+                                                      rdfs:label "hasTreatment"@en .                                                      
 #################################################################
 #    Data properties
 #################################################################
@@ -423,7 +464,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://research.tib.eu/covid-19/vocab/impact
 <http://research.tib.eu/covid-19/vocab/impact> rdf:type owl:DatatypeProperty ;
-                                      rdfs:domain <http://research.tib.eu/covid-19/vocab/AdverseEvent> ;
+                                      rdfs:domain <http://research.tib.eu/covid-19/vocab/DrugDrugInteraction> ;
                                       rdfs:range rdfs:Literal ;
                                       <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
                                       <http://purl.org/dc/terms/modified> "2020-09-14"@en ;
@@ -1283,9 +1324,16 @@ xsd:date rdf:type rdfs:Datatype .
                                      rdfs:label "CovidDrug"@en .
 
 <http://purl.org/dc/terms/DeducedDrugDrugInteraction> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Interaction> ;
+                                                     rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/DrugDrugInteraction> ;
                                                      <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
                                                      <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
                                                      rdfs:label "DeducedDrugDrugInteraction"@en .
+
+<http://purl.org/dc/terms/Comorbidity> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Concept> ;
+                                       <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                       <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
+                                       rdfs:label "Comorbidity"@en .
+
 ###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
 
