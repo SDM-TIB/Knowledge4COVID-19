@@ -44,7 +44,7 @@
 	rr:predicateObjectMap [
 		rr:predicate covid-19:predictionMethod;
 		rr:objectMap [ 
-			rml:reference "Method" 
+			rr:template "http://research.tib.eu/covid-19/entity/{Method}" 
 		]
 	].	
 		
