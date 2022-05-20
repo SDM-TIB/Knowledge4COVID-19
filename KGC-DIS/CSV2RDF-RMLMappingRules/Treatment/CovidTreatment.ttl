@@ -64,9 +64,15 @@ rr:predicateObjectMap [
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://research.tib.eu/covid-19/entity/{Treatment}";
+		rr:template "http://research.tib.eu/covid-19/entity/{Treatment}_deducedDDI_{precipitantDrug}_{objectDrug}_{effect}";
 		rr:class covid-19:DeducedDrugDrugInteraction
 		
+	];
+	rr:predicateObjectMap [
+		rr:predicate covid-19:hasTreatment;
+		rr:objectMap [
+			rr:template "http://research.tib.eu/covid-19/entity/{Treatment}";
+		]
 	];
 	rr:predicateObjectMap [
 		rr:predicate covid-19:precipitantDrug;
