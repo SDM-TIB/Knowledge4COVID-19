@@ -7,6 +7,8 @@
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
 <#Publication>
@@ -30,19 +32,19 @@
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:title;
+		rr:predicate dct:title;
 		rr:objectMap [ 
 			rml:reference "title" 
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:author;
+		rr:predicate dct:creator;
 		rr:objectMap [ 
 			rml:reference "authors" 
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:doi;
+		rr:predicate bibo:doi;
 		rr:objectMap [ 
 			rr:template "http://research.tib.eu/covid-19/entity/{doi}"
 		]
@@ -54,7 +56,7 @@
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate covid-19:pubmed_id;
+		rr:predicate bibo:pmid;
 		rr:objectMap [ 
 			rr:template "http://research.tib.eu/covid-19/entity/{pubmed_id}"
 		]
