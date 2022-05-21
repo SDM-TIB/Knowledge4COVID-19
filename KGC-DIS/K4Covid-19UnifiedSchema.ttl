@@ -1229,13 +1229,6 @@ xsd:date rdf:type rdfs:Datatype .
                                                rdfs:comment "ranking Score_hIndex of Journal of publication"@en ;
                                                rdfs:label "rankingScore_hIndex"@en .
 
-<http://research.tib.eu/covid-19/vocab/pubmedID> rdf:type owl:DatatypeProperty ;
-                                    rdfs:domain <http://research.tib.eu/covid-19/vocab/Publication> ;
-                                    rdfs:range rdfs:Literal ;
-                                    <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
-                                    <http://purl.org/dc/terms/modified> "2022-05-19"@en ;
-                                    rdfs:comment "PubMed ID."@en ;
-                                    rdfs:label "PubMed ID"@en .
 
 <http://research.tib.eu/covid-19/vocab/PublicationType> rdf:type owl:Class ;
                                            rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Concept> ;
