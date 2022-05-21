@@ -568,14 +568,6 @@ xsd:date rdf:type rdfs:Datatype .
                                             rdfs:label "proteinName"@en .
 
 
-###  http://research.tib.eu/covid-19/vocab/pubmed_id
-<http://research.tib.eu/covid-19/vocab/pubmed_id> rdf:type owl:DatatypeProperty ;
-                                         rdfs:domain <http://research.tib.eu/covid-19/vocab/Publication> ;
-                                         rdfs:range rdfs:Literal ;
-                                         rdfs:comment "Publications"^^xsd:string ;
-                                         rdfs:label "pubmed_id"@en .
-
-
 
 ###  http://research.tib.eu/covid-19/vocab/sha_id
 <http://research.tib.eu/covid-19/vocab/sha_id> rdf:type owl:DatatypeProperty ;
@@ -764,7 +756,7 @@ xsd:date rdf:type rdfs:Datatype .
                                     rdfs:domain dct:Literature ;
                                     rdfs:range rdfs:Literal ;
                                     <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
-                                    rdfs:label "title"@en .
+                                    rdfs:label "Title"@en .
 
 <http://purl.org/ontology/bibo/pmid> rdf:type owl:DatatypeProperty ;
                                     <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
