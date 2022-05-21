@@ -86,8 +86,6 @@ services:
       - "5000:5000"
     networks:
       - k4covid
-    environment:
-      JOIN_STARS_LOCALLY: 'false'
     depends_on:
       - covid19kg
 
