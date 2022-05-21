@@ -11,6 +11,7 @@
 @prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
 <#DrugDrugInteractionNS>
+a rr:TriplesMap;
 	rml:logicalSource [ rml:source "/data/drug/Unsymmetric_DDI_corpus.csv";
 						rml:referenceFormulation ql:CSV 
 						];
@@ -69,6 +70,7 @@
 	].
 
 <#DrugDrugInteractionS>
+a rr:TriplesMap;
 	rml:logicalSource [ rml:source "/data/drug/Symmetric_DDI_corpus.csv";
 	rml:referenceFormulation ql:CSV 
 	];
@@ -126,6 +128,7 @@
 	].
 
 <#Symmetric_DDI>
+a rr:TriplesMap;
 	rml:logicalSource [ rml:source "/data/drug/Symmetric_DDI_corpus.csv";
 						rml:referenceFormulation ql:CSV 
 						];
