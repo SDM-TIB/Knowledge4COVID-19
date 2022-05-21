@@ -12,6 +12,7 @@
 @prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
 <#Publication>
+a rr:TriplesMap;
 	rml:logicalSource [ rml:source "/data/pub/metadata.csv";
 						rml:referenceFormulation ql:CSV 
 						];
