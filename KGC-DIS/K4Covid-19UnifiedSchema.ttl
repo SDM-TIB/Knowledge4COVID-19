@@ -414,15 +414,6 @@ xsd:date rdf:type rdfs:Datatype .
                                              rdfs:label "DisorderLabel"@en .
 
 
-###  http://research.tib.eu/covid-19/vocab/doi
-<http://research.tib.eu/covid-19/vocab/doi> rdf:type owl:DatatypeProperty ;
-                                   rdfs:domain <http://research.tib.eu/covid-19/vocab/Publication> ;
-                                   rdfs:range rdfs:Literal ;
-                                   <http://purl.org/dc/terms/creator> "anery-patel"^^xsd:string ;
-                                   <http://purl.org/dc/terms/modified> "2021-04-13T00:00:00"@en ;
-                                   rdfs:comment "DOI of a publication"@en ;
-                                   rdfs:label "doi"@en .
-
 
 ###  http://research.tib.eu/covid-19/vocab/dse_AvgFrequency
 <http://research.tib.eu/covid-19/vocab/dse_AvgFrequency> rdf:type owl:DatatypeProperty ;
@@ -776,9 +767,16 @@ xsd:date rdf:type rdfs:Datatype .
                                     rdfs:label "PubMedID"@en .
 
 <http://purl.org/ontology/bibo/pmid> rdf:type owl:DatatypeProperty ;
-                                    <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                    <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
                                     rdfs:domain dct:Literature ;
                                     rdfs:range rdfs:Literal ;
+                                    <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
+                                    rdfs:label "PubMedID"@en .
+
+<http://research.tib.eu/covid-19/vocab/pmid> rdf:type owl:ObjectProperty ;
+                                    <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
+                                    rdfs:domain <http://research.tib.eu/covid-19/vocab/Publication> ;
+                                    rdfs:range <http://research.tib.eu/covid-19/vocab/Publication> ;
                                     <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
                                     rdfs:label "PubMedID"@en .
 
@@ -789,6 +787,12 @@ xsd:date rdf:type rdfs:Datatype .
                                     <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
                                     rdfs:label "DOI"@en .
 
+<http://research.tib.eu/covid-19/vocab/doi> rdf:type owl:ObjectProperty ;
+                                    <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
+                                    rdfs:domain <http://research.tib.eu/covid-19/vocab/Publication> ;
+                                    rdfs:range <http://research.tib.eu/covid-19/vocab/Publication> ;
+                                    <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
+                                    rdfs:label "DOI"@en .
 
 #################################################################
 #    Classes
@@ -1351,6 +1355,18 @@ xsd:date rdf:type rdfs:Datatype .
                                        <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
                                        rdfs:label "Comorbidity"@en .
 
+<http://research.tib.eu/covid-19/vocab/PubmedPublication> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Publication> ;
+                                       <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
+                                       <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
+                                       rdfs:label "PubmedPublication"@en .
+
+<http://research.tib.eu/covid-19/vocab/DOI> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Concept> ;
+                                       <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
+                                       <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
+                                       rdfs:label "Digital Object Identifier"@en .
+
 ### Equivalent Classes
 covid19:Protein owl:equivalentClass up:Protein, dbr:Protein, wikidata:Q8054 .
 covid19:Treatment owl:equivalentClass wikidata:Q179661, dbo:treatment, dbr:Therapy .
@@ -1365,7 +1381,7 @@ covid19:Publication owl:equivalentClass dbr:Publication, wikidata:Q732577, sio:S
 covid19:DrugDrugInteraction owl:equivalentClass dbr:Drug_interaction, wikidata:Q718753, sio:SIO_001006 .
 covid19:DrugSideEffectInteraction owl:equivalentClass dbr:Side_effect, sio:SIO_001005, wikidata:Q45959 .
 covid19:Agent owl:equivalentClass dct:Agent .
-
+covid19:DOI owl:equivalentClass dbr:Digital_object_identifier, wikidata:Q25670 .
 
 
 ### Equivalent Properties
