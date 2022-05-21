@@ -1309,44 +1309,44 @@ xsd:date rdf:type rdfs:Datatype .
                                            <http://purl.org/dc/terms/modified> "2022-05-19"@en ;
                                            rdfs:label "ConceptAnnotation"@en .
 
-<http://purl.org/dc/terms/Agent> rdf:type owl:Class ;
-                                 rdfs:subClassOf covid19:Concept ;
+<http://research.tib.eu/covid-19/vocab/Agent> rdf:type owl:Class ;
+                                 rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Concept> ;
                                  <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
                                  <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
                                  rdfs:label "Agent"@en .
 
-<http://purl.org/dc/terms/Literature> rdf:type owl:Class ;
-                                 rdfs:subClassOf covid19:Concept ;
+<http://research.tib.eu/covid-19/vocab/Literature> rdf:type owl:Class ;
+                                 rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Concept> ;
                                  <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
                                  <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
                                  rdfs:label "Literature"@en .
 
-<http://purl.org/dc/terms/Treatment> rdf:type owl:Class ;
-                                         rdfs:subClassOf <http://purl.org/dc/terms/Concept> ;
+<http://research.tib.eu/covid-19/vocab/Treatment> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Concept> ;
                                          <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
                                          <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
                                          rdfs:label "Treatment"@en .
 
-<http://purl.org/dc/terms/CovidTreatment> rdf:type owl:Class ;
+<http://research.tib.eu/covid-19/vocab/CovidTreatment> rdf:type owl:Class ;
                                          rdfs:subClassOf <http://purl.org/dc/terms/Treatment> ;
                                          <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
                                          <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
                                          rdfs:label "CovidTreatment"@en .
 
-<http://purl.org/dc/terms/CovidDrug> rdf:type owl:Class ;
+<http://research.tib.eu/covid-19/vocab/CovidDrug> rdf:type owl:Class ;
                                      rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Drug> ;
                                      <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
                                      <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
                                      rdfs:label "CovidDrug"@en .
 
-<http://purl.org/dc/terms/DeducedDrugDrugInteraction> rdf:type owl:Class ;
+<http://research.tib.eu/covid-19/vocab/DeducedDrugDrugInteraction> rdf:type owl:Class ;
                                                      rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/DrugDrugInteraction> ;
                                                      <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
                                                      <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
                                                      rdfs:label "DeducedDrugDrugInteraction"@en .
 
-<http://purl.org/dc/terms/Comorbidity> rdf:type owl:Class ;
-                                       rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Concept> ;
+<http://research.tib.eu/covid-19/vocab/Comorbidity> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Disorder> ;
                                        <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
                                        <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
                                        rdfs:label "Comorbidity"@en .
@@ -1364,6 +1364,8 @@ covid19:Target owl:equivalentClass wikidata:Q658882, sio:SIO_010423 .
 covid19:Publication owl:equivalentClass dbr:Publication, wikidata:Q732577, sio:SIO_000087, obo:IAO_0000311 .
 covid19:DrugDrugInteraction owl:equivalentClass dbr:Drug_interaction, wikidata:Q718753, sio:SIO_001006 .
 covid19:DrugSideEffectInteraction owl:equivalentClass dbr:Side_effect, sio:SIO_001005, wikidata:Q45959 .
+covid19:Agent owl:equivalentClass dct:Agent .
+
 
 
 ### Equivalent Properties
