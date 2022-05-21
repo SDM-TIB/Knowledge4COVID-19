@@ -11,6 +11,7 @@
 
 
 <CUIs_dbpedia_wikidata_annotation_dictionary_label_cui_Covid19>
+a rr:TriplesMap;
     rml:logicalSource [ rml:source "/data/annotation/UMLS_combined.csv";
                         rml:referenceFormulation ql:CSV 
                         ];
@@ -31,6 +32,7 @@
     ].
 
 <wikidata_annotation_dictionary_label_cui_Covid19>
+a rr:TriplesMap;
     rml:logicalSource [ rml:source "/data/annotation/UMLS_combined.csv";
                         rml:referenceFormulation ql:CSV 
                         ];
@@ -52,6 +54,7 @@
     ].
 
 <dbpedia_annotation_dictionary_label_cui_Covid19>
+a rr:TriplesMap;
     rml:logicalSource [ rml:source "/data/annotation/UMLS_combined.csv";
                         rml:referenceFormulation ql:CSV 
                         ];
