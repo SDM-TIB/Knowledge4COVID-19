@@ -10,6 +10,7 @@
 @prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
 <DrugEnzymePrediction>
+a rr:TriplesMap;
 	rml:logicalSource [ rml:source "/data/drug_predictions/DrugEnzyme_prediction_LUH.csv";
 						rml:referenceFormulation ql:CSV 
 						];
