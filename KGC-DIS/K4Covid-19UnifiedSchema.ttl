@@ -8,6 +8,15 @@
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix covid19: <http://research.tib.eu/covid-19/vocab/>.
 @base <http://www.w3.org/2002/07/owl#> .
+@prefix up: <http://purl.uniprot.org/core/> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix sio: <https://semanticscience.org/resource/> .
+
+
 
 
 <https://github.com/SDM-TIB/Knowledge4COVID-19/blob/main/KGC-DIS/K4Covid-19UnifiedSchema.ttl> rdf:type owl:Ontology.
@@ -904,7 +913,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://research.tib.eu/covid-19/vocab/DrugDrugPrediction
 <http://research.tib.eu/covid-19/vocab/DrugDrugPrediction> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Interaction> ;
+                                                  rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/DrugDrugInteraction> ;
                                                   <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
                                                   <http://purl.org/dc/terms/modified> "2020-10-29"@en ;
                                                   rdfs:comment "Represents the predicted relation between drugs."@en ;
@@ -1118,7 +1127,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://research.tib.eu/covid-19/vocab/PharmacodynamicDrugDrugInteraction
 <http://research.tib.eu/covid-19/vocab/PharmacodynamicDrugDrugInteraction> rdf:type owl:Class ;
-                                                            rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Interaction> ;
+                                                            rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/DrugDrugInteraction> ;
                                                             <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
                                                             <http://purl.org/dc/terms/modified> "2022-04-05"@en ;
                                                             rdfs:comment "Represents the symmetric relation between drugs."@en ;
@@ -1127,7 +1136,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://research.tib.eu/covid-19/vocab/PharmacokyneticDrugDrugInteraction
 <http://research.tib.eu/covid-19/vocab/PharmacokyneticDrugDrugInteraction> rdf:type owl:Class ;
-                                                            rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Interaction> ;
+                                                            rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/DrugDrugInteraction> ;
                                                             <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
                                                             <http://purl.org/dc/terms/modified> "2022-04-05"@en ;
                                                             rdfs:comment "Represents the unsymmetric relation between drugs."@en ;
@@ -1141,7 +1150,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://research.tib.eu/covid-19/vocab/Target
 <http://research.tib.eu/covid-19/vocab/Target> rdf:type owl:Class ;
-                                      rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Concept> ;
+                                      rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Protein>;
                                       <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
                                       <http://purl.org/dc/terms/modified> "2020-10-30"@en ;
                                       rdfs:comment "A drug target is a molecule in the body, usually a protein, that is intrinsically associated with a particular disease process and that could be addressed by a drug to produce a desired therapeutic effect."@en ;
@@ -1341,6 +1350,25 @@ xsd:date rdf:type rdfs:Datatype .
                                        <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
                                        <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
                                        rdfs:label "Comorbidity"@en .
+
+### Equivalent Classes
+covid19:Protein owl:equivalentClass up:Protein, dbr:Protein, wikidata:Q8054 .
+covid19:Treatment owl:equivalentClass wikidata:Q179661, dbo:treatment, dbr:Therapy .
+covid19:CovidTreatment owl:equivalentClass wikidata:Q96337364 .
+covid19:Phenotype owl:equivalentClass obo:OGMS_0000023, sio:SIO_001280, dbr:Phenotype, wikidata:Q104053 .
+covid19:Drug owl:equivalentClass dbo:Drug, wikidata:Q8386 .
+covid19:Gene owl:equivalentClass dbo:Gene, dbr:Gene, wikidata:Q7187, up:Gene, sio:SIO_010035, obo:GO_0010467 .
+covid19:Disorder owl:equivalentClass wikidata:Q12136, dbr:Disease, up:Disease, obo:OGMS_0000031, sio:SIO_010299 . 
+covid19:Enzyme owl:equivalentClass dbo:Enzyme, dbr:Enzyme, up:Enzyme, obo:OBI_0000427, sio:SIO_010343, wikidata:Q8047 .
+covid19:Target owl:equivalentClass wikidata:Q658882, sio:SIO_010423 .
+covid19:Publication owl:equivalentClass dbr:Publication, wikidata:Q732577, sio:SIO_000087, obo:IAO_0000311 .
+covid19:DrugDrugInteraction owl:equivalentClass dbr:Drug_interaction, wikidata:Q718753, sio:SIO_001006 .
+covid19:DrugSideEffectInteraction owl:equivalentClass dbr:Side_effect, sio:SIO_001005, wikidata:Q45959 .
+
+
+### Equivalent Properties
+covid19:doi owl:equivalentProperty bibo:doi .
+covid19:pmid owl:equivalentProperty bibo:pmid .
 
 ###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
 
