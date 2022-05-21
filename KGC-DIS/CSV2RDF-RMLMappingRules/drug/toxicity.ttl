@@ -10,6 +10,7 @@
 @prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
 <Phenotype>
+a rr:TriplesMap;
 	rml:logicalSource [ rml:source "/data/drug/toxicitiesAndTypes_processed.csv";
 						rml:referenceFormulation ql:CSV
 						];
