@@ -10,6 +10,7 @@
 @prefix covid-19: <http://research.tib.eu/covid-19/vocab/> .
 
 <DrugProteinInteraction>
+a rr:TriplesMap;
 	rml:logicalSource [ rml:source "/data/drug/DrugsAndProteins.csv";
 						rml:referenceFormulation ql:CSV 
 						];
@@ -43,6 +44,7 @@
 	].
 		
 <Protein>
+a rr:TriplesMap;
 	rml:logicalSource [ rml:source "/data/drug/DrugsAndProteins.csv";
 						rml:referenceFormulation ql:CSV 
 						];
