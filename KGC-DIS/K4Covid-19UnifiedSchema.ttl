@@ -764,7 +764,7 @@ xsd:date rdf:type rdfs:Datatype .
                                     rdfs:domain dct:Literature ;
                                     rdfs:range rdfs:Literal ;
                                     <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
-                                    rdfs:label "PubMedID"@en .
+                                    rdfs:label "title"@en .
 
 <http://purl.org/ontology/bibo/pmid> rdf:type owl:DatatypeProperty ;
                                     <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
