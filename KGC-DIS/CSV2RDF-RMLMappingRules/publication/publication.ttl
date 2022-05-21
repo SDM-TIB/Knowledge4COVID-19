@@ -65,7 +65,7 @@
     rr:predicateObjectMap [
         rr:predicate covid-19:publication_isRelatedTo_Disease;
         rr:objectMap [
-        rr:template  "http://research.tib.eu/covid-19/entity/LungCancer"
+        rr:template  "http://research.tib.eu/covid-19/entity/Covid-19"
         ]
     ];
     rr:predicateObjectMap [
