@@ -76,7 +76,7 @@ services:
     tty: true
     
   detrusty:
-    image: sdmtib/detrusty:0.4.2
+    image: sdmtib/detrusty:0.4.3
     hostname: detrusty
     container_name: detrusty
     domainname: k4covid
