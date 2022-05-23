@@ -11,7 +11,7 @@ The following figure depicts the steps of the KG creation process.
 Steps 1 and 2 are done at the level of Scientific Open Data and Publications DEs, while steps 3 and 4 are conducted at the level of Knowledge4COVID-19 DE to create the Knowledge4COVID-19 KG.
 First, data is ingested and described in terms of metadata (step 1), e.g., title and abstract of the publications, and drug-drug interactions.
 Knowledge extraction methods recognize biomedical entities from textual data and link them to [UMLS](https://www.nlm.nih.gov/research/umls/index.html), and to resources in [DBpedia](https://www.dbpedia.org/), [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page), [Uniprot](https://www.uniprot.org/help/uniprotkb), and [DrugBank](https://go.drugbank.com/).
-A total of 12,223,409 UMLS annotations have been extracted by FALCON.
+A total of 12,223,409 UMLS annotations have been extracted by [FALCON](https://github.com/SDM-TIB/falcon2.0).
 These annotations are used for solving entity alignment and semantic data integration of biomedical entities in the Knowledge4COVID-19 KG (e.g., drugs, phenotypes, side effects, and adverse events).
 Moreover, there are 3,739,445 links to DBpedia, 3,476,435 links to Wikidata, 5,248 links to the Uniprot RDF KG, and 3,427 links to DrugBank.
 The data sources shared by these DEs are mapped to the [Knowledge4COVID-19 unified schema](https://github.com/SDM-TIB/Knowledge4COVID-19/blob/main/KGC-DIS/K4Covid-19UnifiedSchema.ttl).
