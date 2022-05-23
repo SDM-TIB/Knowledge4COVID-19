@@ -19,8 +19,8 @@ logger.setLevel(logging.INFO)
 
 
 
-#KG = os.environ["ENDPOINT"]
-KG = "http://node3.research.tib.eu:8891/sparql"
+KG = os.environ["ENDPOINT"]
+#KG = "http://node3.research.tib.eu:8891/sparql"
 EMPTY_JSON = "{}"
 
 app = Flask(__name__)
