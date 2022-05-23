@@ -53,7 +53,18 @@ services:
       - "8892:8890"
     networks:
       - k4covid
-         
+      
+  covid19_exp_api:
+    image: sdmtib/covid19_exploration:2.0
+    hostname: covid19_exploration_api
+    container_name: covid19_exploration_api
+    domainname: k4covid
+    ports:
+      - "18873:5000"
+    environment:
+      - ENDPOINT=http://node3.research.tib.eu:8891/sparql
+    networks:
+      - k4covid         
   dereferencing:
     image: asanchez75/pubby:v0.3.3
     hostname: pubby
