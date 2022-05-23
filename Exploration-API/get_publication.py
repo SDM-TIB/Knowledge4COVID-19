@@ -21,7 +21,7 @@ def get_publication(input_cui_uri, sparql):
         ?ann <http://research.tib.eu/covid-19/vocab/hasSemanticAnnotation> ?semAnn.
         ?semAnn <http://research.tib.eu/covid-19/vocab/hasCUIAnnotation> ?drugCUI.
         ?ann <http://research.tib.eu/covid-19/vocab/annotates> ?pub.
-        ?pub <http://research.tib.eu/covid-19/vocab/title> ?title.
+        ?pub <http://purl.org/dc/terms/title> ?title.
         ?pub <http://research.tib.eu/covid-19/vocab/year> ?year.
         ?pub <http://research.tib.eu/covid-19/vocab/journal> ?journal.
         ?pub <http://research.tib.eu/covid-19/vocab/externalLink> ?url.
@@ -43,20 +43,23 @@ def get_publication(input_cui_uri, sparql):
         url = r['url']['value']
         drug = (r['drug']['value']).replace('http://research.tib.eu/covid-19/vocab/', '')
         drugLabel = r['drugLabel']['value']
+        #drugLabel=[x.upper() for x in drugLabel]
+        #drugLabel=list(set(drugLabel))
+        #drugLabel=drugLabel[0]
 
-        if pub not in dictionary['Publication:']:
-            dictionary['Publication:'][pub] = {}
-            dictionary['Publication:'][pub]['year:'] = year
-            dictionary['Publication:'][pub]['journal:'] = journal
-            dictionary['Publication:'][pub]['title:'] = title
-            dictionary['Publication:'][pub]['url:'] = url
-            dictionary['Publication:'][pub]['Drug:'] = []
-            dictionary['Publication:'][pub]['DrugLabel:'] = []
-            dictionary['Publication:'][pub]['Drug:'].append(drug)
-            dictionary['Publication:'][pub]['DrugLabel:'].append(drugLabel)
-        else:
-            dictionary['Publication:'][pub]['Drug:'].append(drug)
-            dictionary['Publication:'][pub]['DrugLabel:'].append(drugLabel)
+        #if pub not in dictionary['Publication:']:
+        dictionary['Publication:'][pub] = {}
+        dictionary['Publication:'][pub]['year:'] = year
+        dictionary['Publication:'][pub]['journal:'] = journal
+        dictionary['Publication:'][pub]['title:'] = title
+        dictionary['Publication:'][pub]['url:'] = url
+        dictionary['Publication:'][pub]['Drug:'] = []
+        dictionary['Publication:'][pub]['DrugLabel:'] = []
+        dictionary['Publication:'][pub]['Drug:'].append(drug)
+        dictionary['Publication:'][pub]['DrugLabel:'].append(drugLabel)
+        #else:
+            #dictionary['Publication:'][pub]['Drug:'].append(drug)
+            #dictionary['Publication:'][pub]['DrugLabel:'].append(drugLabel)
 
     '''with open('publication.json', 'w') as fp:
         json.dump(dictionary, fp)'''
