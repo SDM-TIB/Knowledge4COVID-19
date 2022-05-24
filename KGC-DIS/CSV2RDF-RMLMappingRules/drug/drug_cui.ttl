@@ -25,7 +25,7 @@ a rr:TriplesMap;
 		]
 	];
 	rr:predicateObjectMap [
-		rr:predicate rdfs:label;
+		rr:predicate covid-19:drugLabel;
 		rr:objectMap [
 			rml:reference "DrugName";
 		]
