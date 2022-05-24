@@ -72,8 +72,8 @@ curl --header "Content-Type: application/json" \
   --request POST \
   --data '{
    "Drugs":[
-  	"C0000970",
-  	"C0028978",
+  	"C0765273",
+  	"C0995188",
   	"C0009214"
    ]
 }' \
