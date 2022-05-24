@@ -23,6 +23,12 @@ a rr:TriplesMap;
 		rr:objectMap [
 			rr:template "http://research.tib.eu/covid-19/entity/{CUI_ID}";
 		]
+	];
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label;
+		rr:objectMap [
+			rml:reference "DrugName";
+		]
 	].
 
 <Drug_covid>
