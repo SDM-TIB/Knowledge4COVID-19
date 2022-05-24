@@ -1,6 +1,6 @@
 [
   {
-    "rootType": "http://research.tib.eu/covid-19/vocab/ADMINISTERED_TO",
+    "rootType": "https://dbpedia.org/class/yago/Organization108008335",
     "predicates": [
       {
         "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -13,52 +13,7 @@
         ]
       },
       {
-        "predicate": "http://research.tib.eu/covid-19/vocab/confidence",
-        "range": [],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/negation",
-        "range": [],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_annotation",
-        "range": [
-          "http://research.tib.eu/covid-19/vocab/Annotation"
-        ],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
-        "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
-        ],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_Disease",
+        "predicate": "http://www.w3.org/ns/prov#hasGeneratedBy",
         "range": [],
         "policies": [
           {
@@ -68,21 +23,13 @@
         ]
       }
     ],
-    "linkedTo": [
-      "http://research.tib.eu/covid-19/vocab/Annotation",
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
-      "http://research.tib.eu/covid-19/vocab/Publication"
-    ],
+    "linkedTo": [],
     "wrappers": [
       {
         "url": "http://covid19kg:8890/sparql",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-          "http://research.tib.eu/covid-19/vocab/confidence",
-          "http://research.tib.eu/covid-19/vocab/negation",
-          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_annotation",
-          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
-          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_Disease"
+          "http://www.w3.org/ns/prov#hasGeneratedBy"
         ],
         "urlparam": "",
         "wrapperType": "SPARQLEndpoint"
@@ -90,7 +37,7 @@
     ]
   },
   {
-    "rootType": "http://research.tib.eu/covid-19/vocab/LOCATION_OF",
+    "rootType": "https://dbpedia.org/class/yago/Organism100004475",
     "predicates": [
       {
         "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -103,52 +50,7 @@
         ]
       },
       {
-        "predicate": "http://research.tib.eu/covid-19/vocab/confidence",
-        "range": [],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/negation",
-        "range": [],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_annotation",
-        "range": [
-          "http://research.tib.eu/covid-19/vocab/Annotation"
-        ],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
-        "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
-        ],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_Disease",
+        "predicate": "http://www.w3.org/ns/prov#hasGeneratedBy",
         "range": [],
         "policies": [
           {
@@ -158,21 +60,13 @@
         ]
       }
     ],
-    "linkedTo": [
-      "http://research.tib.eu/covid-19/vocab/Annotation",
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
-      "http://research.tib.eu/covid-19/vocab/Publication"
-    ],
+    "linkedTo": [],
     "wrappers": [
       {
         "url": "http://covid19kg:8890/sparql",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-          "http://research.tib.eu/covid-19/vocab/confidence",
-          "http://research.tib.eu/covid-19/vocab/negation",
-          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_annotation",
-          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
-          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_Disease"
+          "http://www.w3.org/ns/prov#hasGeneratedBy"
         ],
         "urlparam": "",
         "wrapperType": "SPARQLEndpoint"
@@ -180,7 +74,7 @@
     ]
   },
   {
-    "rootType": "http://research.tib.eu/covid-19/vocab/PART_OF",
+    "rootType": "https://dbpedia.org/ontology/Species",
     "predicates": [
       {
         "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -193,52 +87,7 @@
         ]
       },
       {
-        "predicate": "http://research.tib.eu/covid-19/vocab/confidence",
-        "range": [],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/negation",
-        "range": [],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_annotation",
-        "range": [
-          "http://research.tib.eu/covid-19/vocab/Annotation"
-        ],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
-        "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
-        ],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_Disease",
+        "predicate": "http://www.w3.org/ns/prov#hasGeneratedBy",
         "range": [],
         "policies": [
           {
@@ -248,21 +97,13 @@
         ]
       }
     ],
-    "linkedTo": [
-      "http://research.tib.eu/covid-19/vocab/Annotation",
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
-      "http://research.tib.eu/covid-19/vocab/Publication"
-    ],
+    "linkedTo": [],
     "wrappers": [
       {
         "url": "http://covid19kg:8890/sparql",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-          "http://research.tib.eu/covid-19/vocab/confidence",
-          "http://research.tib.eu/covid-19/vocab/negation",
-          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_annotation",
-          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
-          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_Disease"
+          "http://www.w3.org/ns/prov#hasGeneratedBy"
         ],
         "urlparam": "",
         "wrapperType": "SPARQLEndpoint"
@@ -270,7 +111,7 @@
     ]
   },
   {
-    "rootType": "http://research.tib.eu/covid-19/vocab/PROCESS_OF",
+    "rootType": "http://dbpedia.org/ontology/ChemicalSubstance",
     "predicates": [
       {
         "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -283,52 +124,7 @@
         ]
       },
       {
-        "predicate": "http://research.tib.eu/covid-19/vocab/confidence",
-        "range": [],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/negation",
-        "range": [],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_annotation",
-        "range": [
-          "http://research.tib.eu/covid-19/vocab/Annotation"
-        ],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
-        "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
-        ],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_Disease",
+        "predicate": "http://www.w3.org/ns/prov#hasGeneratedBy",
         "range": [],
         "policies": [
           {
@@ -338,21 +134,87 @@
         ]
       }
     ],
-    "linkedTo": [
-      "http://research.tib.eu/covid-19/vocab/Annotation",
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
-      "http://research.tib.eu/covid-19/vocab/Publication"
-    ],
+    "linkedTo": [],
     "wrappers": [
       {
         "url": "http://covid19kg:8890/sparql",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-          "http://research.tib.eu/covid-19/vocab/confidence",
-          "http://research.tib.eu/covid-19/vocab/negation",
-          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_annotation",
-          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
-          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_Disease"
+          "http://www.w3.org/ns/prov#hasGeneratedBy"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://dbpedia.org/ontology/Disease",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/ns/prov#hasGeneratedBy",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/ns/prov#hasGeneratedBy"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://dbpedia.org/ontology/PersonFunction",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/ns/prov#hasGeneratedBy",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://www.w3.org/ns/prov#hasGeneratedBy"
         ],
         "urlparam": "",
         "wrapperType": "SPARQLEndpoint"
@@ -407,8 +269,8 @@
       {
         "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
         "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
         ],
         "policies": [
           {
@@ -430,8 +292,8 @@
     ],
     "linkedTo": [
       "http://research.tib.eu/covid-19/vocab/Annotation",
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
-      "http://research.tib.eu/covid-19/vocab/Publication"
+      "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author"
     ],
     "wrappers": [
       {
@@ -497,8 +359,8 @@
       {
         "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
         "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
         ],
         "policies": [
           {
@@ -520,8 +382,8 @@
     ],
     "linkedTo": [
       "http://research.tib.eu/covid-19/vocab/Annotation",
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
-      "http://research.tib.eu/covid-19/vocab/Publication"
+      "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author"
     ],
     "wrappers": [
       {
@@ -587,8 +449,8 @@
       {
         "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
         "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
         ],
         "policies": [
           {
@@ -610,8 +472,8 @@
     ],
     "linkedTo": [
       "http://research.tib.eu/covid-19/vocab/Annotation",
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
-      "http://research.tib.eu/covid-19/vocab/Publication"
+      "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author"
     ],
     "wrappers": [
       {
@@ -645,19 +507,19 @@
       {
         "predicate": "http://www.w3.org/2002/07/owl#sameAs",
         "range": [
-          "https://dbpedia.org/ontology/Species",
-          "http://dbpedia.org/ontology/Disease",
-          "http://www.wikidata.org/entity/Q3736076",
-          "https://dbpedia.org/class/yago/Organization108008335",
-          "http://dbpedia.org/ontology/PersonFunction",
-          "http://www.wikidata.org/entity/Q79529",
           "https://dbpedia.org/class/yago/Organism100004475",
-          "http://www.wikidata.org/entity/Q12136",
-          "http://www.wikidata.org/entity/Q514",
-          "http://dbpedia.org/ontology/Gene",
-          "http://dbpedia.org/ontology/ChemicalSubstance",
+          "https://dbpedia.org/class/yago/Organization108008335",
+          "http://www.wikidata.org/entity/Q863908",
           "http://www.wikidata.org/entity/Q43229",
-          "http://www.wikidata.org/entity/Q863908"
+          "http://www.wikidata.org/entity/Q514",
+          "http://dbpedia.org/ontology/PersonFunction",
+          "http://www.wikidata.org/entity/Q3736076",
+          "https://dbpedia.org/ontology/Species",
+          "http://dbpedia.org/ontology/Gene",
+          "http://dbpedia.org/ontology/Disease",
+          "http://www.wikidata.org/entity/Q12136",
+          "http://www.wikidata.org/entity/Q79529",
+          "http://dbpedia.org/ontology/ChemicalSubstance"
         ],
         "policies": [
           {
@@ -728,19 +590,19 @@
       }
     ],
     "linkedTo": [
-      "https://dbpedia.org/ontology/Species",
-      "http://dbpedia.org/ontology/Disease",
-      "http://www.wikidata.org/entity/Q3736076",
-      "https://dbpedia.org/class/yago/Organization108008335",
-      "http://dbpedia.org/ontology/PersonFunction",
-      "http://www.wikidata.org/entity/Q79529",
       "https://dbpedia.org/class/yago/Organism100004475",
-      "http://www.wikidata.org/entity/Q12136",
-      "http://www.wikidata.org/entity/Q514",
-      "http://dbpedia.org/ontology/Gene",
-      "http://dbpedia.org/ontology/ChemicalSubstance",
+      "https://dbpedia.org/class/yago/Organization108008335",
+      "http://www.wikidata.org/entity/Q863908",
       "http://www.wikidata.org/entity/Q43229",
-      "http://www.wikidata.org/entity/Q863908"
+      "http://www.wikidata.org/entity/Q514",
+      "http://dbpedia.org/ontology/PersonFunction",
+      "http://www.wikidata.org/entity/Q3736076",
+      "https://dbpedia.org/ontology/Species",
+      "http://dbpedia.org/ontology/Gene",
+      "http://dbpedia.org/ontology/Disease",
+      "http://www.wikidata.org/entity/Q12136",
+      "http://www.wikidata.org/entity/Q79529",
+      "http://dbpedia.org/ontology/ChemicalSubstance"
     ],
     "wrappers": [
       {
@@ -926,8 +788,8 @@
       {
         "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
         "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
         ],
         "policies": [
           {
@@ -949,8 +811,8 @@
     ],
     "linkedTo": [
       "http://research.tib.eu/covid-19/vocab/Annotation",
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
-      "http://research.tib.eu/covid-19/vocab/Publication"
+      "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author"
     ],
     "wrappers": [
       {
@@ -1016,8 +878,8 @@
       {
         "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
         "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
         ],
         "policies": [
           {
@@ -1039,8 +901,8 @@
     ],
     "linkedTo": [
       "http://research.tib.eu/covid-19/vocab/Annotation",
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
-      "http://research.tib.eu/covid-19/vocab/Publication"
+      "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author"
     ],
     "wrappers": [
       {
@@ -1149,6 +1011,16 @@
         ]
       },
       {
+        "predicate": "http://research.tib.eu/covid-19/vocab/drugLabel",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
         "predicate": "http://research.tib.eu/covid-19/vocab/drug_isRelatedTo_dse",
         "range": [
           "http://research.tib.eu/covid-19/vocab/DrugToxicityInteraction"
@@ -1195,6 +1067,7 @@
         "url": "http://covid19kg:8890/sparql",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://research.tib.eu/covid-19/vocab/drugLabel",
           "http://research.tib.eu/covid-19/vocab/drug_isRelatedTo_dse",
           "http://research.tib.eu/covid-19/vocab/hasCUIAnnotation",
           "http://research.tib.eu/covid-19/vocab/hasSideEffect"
@@ -1220,8 +1093,8 @@
       {
         "predicate": "http://research.tib.eu/covid-19/vocab/hasComorbidity",
         "range": [
-          "http://research.tib.eu/covid-19/vocab/Disorder",
-          "http://research.tib.eu/covid-19/vocab/Phenotype"
+          "http://research.tib.eu/covid-19/vocab/Phenotype",
+          "http://research.tib.eu/covid-19/vocab/Disorder"
         ],
         "policies": [
           {
@@ -1258,8 +1131,8 @@
       }
     ],
     "linkedTo": [
-      "http://research.tib.eu/covid-19/vocab/Disorder",
       "http://research.tib.eu/covid-19/vocab/Phenotype",
+      "http://research.tib.eu/covid-19/vocab/Disorder",
       "http://research.tib.eu/covid-19/vocab/CovidDrug",
       "http://research.tib.eu/covid-19/vocab/Drug",
       "http://research.tib.eu/covid-19/vocab/CovidDrug",
@@ -1327,8 +1200,8 @@
       {
         "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
         "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
         ],
         "policies": [
           {
@@ -1350,8 +1223,8 @@
     ],
     "linkedTo": [
       "http://research.tib.eu/covid-19/vocab/Annotation",
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
-      "http://research.tib.eu/covid-19/vocab/Publication"
+      "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author"
     ],
     "wrappers": [
       {
@@ -1550,6 +1423,16 @@
         ]
       },
       {
+        "predicate": "http://research.tib.eu/covid-19/vocab/drugLabel",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
         "predicate": "http://research.tib.eu/covid-19/vocab/drug_isRelatedTo_dse",
         "range": [
           "http://research.tib.eu/covid-19/vocab/DrugToxicityInteraction"
@@ -1596,6 +1479,7 @@
         "url": "http://covid19kg:8890/sparql",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://research.tib.eu/covid-19/vocab/drugLabel",
           "http://research.tib.eu/covid-19/vocab/drug_isRelatedTo_dse",
           "http://research.tib.eu/covid-19/vocab/hasCUIAnnotation",
           "http://research.tib.eu/covid-19/vocab/hasSideEffect"
@@ -1684,31 +1568,6 @@
         ]
       },
       {
-        "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
-        "range": [
-          "http://research.tib.eu/covid-19/vocab/DrugDrugInteraction"
-        ],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/affects",
-        "range": [
-          "http://research.tib.eu/covid-19/vocab/CovidDrug",
-          "http://research.tib.eu/covid-19/vocab/Drug"
-        ],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
         "predicate": "http://research.tib.eu/covid-19/vocab/effect",
         "range": [
           "http://research.tib.eu/covid-19/vocab/Annotation"
@@ -1733,19 +1592,6 @@
       {
         "predicate": "http://research.tib.eu/covid-19/vocab/interaction",
         "range": [],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/isAffected",
-        "range": [
-          "http://research.tib.eu/covid-19/vocab/CovidDrug",
-          "http://research.tib.eu/covid-19/vocab/Drug"
-        ],
         "policies": [
           {
             "dataset": "http://covid19kg:8890/sparql",
@@ -1814,6 +1660,44 @@
         ]
       },
       {
+        "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "range": [
+          "http://research.tib.eu/covid-19/vocab/DrugDrugInteraction"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://research.tib.eu/covid-19/vocab/affects",
+        "range": [
+          "http://research.tib.eu/covid-19/vocab/CovidDrug",
+          "http://research.tib.eu/covid-19/vocab/Drug"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://research.tib.eu/covid-19/vocab/isAffected",
+        "range": [
+          "http://research.tib.eu/covid-19/vocab/CovidDrug",
+          "http://research.tib.eu/covid-19/vocab/Drug"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
         "predicate": "http://www.w3.org/ns/prov#hadPrimarySource",
         "range": [],
         "policies": [
@@ -1825,16 +1709,16 @@
       }
     ],
     "linkedTo": [
+      "http://research.tib.eu/covid-19/vocab/Annotation",
+      "http://research.tib.eu/covid-19/vocab/Annotation",
+      "http://research.tib.eu/covid-19/vocab/CovidDrug",
+      "http://research.tib.eu/covid-19/vocab/Drug",
+      "http://research.tib.eu/covid-19/vocab/Annotation",
+      "http://research.tib.eu/covid-19/vocab/CovidDrug",
+      "http://research.tib.eu/covid-19/vocab/Drug",
       "http://research.tib.eu/covid-19/vocab/DrugDrugInteraction",
       "http://research.tib.eu/covid-19/vocab/CovidDrug",
       "http://research.tib.eu/covid-19/vocab/Drug",
-      "http://research.tib.eu/covid-19/vocab/Annotation",
-      "http://research.tib.eu/covid-19/vocab/CovidDrug",
-      "http://research.tib.eu/covid-19/vocab/Drug",
-      "http://research.tib.eu/covid-19/vocab/Annotation",
-      "http://research.tib.eu/covid-19/vocab/CovidDrug",
-      "http://research.tib.eu/covid-19/vocab/Drug",
-      "http://research.tib.eu/covid-19/vocab/Annotation",
       "http://research.tib.eu/covid-19/vocab/CovidDrug",
       "http://research.tib.eu/covid-19/vocab/Drug"
     ],
@@ -1843,17 +1727,17 @@
         "url": "http://covid19kg:8890/sparql",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-          "http://www.w3.org/2000/01/rdf-schema#subClassOf",
-          "http://research.tib.eu/covid-19/vocab/affects",
           "http://research.tib.eu/covid-19/vocab/effect",
           "http://research.tib.eu/covid-19/vocab/impact",
           "http://research.tib.eu/covid-19/vocab/interaction",
-          "http://research.tib.eu/covid-19/vocab/isAffected",
           "http://research.tib.eu/covid-19/vocab/objectDrug",
           "http://research.tib.eu/covid-19/vocab/object_hasDrugBankID",
           "http://research.tib.eu/covid-19/vocab/precipitantDrug",
           "http://research.tib.eu/covid-19/vocab/precipitant_hasDrugBankID",
           "http://www.w3.org/ns/prov#hasPrimarySource",
+          "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+          "http://research.tib.eu/covid-19/vocab/affects",
+          "http://research.tib.eu/covid-19/vocab/isAffected",
           "http://www.w3.org/ns/prov#hadPrimarySource"
         ],
         "urlparam": "",
@@ -1888,8 +1772,8 @@
         "predicate": "http://research.tib.eu/covid-19/vocab/hasInteractingDrug",
         "range": [
           "http://research.tib.eu/covid-19/vocab/CovidDrug",
-          "http://research.tib.eu/covid-19/vocab/Drug",
-          "http://research.tib.eu/covid-19/vocab/Annotation"
+          "http://research.tib.eu/covid-19/vocab/Annotation",
+          "http://research.tib.eu/covid-19/vocab/Drug"
         ],
         "policies": [
           {
@@ -1917,22 +1801,12 @@
             "operator": "PR"
           }
         ]
-      },
-      {
-        "predicate": "http://www.w3.org/2000/01/rdf-schema#Label",
-        "range": [],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
       }
     ],
     "linkedTo": [
       "http://research.tib.eu/covid-19/vocab/CovidDrug",
-      "http://research.tib.eu/covid-19/vocab/Drug",
-      "http://research.tib.eu/covid-19/vocab/Annotation"
+      "http://research.tib.eu/covid-19/vocab/Annotation",
+      "http://research.tib.eu/covid-19/vocab/Drug"
     ],
     "wrappers": [
       {
@@ -1942,8 +1816,7 @@
           "http://research.tib.eu/covid-19/vocab/confidence",
           "http://research.tib.eu/covid-19/vocab/hasInteractingDrug",
           "http://research.tib.eu/covid-19/vocab/predictionMethod",
-          "http://www.w3.org/ns/prov#hasPrimarySource",
-          "http://www.w3.org/2000/01/rdf-schema#Label"
+          "http://www.w3.org/ns/prov#hasPrimarySource"
         ],
         "urlparam": "",
         "wrapperType": "SPARQLEndpoint"
@@ -2007,7 +1880,7 @@
         ]
       },
       {
-        "predicate": "http://research.tib.eu/covid-19/vocab/hasInteractingTarget",
+        "predicate": "http://research.tib.eu/covid-19/vocab/hasInteractingEnzyme",
         "range": [
           "http://research.tib.eu/covid-19/vocab/Enzyme"
         ],
@@ -2019,7 +1892,7 @@
         ]
       },
       {
-        "predicate": "http://research.tib.eu/covid-19/vocab/hasInteractingEnzyme",
+        "predicate": "http://research.tib.eu/covid-19/vocab/hasInteractingTarget",
         "range": [
           "http://research.tib.eu/covid-19/vocab/Enzyme"
         ],
@@ -2046,8 +1919,8 @@
           "http://research.tib.eu/covid-19/vocab/hasInteractingDrug",
           "http://research.tib.eu/covid-19/vocab/predictionMethod",
           "http://www.w3.org/ns/prov#hasPrimarySource",
-          "http://research.tib.eu/covid-19/vocab/hasInteractingTarget",
-          "http://research.tib.eu/covid-19/vocab/hasInteractingEnzyme"
+          "http://research.tib.eu/covid-19/vocab/hasInteractingEnzyme",
+          "http://research.tib.eu/covid-19/vocab/hasInteractingTarget"
         ],
         "urlparam": "",
         "wrapperType": "SPARQLEndpoint"
@@ -2476,6 +2349,18 @@
         ]
       },
       {
+        "predicate": "http://research.tib.eu/covid-19/vocab/hasInteractingEnzyme",
+        "range": [
+          "http://research.tib.eu/covid-19/vocab/Enzyme"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
         "predicate": "http://research.tib.eu/covid-19/vocab/hasInteractingEnzym",
         "range": [
           "http://research.tib.eu/covid-19/vocab/Enzyme"
@@ -2489,18 +2374,6 @@
       },
       {
         "predicate": "http://research.tib.eu/covid-19/vocab/hasInteractingTarget",
-        "range": [
-          "http://research.tib.eu/covid-19/vocab/Enzyme"
-        ],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/hasInteractingEnzyme",
         "range": [
           "http://research.tib.eu/covid-19/vocab/Enzyme"
         ],
@@ -2528,9 +2401,9 @@
           "http://research.tib.eu/covid-19/vocab/hasInteractingDrug",
           "http://research.tib.eu/covid-19/vocab/predictionMethod",
           "http://www.w3.org/ns/prov#hasPrimarySource",
+          "http://research.tib.eu/covid-19/vocab/hasInteractingEnzyme",
           "http://research.tib.eu/covid-19/vocab/hasInteractingEnzym",
-          "http://research.tib.eu/covid-19/vocab/hasInteractingTarget",
-          "http://research.tib.eu/covid-19/vocab/hasInteractingEnzyme"
+          "http://research.tib.eu/covid-19/vocab/hasInteractingTarget"
         ],
         "urlparam": "",
         "wrapperType": "SPARQLEndpoint"
@@ -2749,8 +2622,8 @@
       {
         "predicate": "http://research.tib.eu/covid-19/vocab/annotates",
         "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
         ],
         "policies": [
           {
@@ -2793,8 +2666,8 @@
       }
     ],
     "linkedTo": [
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
       "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author",
       "http://research.tib.eu/covid-19/vocab/Annotation"
     ],
     "wrappers": [
@@ -2860,8 +2733,8 @@
       {
         "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
         "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
         ],
         "policies": [
           {
@@ -2883,8 +2756,8 @@
     ],
     "linkedTo": [
       "http://research.tib.eu/covid-19/vocab/Annotation",
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
-      "http://research.tib.eu/covid-19/vocab/Publication"
+      "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author"
     ],
     "wrappers": [
       {
@@ -2950,8 +2823,8 @@
       {
         "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
         "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
         ],
         "policies": [
           {
@@ -2973,8 +2846,8 @@
     ],
     "linkedTo": [
       "http://research.tib.eu/covid-19/vocab/Annotation",
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
-      "http://research.tib.eu/covid-19/vocab/Publication"
+      "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author"
     ],
     "wrappers": [
       {
@@ -3040,8 +2913,8 @@
       {
         "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
         "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
         ],
         "policies": [
           {
@@ -3063,8 +2936,8 @@
     ],
     "linkedTo": [
       "http://research.tib.eu/covid-19/vocab/Annotation",
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
-      "http://research.tib.eu/covid-19/vocab/Publication"
+      "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author"
     ],
     "wrappers": [
       {
@@ -3098,8 +2971,8 @@
       {
         "predicate": "http://research.tib.eu/covid-19/vocab/annotates",
         "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
         ],
         "policies": [
           {
@@ -3142,8 +3015,8 @@
       }
     ],
     "linkedTo": [
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
       "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author",
       "http://research.tib.eu/covid-19/vocab/Annotation"
     ],
     "wrappers": [
@@ -3209,8 +3082,8 @@
       {
         "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
         "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
         ],
         "policies": [
           {
@@ -3232,8 +3105,8 @@
     ],
     "linkedTo": [
       "http://research.tib.eu/covid-19/vocab/Annotation",
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
-      "http://research.tib.eu/covid-19/vocab/Publication"
+      "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author"
     ],
     "wrappers": [
       {
@@ -3452,9 +3325,9 @@
         ]
       },
       {
-        "predicate": "http://research.tib.eu/covid-19/vocab/isSideEffectOf",
+        "predicate": "http://research.tib.eu/covid-19/vocab/sideEffect_isRelatedTo_dse",
         "range": [
-          "http://research.tib.eu/covid-19/vocab/DrugSideEffectInteraction"
+          "http://research.tib.eu/covid-19/vocab/DrugToxicityInteraction"
         ],
         "policies": [
           {
@@ -3464,9 +3337,9 @@
         ]
       },
       {
-        "predicate": "http://research.tib.eu/covid-19/vocab/sideEffect_isRelatedTo_dse",
+        "predicate": "http://research.tib.eu/covid-19/vocab/isSideEffectOf",
         "range": [
-          "http://research.tib.eu/covid-19/vocab/DrugToxicityInteraction"
+          "http://research.tib.eu/covid-19/vocab/DrugSideEffectInteraction"
         ],
         "policies": [
           {
@@ -3478,8 +3351,8 @@
     ],
     "linkedTo": [
       "http://research.tib.eu/covid-19/vocab/Annotation",
-      "http://research.tib.eu/covid-19/vocab/DrugSideEffectInteraction",
-      "http://research.tib.eu/covid-19/vocab/DrugToxicityInteraction"
+      "http://research.tib.eu/covid-19/vocab/DrugToxicityInteraction",
+      "http://research.tib.eu/covid-19/vocab/DrugSideEffectInteraction"
     ],
     "wrappers": [
       {
@@ -3487,8 +3360,8 @@
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://research.tib.eu/covid-19/vocab/hasCUIAnnotation",
-          "http://research.tib.eu/covid-19/vocab/isSideEffectOf",
-          "http://research.tib.eu/covid-19/vocab/sideEffect_isRelatedTo_dse"
+          "http://research.tib.eu/covid-19/vocab/sideEffect_isRelatedTo_dse",
+          "http://research.tib.eu/covid-19/vocab/isSideEffectOf"
         ],
         "urlparam": "",
         "wrapperType": "SPARQLEndpoint"
@@ -3638,30 +3511,10 @@
         ]
       },
       {
-        "predicate": "http://research.tib.eu/covid-19/vocab/arxiv_id",
-        "range": [],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
         "predicate": "http://research.tib.eu/covid-19/vocab/doi",
         "range": [
           "http://research.tib.eu/covid-19/vocab/Gene"
         ],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://research.tib.eu/covid-19/vocab/externalLink",
-        "range": [],
         "policies": [
           {
             "dataset": "http://covid19kg:8890/sparql",
@@ -3722,8 +3575,8 @@
       {
         "predicate": "http://research.tib.eu/covid-19/vocab/pmid",
         "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
         ],
         "policies": [
           {
@@ -3763,6 +3616,26 @@
         ]
       },
       {
+        "predicate": "http://research.tib.eu/covid-19/vocab/year",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://research.tib.eu/covid-19/vocab/externalLink",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
         "predicate": "http://research.tib.eu/covid-19/vocab/who_covidence_id",
         "range": [],
         "policies": [
@@ -3773,7 +3646,7 @@
         ]
       },
       {
-        "predicate": "http://research.tib.eu/covid-19/vocab/year",
+        "predicate": "http://research.tib.eu/covid-19/vocab/arxiv_id",
         "range": [],
         "policies": [
           {
@@ -3835,8 +3708,8 @@
     ],
     "linkedTo": [
       "http://research.tib.eu/covid-19/vocab/Gene",
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
-      "http://research.tib.eu/covid-19/vocab/Publication"
+      "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author"
     ],
     "wrappers": [
       {
@@ -3848,9 +3721,7 @@
           "http://purl.org/dc/terms/title",
           "http://purl.org/ontology/bibo/doi",
           "http://purl.org/ontology/bibo/pmid",
-          "http://research.tib.eu/covid-19/vocab/arxiv_id",
           "http://research.tib.eu/covid-19/vocab/doi",
-          "http://research.tib.eu/covid-19/vocab/externalLink",
           "http://research.tib.eu/covid-19/vocab/journal",
           "http://research.tib.eu/covid-19/vocab/license",
           "http://research.tib.eu/covid-19/vocab/pdf_json_files",
@@ -3860,8 +3731,10 @@
           "http://research.tib.eu/covid-19/vocab/publication_isRelatedTo_Disease",
           "http://research.tib.eu/covid-19/vocab/sha_id",
           "http://research.tib.eu/covid-19/vocab/source",
-          "http://research.tib.eu/covid-19/vocab/who_covidence_id",
           "http://research.tib.eu/covid-19/vocab/year",
+          "http://research.tib.eu/covid-19/vocab/externalLink",
+          "http://research.tib.eu/covid-19/vocab/who_covidence_id",
+          "http://research.tib.eu/covid-19/vocab/arxiv_id",
           "http://research.tib.eu/covid-19/vocab/authorAffiliation",
           "http://research.tib.eu/covid-19/vocab/citedBy",
           "http://research.tib.eu/covid-19/vocab/hasPublicationType",
@@ -3981,8 +3854,8 @@
       {
         "predicate": "http://research.tib.eu/covid-19/vocab/pmid",
         "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
         ],
         "policies": [
           {
@@ -4034,8 +3907,8 @@
     ],
     "linkedTo": [
       "http://research.tib.eu/covid-19/vocab/Gene",
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
-      "http://research.tib.eu/covid-19/vocab/Publication"
+      "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author"
     ],
     "wrappers": [
       {
@@ -4110,8 +3983,8 @@
       {
         "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
         "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
         ],
         "policies": [
           {
@@ -4133,8 +4006,8 @@
     ],
     "linkedTo": [
       "http://research.tib.eu/covid-19/vocab/Annotation",
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
-      "http://research.tib.eu/covid-19/vocab/Publication"
+      "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author"
     ],
     "wrappers": [
       {
@@ -4315,8 +4188,8 @@
       {
         "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
         "range": [
-          "http://research.tib.eu/covid-19/vocab/Publication_Author",
-          "http://research.tib.eu/covid-19/vocab/Publication"
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
         ],
         "policies": [
           {
@@ -4338,8 +4211,8 @@
     ],
     "linkedTo": [
       "http://research.tib.eu/covid-19/vocab/Annotation",
-      "http://research.tib.eu/covid-19/vocab/Publication_Author",
-      "http://research.tib.eu/covid-19/vocab/Publication"
+      "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author"
     ],
     "wrappers": [
       {
@@ -4467,6 +4340,65 @@
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
           "http://www.w3.org/ns/prov#hasGeneratedBy"
+        ],
+        "urlparam": "",
+        "wrapperType": "SPARQLEndpoint"
+      }
+    ]
+  },
+  {
+    "rootType": "http://www.w3.org/ns/r2rml#TriplesMap",
+    "predicates": [
+      {
+        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://semweb.mmlab.be/ns/rml#logicalSource",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/ns/r2rml#subjectMap",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://www.w3.org/ns/r2rml#predicateObjectMap",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      }
+    ],
+    "linkedTo": [],
+    "wrappers": [
+      {
+        "url": "http://covid19kg:8890/sparql",
+        "predicates": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "http://semweb.mmlab.be/ns/rml#logicalSource",
+          "http://www.w3.org/ns/r2rml#subjectMap",
+          "http://www.w3.org/ns/r2rml#predicateObjectMap"
         ],
         "urlparam": "",
         "wrapperType": "SPARQLEndpoint"
@@ -4744,7 +4676,7 @@
     ]
   },
   {
-    "rootType": "http://www.w3.org/ns/r2rml#TriplesMap",
+    "rootType": "http://research.tib.eu/covid-19/vocab/ADMINISTERED_TO",
     "predicates": [
       {
         "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -4757,7 +4689,7 @@
         ]
       },
       {
-        "predicate": "http://semweb.mmlab.be/ns/rml#logicalSource",
+        "predicate": "http://research.tib.eu/covid-19/vocab/confidence",
         "range": [],
         "policies": [
           {
@@ -4767,7 +4699,7 @@
         ]
       },
       {
-        "predicate": "http://www.w3.org/ns/r2rml#subjectMap",
+        "predicate": "http://research.tib.eu/covid-19/vocab/negation",
         "range": [],
         "policies": [
           {
@@ -4777,7 +4709,32 @@
         ]
       },
       {
-        "predicate": "http://www.w3.org/ns/r2rml#predicateObjectMap",
+        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_annotation",
+        "range": [
+          "http://research.tib.eu/covid-19/vocab/Annotation"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
+        "range": [
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_Disease",
         "range": [],
         "policies": [
           {
@@ -4787,15 +4744,21 @@
         ]
       }
     ],
-    "linkedTo": [],
+    "linkedTo": [
+      "http://research.tib.eu/covid-19/vocab/Annotation",
+      "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author"
+    ],
     "wrappers": [
       {
         "url": "http://covid19kg:8890/sparql",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-          "http://semweb.mmlab.be/ns/rml#logicalSource",
-          "http://www.w3.org/ns/r2rml#subjectMap",
-          "http://www.w3.org/ns/r2rml#predicateObjectMap"
+          "http://research.tib.eu/covid-19/vocab/confidence",
+          "http://research.tib.eu/covid-19/vocab/negation",
+          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_annotation",
+          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
+          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_Disease"
         ],
         "urlparam": "",
         "wrapperType": "SPARQLEndpoint"
@@ -4803,7 +4766,7 @@
     ]
   },
   {
-    "rootType": "https://dbpedia.org/class/yago/Organization108008335",
+    "rootType": "http://research.tib.eu/covid-19/vocab/LOCATION_OF",
     "predicates": [
       {
         "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -4816,7 +4779,52 @@
         ]
       },
       {
-        "predicate": "http://www.w3.org/ns/prov#hasGeneratedBy",
+        "predicate": "http://research.tib.eu/covid-19/vocab/confidence",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://research.tib.eu/covid-19/vocab/negation",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_annotation",
+        "range": [
+          "http://research.tib.eu/covid-19/vocab/Annotation"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
+        "range": [
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_Disease",
         "range": [],
         "policies": [
           {
@@ -4826,13 +4834,21 @@
         ]
       }
     ],
-    "linkedTo": [],
+    "linkedTo": [
+      "http://research.tib.eu/covid-19/vocab/Annotation",
+      "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author"
+    ],
     "wrappers": [
       {
         "url": "http://covid19kg:8890/sparql",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-          "http://www.w3.org/ns/prov#hasGeneratedBy"
+          "http://research.tib.eu/covid-19/vocab/confidence",
+          "http://research.tib.eu/covid-19/vocab/negation",
+          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_annotation",
+          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
+          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_Disease"
         ],
         "urlparam": "",
         "wrapperType": "SPARQLEndpoint"
@@ -4840,7 +4856,7 @@
     ]
   },
   {
-    "rootType": "https://dbpedia.org/class/yago/Organism100004475",
+    "rootType": "http://research.tib.eu/covid-19/vocab/PART_OF",
     "predicates": [
       {
         "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -4853,7 +4869,52 @@
         ]
       },
       {
-        "predicate": "http://www.w3.org/ns/prov#hasGeneratedBy",
+        "predicate": "http://research.tib.eu/covid-19/vocab/confidence",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://research.tib.eu/covid-19/vocab/negation",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_annotation",
+        "range": [
+          "http://research.tib.eu/covid-19/vocab/Annotation"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
+        "range": [
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
+        ],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_Disease",
         "range": [],
         "policies": [
           {
@@ -4863,13 +4924,21 @@
         ]
       }
     ],
-    "linkedTo": [],
+    "linkedTo": [
+      "http://research.tib.eu/covid-19/vocab/Annotation",
+      "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author"
+    ],
     "wrappers": [
       {
         "url": "http://covid19kg:8890/sparql",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-          "http://www.w3.org/ns/prov#hasGeneratedBy"
+          "http://research.tib.eu/covid-19/vocab/confidence",
+          "http://research.tib.eu/covid-19/vocab/negation",
+          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_annotation",
+          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
+          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_Disease"
         ],
         "urlparam": "",
         "wrapperType": "SPARQLEndpoint"
@@ -4877,7 +4946,7 @@
     ]
   },
   {
-    "rootType": "https://dbpedia.org/ontology/Species",
+    "rootType": "http://research.tib.eu/covid-19/vocab/PROCESS_OF",
     "predicates": [
       {
         "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -4890,7 +4959,7 @@
         ]
       },
       {
-        "predicate": "http://www.w3.org/ns/prov#hasGeneratedBy",
+        "predicate": "http://research.tib.eu/covid-19/vocab/confidence",
         "range": [],
         "policies": [
           {
@@ -4898,27 +4967,22 @@
             "operator": "PR"
           }
         ]
-      }
-    ],
-    "linkedTo": [],
-    "wrappers": [
+      },
       {
-        "url": "http://covid19kg:8890/sparql",
-        "predicates": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-          "http://www.w3.org/ns/prov#hasGeneratedBy"
+        "predicate": "http://research.tib.eu/covid-19/vocab/negation",
+        "range": [],
+        "policies": [
+          {
+            "dataset": "http://covid19kg:8890/sparql",
+            "operator": "PR"
+          }
+        ]
+      },
+      {
+        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_annotation",
+        "range": [
+          "http://research.tib.eu/covid-19/vocab/Annotation"
         ],
-        "urlparam": "",
-        "wrapperType": "SPARQLEndpoint"
-      }
-    ]
-  },
-  {
-    "rootType": "http://dbpedia.org/ontology/ChemicalSubstance",
-    "predicates": [
-      {
-        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-        "range": [],
         "policies": [
           {
             "dataset": "http://covid19kg:8890/sparql",
@@ -4927,35 +4991,11 @@
         ]
       },
       {
-        "predicate": "http://www.w3.org/ns/prov#hasGeneratedBy",
-        "range": [],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      }
-    ],
-    "linkedTo": [],
-    "wrappers": [
-      {
-        "url": "http://covid19kg:8890/sparql",
-        "predicates": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-          "http://www.w3.org/ns/prov#hasGeneratedBy"
+        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
+        "range": [
+          "http://research.tib.eu/covid-19/vocab/Publication",
+          "http://research.tib.eu/covid-19/vocab/Publication_Author"
         ],
-        "urlparam": "",
-        "wrapperType": "SPARQLEndpoint"
-      }
-    ]
-  },
-  {
-    "rootType": "http://dbpedia.org/ontology/Disease",
-    "predicates": [
-      {
-        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-        "range": [],
         "policies": [
           {
             "dataset": "http://covid19kg:8890/sparql",
@@ -4964,7 +5004,7 @@
         ]
       },
       {
-        "predicate": "http://www.w3.org/ns/prov#hasGeneratedBy",
+        "predicate": "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_Disease",
         "range": [],
         "policies": [
           {
@@ -4974,50 +5014,21 @@
         ]
       }
     ],
-    "linkedTo": [],
-    "wrappers": [
-      {
-        "url": "http://covid19kg:8890/sparql",
-        "predicates": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-          "http://www.w3.org/ns/prov#hasGeneratedBy"
-        ],
-        "urlparam": "",
-        "wrapperType": "SPARQLEndpoint"
-      }
-    ]
-  },
-  {
-    "rootType": "http://dbpedia.org/ontology/PersonFunction",
-    "predicates": [
-      {
-        "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-        "range": [],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      },
-      {
-        "predicate": "http://www.w3.org/ns/prov#hasGeneratedBy",
-        "range": [],
-        "policies": [
-          {
-            "dataset": "http://covid19kg:8890/sparql",
-            "operator": "PR"
-          }
-        ]
-      }
+    "linkedTo": [
+      "http://research.tib.eu/covid-19/vocab/Annotation",
+      "http://research.tib.eu/covid-19/vocab/Publication",
+      "http://research.tib.eu/covid-19/vocab/Publication_Author"
     ],
-    "linkedTo": [],
     "wrappers": [
       {
         "url": "http://covid19kg:8890/sparql",
         "predicates": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-          "http://www.w3.org/ns/prov#hasGeneratedBy"
+          "http://research.tib.eu/covid-19/vocab/confidence",
+          "http://research.tib.eu/covid-19/vocab/negation",
+          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_annotation",
+          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_publication",
+          "http://research.tib.eu/covid-19/vocab/relation_isRelatedTo_Disease"
         ],
         "urlparam": "",
         "wrapperType": "SPARQLEndpoint"
