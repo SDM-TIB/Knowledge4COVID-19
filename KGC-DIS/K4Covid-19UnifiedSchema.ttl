@@ -1345,6 +1345,17 @@ xsd:date rdf:type rdfs:Datatype .
                                        <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
                                        rdfs:label "Digital Object Identifier"@en .
 
+<http://research.tib.eu/covid-19/vocab/DDI-CRD> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/DrugDrugInteraction> ;
+                                       <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
+                                       <http://purl.org/dc/terms/modified> "2022-05-25"@en ;
+                                       rdfs:label "DDI-CRD"@en .
+
+<http://research.tib.eu/covid-19/vocab/DDI-NCRD> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/DrugDrugInteraction> ;
+                                       <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
+                                       <http://purl.org/dc/terms/modified> "2022-05-25"@en ;
+                                       rdfs:label "DDI-NCRD"@en .
 ### Equivalent Classes
 covid19:Protein owl:equivalentClass up:Protein, dbr:Protein, wikidata:Q8054 .
 covid19:Treatment owl:equivalentClass wikidata:Q179661, dbo:treatment, dbr:Therapy .
