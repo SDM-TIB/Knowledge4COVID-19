@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4701816.svg)](https://doi.org/10.5281/zenodo.4701816)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache2-green.svg)](LICENSE)
+
 # Knowledge4COVID-19
 
 ## Knowledge4COVID-19 Framework
