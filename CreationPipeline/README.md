@@ -10,7 +10,10 @@ This directory contains the instructions for running the K4COVID pipeline
 # Downloading the required data
 
 First we need to download the raw data that is going to be integrated into the created Knowledge Graph.
-The data can be downloaded using this [https://tib.eu/cloud/s/8Pc8HPCGA6sLnea](link) 
+The data can be downloaded using this ([link](https://tib.eu/cloud/s/8Pc8HPCGA6sLnea))
+
+After downloading the data, the (data) directory should be placed under CreationPipeline directory
+
 
 
 # Running the docker containers
