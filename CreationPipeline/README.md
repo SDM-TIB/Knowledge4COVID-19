@@ -7,6 +7,12 @@ This directory contains the instructions for running the K4COVID pipeline
       - `load_to_virtuos.py` - used to load the transformed RDF data to virtuoso using the `virtuoso-script.sh` script
 - `docker-compose.yml` - docker compose setup for transforming data to RDF and load it to `Virtuoso` triple store.
 
+# Downloading the required data
+
+First we need to download the raw data that is going to be integrated into the created Knowledge Graph.
+The data can be downloaded using this [https://tib.eu/cloud/s/8Pc8HPCGA6sLnea](link) 
+
+
 # Running the docker containers
 To start the docker containers, run the following command
 (Prerequisite: *Docker-ce*, *Docker-compose*)
