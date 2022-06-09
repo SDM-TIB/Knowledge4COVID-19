@@ -1356,6 +1356,37 @@ xsd:date rdf:type rdfs:Datatype .
                                        <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
                                        <http://purl.org/dc/terms/modified> "2022-05-25"@en ;
                                        rdfs:label "DDI-NCRD"@en .
+
+###  http://research.tib.eu/covid-19/vocab/ADMINISTERED_TO
+<http://research.tib.eu/covid-19/vocab/ADMINISTERED_TO> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Relation> ;
+                                       rdfs:comment "Relation between two UMLS CUIs that represents the ADMINISTERED_TO relation."@en ;
+                                       rdfs:isDefinedBy "emetis_niazmand"@en ;
+                                       rdfs:label "ADMINISTERED_TO"@en .
+
+
+###  http://research.tib.eu/covid-19/vocab/LOCATION_OF
+<http://research.tib.eu/covid-19/vocab/LOCATION_OF> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Relation> ;
+                                       rdfs:comment "Relation between two UMLS CUIs that represents the LOCATION_OF relation."@en ;
+                                       rdfs:isDefinedBy "emetis_niazmand"@en ;
+                                       rdfs:label "LOCATION_OF"@en .
+
+
+###  http://research.tib.eu/covid-19/vocab/PART_OF
+<http://research.tib.eu/covid-19/vocab/PART_OF> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Relation> ;
+                                       rdfs:comment "Relation between two UMLS CUIs that represents the PART_OF relation."@en ;
+                                       rdfs:isDefinedBy "emetis_niazmand"@en ;
+                                       rdfs:label "PART_OF"@en .
+
+
+###  http://research.tib.eu/covid-19/vocab/PROCESS_OF
+<http://research.tib.eu/covid-19/vocab/PROCESS_OF> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://research.tib.eu/covid-19/vocab/Relation> ;
+                                       rdfs:comment "Relation between two UMLS CUIs that represents the PROCESS_OF relation."@en ;
+                                       rdfs:isDefinedBy "emetis_niazmand"@en ;
+                                       rdfs:label "PROCESS_OF"@en .
 ### Equivalent Classes
 covid19:Protein owl:equivalentClass up:Protein, dbr:Protein, wikidata:Q8054 .
 covid19:Treatment owl:equivalentClass wikidata:Q179661, dbo:treatment, dbr:Therapy .
